@@ -1,0 +1,135 @@
+# Title:
+# No Tumblr
+#
+# Description:
+# Blocks Tumblr (simple as that!)                    
+#                         
+# Compatible with AdAway on Android and multiple ad blockers.
+#
+# Source(s) Used:
+# https://raw.githubusercontent.com/ryanbarillosofficial/dns-blocklists/main/social_media/sources.json
+#
+# Project Home Page:
+# https://github.com/ryanbarillos/dns-blocklists
+#
+# Last Updated: 11 Feb 2025
+
+
+#=========
+IPv4 Nodes
+#=========
+0.0.0.0 24.media.tumblr.com
+0.0.0.0 25.media.tumblr.com
+0.0.0.0 28.media.tumblr.com
+0.0.0.0 36.media.tumblr.com
+0.0.0.0 37.media.tumblr.com
+0.0.0.0 38.media.tumblr.com
+0.0.0.0 40.media.tumblr.com
+0.0.0.0 66.media.tumblr.com
+0.0.0.0 67.media.tumblr.com
+0.0.0.0 68.media.tumblr.com
+0.0.0.0 78.media.tumblr.com
+0.0.0.0 a.tumblr.com
+0.0.0.0 api.tumblr.com
+0.0.0.0 assets.tumblr.com
+0.0.0.0 cookiex.ngd.yahoo.com
+0.0.0.0 embed.tumblr.com
+0.0.0.0 engineering.tumblr.com
+0.0.0.0 platform.tumblr.com
+0.0.0.0 px.srvcs.tumblr.com
+0.0.0.0 secure.assets.tumblr.com
+0.0.0.0 secure.static.tumblr.com
+0.0.0.0 staff.tumblr.com
+0.0.0.0 static.tumblr.com
+0.0.0.0 tumblr.com
+0.0.0.0 tumblr.tumblr.com
+0.0.0.0 v.tumblr.com
+0.0.0.0 vt.tumblr.com
+0.0.0.0 www.tumblr.com
+0.0.0.0 www.24.media.tumblr.com
+0.0.0.0 www.25.media.tumblr.com
+0.0.0.0 www.28.media.tumblr.com
+0.0.0.0 www.36.media.tumblr.com
+0.0.0.0 www.37.media.tumblr.com
+0.0.0.0 www.38.media.tumblr.com
+0.0.0.0 www.40.media.tumblr.com
+0.0.0.0 www.66.media.tumblr.com
+0.0.0.0 www.67.media.tumblr.com
+0.0.0.0 www.68.media.tumblr.com
+0.0.0.0 www.78.media.tumblr.com
+0.0.0.0 www.a.tumblr.com
+0.0.0.0 www.api.tumblr.com
+0.0.0.0 www.assets.tumblr.com
+0.0.0.0 www.cookiex.ngd.yahoo.com
+0.0.0.0 www.embed.tumblr.com
+0.0.0.0 www.engineering.tumblr.com
+0.0.0.0 www.platform.tumblr.com
+0.0.0.0 www.px.srvcs.tumblr.com
+0.0.0.0 www.secure.assets.tumblr.com
+0.0.0.0 www.secure.static.tumblr.com
+0.0.0.0 www.staff.tumblr.com
+0.0.0.0 www.static.tumblr.com
+0.0.0.0 www.tumblr.com
+0.0.0.0 www.tumblr.tumblr.com
+0.0.0.0 www.v.tumblr.com
+0.0.0.0 www.vt.tumblr.com
+
+
+#=========
+IPv6 Nodes
+#=========
+::1 24.media.tumblr.com
+::1 25.media.tumblr.com
+::1 28.media.tumblr.com
+::1 36.media.tumblr.com
+::1 37.media.tumblr.com
+::1 38.media.tumblr.com
+::1 40.media.tumblr.com
+::1 66.media.tumblr.com
+::1 67.media.tumblr.com
+::1 68.media.tumblr.com
+::1 78.media.tumblr.com
+::1 a.tumblr.com
+::1 api.tumblr.com
+::1 assets.tumblr.com
+::1 cookiex.ngd.yahoo.com
+::1 embed.tumblr.com
+::1 engineering.tumblr.com
+::1 platform.tumblr.com
+::1 px.srvcs.tumblr.com
+::1 secure.assets.tumblr.com
+::1 secure.static.tumblr.com
+::1 staff.tumblr.com
+::1 static.tumblr.com
+::1 tumblr.com
+::1 tumblr.tumblr.com
+::1 v.tumblr.com
+::1 vt.tumblr.com
+::1 www.tumblr.com
+::1 www.24.media.tumblr.com
+::1 www.25.media.tumblr.com
+::1 www.28.media.tumblr.com
+::1 www.36.media.tumblr.com
+::1 www.37.media.tumblr.com
+::1 www.38.media.tumblr.com
+::1 www.40.media.tumblr.com
+::1 www.66.media.tumblr.com
+::1 www.67.media.tumblr.com
+::1 www.68.media.tumblr.com
+::1 www.78.media.tumblr.com
+::1 www.a.tumblr.com
+::1 www.api.tumblr.com
+::1 www.assets.tumblr.com
+::1 www.cookiex.ngd.yahoo.com
+::1 www.embed.tumblr.com
+::1 www.engineering.tumblr.com
+::1 www.platform.tumblr.com
+::1 www.px.srvcs.tumblr.com
+::1 www.secure.assets.tumblr.com
+::1 www.secure.static.tumblr.com
+::1 www.staff.tumblr.com
+::1 www.static.tumblr.com
+::1 www.tumblr.com
+::1 www.tumblr.tumblr.com
+::1 www.v.tumblr.com
+::1 www.vt.tumblr.com

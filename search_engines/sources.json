@@ -1,0 +1,521 @@
+{
+    "active_search_results": [
+        {
+            "url": "activesearchresults.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],    
+    "aol": [
+        {
+            "url": "search.aol.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],    
+    "ask": [
+        {
+            "url": "ask.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],
+    "baidu": [
+        {
+            "url": "baidu.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],
+    "bing": [
+        {
+            "url": "bing.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "bing.net",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "tse1.explicit.bing.net",
+            "comment": "Relied upon by Bing, Yahoo Search & Ecosia for explicit graphics when SafeSearch is off",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+            
+        },
+        {
+            "url": "tse2.explicit.bing.net",
+            "comment": "Relied upon by Bing, Yahoo Search & Ecosia for explicit graphics when SafeSearch is off",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+            
+        },
+        {
+            "url": "tse1.mm.bing.net",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "tse2.mm.bing.net",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "th.bing.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }        
+    ],
+    "blackle": [
+        {
+            "url": "blackle.com",
+            "comment": "",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],
+    "boardreader": [
+        {
+            "url": "boardreader.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],    
+    "brave_search": [
+        {
+            "url": "search.brave.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "imgs.search.brave.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        } 
+    ],
+    "dogpile": [
+        {
+            "url": "dogpile.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],    
+    "duckduckgo": [
+        {
+            "url": "duckduckgo.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "safe.duckduckgo.com",
+            "safesearch": true,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "html.duckduckgo.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "lite.duckduckgo.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "start.duckduckgo.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "external-content.duckduckgo.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+        }
+    ],
+    "ecosia": [
+        {
+            "url": "ecosia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "ap.ecosia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "api.ecosia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": true
+        },        
+        {
+            "url": "cdn.ecosia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": true
+        }
+    ],
+    "entireweb": [
+        {
+            "url": "entireweb.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "search.entireweb.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "cdn.entireweb.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "affiliate.entireweb.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }        
+    ],      
+    "excite": [
+        {
+            "url": "results.excite.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],      
+    "google": [
+        {
+            "url": "google.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "images.google.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+
+        }
+    ],
+    "hotbot": [
+        {
+            "url": "hakia.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],    
+    "info": [
+        {
+            "url": "info.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "lycos": [
+        {
+            "url": "lycos.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "metacrawler": [
+        {
+            "url": "metacrawler.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "metager": [
+        {
+            "url": "metager.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "mojeek": [
+        {
+            "url": "mojeek.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ], 
+    "mullvad_leta": [
+        {
+            "url": "leta.mullvad.net",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],        
+    "qwant": [
+        {
+            "url": "qwant.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "qwantjunior.com",
+            "safesearch": true,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "lite.qwant.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "s2.qwant.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+        }
+    ],
+    "recipebridge": [
+        {
+            "url": "recipebridge.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],     
+    "refseek": [
+        {
+            "url": "refseek.com",
+            "safesearch": true,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],    
+    "swisscows": [
+        {
+            "url": "swisscows.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "searx": [
+        {
+            "url": "searx.be",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "shutterstock": [
+        {
+            "url": "shutterstock.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "images.shutterstock.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "plus.shutterstock.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }   
+    ],    
+    "startpage": [
+        {
+            "url": "startpage.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "eu-browse.startpage.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ],
+    "stockphotos": [
+        {
+            "url": "everystockphoto.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "stockphotos.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "image.stockphotos.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "images.stockphotos.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "static.stockphotos.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },  
+        {
+            "url": "vector.stockphotos.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],
+    "tinyeye": [
+        {
+            "url": "tineye.com",
+            "safesearch": true,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }
+    ],     
+    "vadlo": [
+        {
+            "url": "vadlo.com",
+            "safesearch": true,
+            "has_graphics": false
+        }
+    ],    
+    "vecteezy": [
+        {
+            "url": "vecteezy.com",
+            "safesearch": true,
+            "has_graphics": false
+        },
+        {
+            "url": "static.vecteezy.com",
+            "safesearch": true,
+            "has_graphics": false
+        },
+        {
+            "url": "files.vecteezy.com",
+            "safesearch": true,
+            "has_graphics": false
+        }
+    ],
+    "wikimedia": [
+        {
+            "url": "wikipedia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "upload.wikimedia.org",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "meta.wikimedia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "commons.wikimedia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": true
+        },
+        {
+            "url": "commons.m.wikimedia.org",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": true
+        }        
+    ],   
+    "yahoo": [
+        {
+            "url": "search.yahoo.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "images.search.yahoo.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        },
+        {
+            "url": "s.yimg.com",
+            "safesearch": false,
+            "has_graphics": true,
+            "damaging_if_disabled": false
+        }    
+    ],
+    "you": [
+        {
+            "url": "you.com",
+            "safesearch": false,
+            "has_graphics": false,
+            "damaging_if_disabled": false
+        }
+    ]
+}

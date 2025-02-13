@@ -1,0 +1,18 @@
+{
+    "0": {
+        "name": "AdAway Official Hosts",
+        "link": "https://adaway.org/hosts.txt"
+    },
+    "1": {
+        "name": "AdGuard Mobile Ads",
+        "link": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt"
+    },
+    "2": {
+        "name": "AdGuard Mobile Spyware",
+        "link": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt"
+    },    
+    "3": {
+        "name": "Goodbye Ads",
+        "link": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt"
+    } 
+}

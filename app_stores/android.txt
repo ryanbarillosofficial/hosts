@@ -1,0 +1,45 @@
+# No App Stores - Android
+#
+# Disable Internet searching on your mobile devices
+# Last Updated: 26 Jan 2024
+
+# APKPure
+0.0.0.0 apkpure.com
+0.0.0.0 apkpure.net
+0.0.0.0 d.cdnpure.com
+0.0.0.0 www.apkpure.com
+0.0.0.0 www.apkpure.net
+::1 apkpure.com
+::1 apkpure.net
+::1 www.apkpure.com
+::1 www.apkpure.net
+::1 d.cdnpure.com
+
+
+
+# Aptoide
+0.0.0.0 aptoide.com
+0.0.0.0 buzz.aptoide.com
+0.0.0.0 en.aptoide.com
+0.0.0.0 fr.aptoide.com
+::1 aptoide.com
+::1 buzz.aptoide.com
+::1 en.aptoide.com
+
+0.0.0.0 www.aptoide.com
+0.0.0.0 www.buzz.aptoide.com
+0.0.0.0 www.en.aptoide.com
+0.0.0.0 www.fr.aptoide.com
+::1 fr.aptoide.com
+::1 www.aptoide.com
+::1 www.buzz.aptoide.com
+::1 www.en.aptoide.com
+::1 www.fr.aptoide.com
+
+
+
+# HappyMod
+0.0.0.0 happymod.com
+0.0.0.0 www.happymod.com
+::1 happymod.com
+::1 www.happymod.com

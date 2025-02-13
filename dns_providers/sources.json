@@ -1,0 +1,19 @@
+{
+    "google": [
+        "dns.google.com"
+    ],
+    "mullvad": [
+        "dns.mullvad.net",
+        "adblock.dns.mullvad.net"
+    ],
+    "nextdns": [
+        "nextdns.io",
+        "my.nextdns.io",
+        "dns.nextdns.io",
+        "api.nextdns.io",
+        "link-ip.nextdns.io",
+        "dns1.nextdns.io",
+        "test-ipv6.nextdns.io",
+        "apple.nextdns.io"
+    ]
+}

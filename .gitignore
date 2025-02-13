@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ryan's additions
+*.txt.bak
+*image_free.txt
+*graphicfree.txt
+*__pycache__
