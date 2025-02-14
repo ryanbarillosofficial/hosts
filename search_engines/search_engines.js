@@ -89,27 +89,4 @@ makehost(
     safesearch_strict__domains_sans_www_prefix,
     safesearch_strict__domains_with_www_prefix,
     DIRECTORY_OUTPUT
-    )    
-    /*
-// Blacklist of all search engines NOT SAFESEARCH (easy mode)
-//
-
-// Blacklist of all search engines NOT SAFESEARCH (easy mode)
-//
-makehost(
-    host_name="safesearch_strict",
-    host_title="Safe Search Engines ONLY (Strict Version)",
-    host_description="Only allow search engines with Safe Mode STRICTLY enabled",
-    domains_sans_www_prefix=safesearch_strict__domains_sans_www_prefix,
-    domains_with_www_prefix=safesearch_strict__domains_with_www_prefix
-    )    
-// Blacklist of all search engines NOT SAFESEARCH + WITH IMAGES
-//
-makehost(
-    host_name = "safesearch__graphicfree",
-    host_title = "Safe Search Engines + NO Images ONLY",
-    host_description = "Only allow search engines with Safe Mode STRICTLY enabled + no images",
-    domains_sans_www_prefix = safesearch__graphicfree__domains_sans_www_prefix,
-    domains_with_www_prefix = safesearch__graphicfree__domains_with_www_prefix
     )
-    */

@@ -1,6 +1,13 @@
 // Imports
-import { exit } from "process";
 import fs from "fs";
+import path from "path";
+
+/*
+Imports for debugging (not used very often)
+The one I use most from these:
+- process.exit();
+*/
+import process from "process";
 
 // Constant variables
 const DIRECTORY_CURRENT = process.cwd();
@@ -12,7 +19,7 @@ const IP_PREFIX = {
 };
 
 export default function makehost(
-  host_name = "all",
+  host_name,
   host_title,
   host_description,
   domains_sans_www_prefix,
@@ -32,7 +39,10 @@ export default function makehost(
 
   // Info for each host file
   const FILE_NAME = `${host_name}.txt`;
-  const FILE_PATH = `${DIRECTORY_CURRENT}/${directory_output}/${FILE_NAME}`;
+  const FILE_PATH = path.join(DIRECTORY_CURRENT, FILE_NAME);
+
+  // console.log(`Host file will be placed here:\n${FILE_PATH}\n`);
+
   const HOST_COMMENT = `# Title: \
     \n# ${host_title} \
     \n# \
@@ -77,5 +87,5 @@ export default function makehost(
 
   // Make the host text file
   fs.writeFileSync(FILE_PATH, HOST_COMMENT + IPV4_ADDRESSES + IPV6_ADDRESSES);
-  console.log(`Created \"${FILE_NAME}\" for \"${host_title}\" — yay!`);
+  console.log(`Created \"${FILE_NAME}\" for \"${host_title}\"`);
 }
