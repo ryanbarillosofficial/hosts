@@ -8,7 +8,7 @@ const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
 const IP_PREFIX = {
   V4: "0.0.0.0",
-  V6: "::0",
+  V6: "::1",
 };
 
 export default function makehost(
