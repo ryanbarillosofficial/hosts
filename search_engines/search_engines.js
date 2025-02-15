@@ -1,5 +1,5 @@
 import sources from "./sources.json" with {type: "json"}
-import makehost from "../makehost.js"
+import {makeHost} from "../hostTools.js"
 
 const DIRECTORY_OUTPUT = "search_engines";
 
@@ -56,13 +56,12 @@ for (const search_engine in sources) {
         }
     }
 }
-
 /*
 Now to create all appropriate host files
 */
 
 // Blocking ALL Search Engines
-makehost(
+makeHost(
     "all",
     "No Search Engines",
     "No search engines AT ALL",
@@ -72,7 +71,7 @@ makehost(
     )
 
 // Blocking ALL Search Engines + SafeSearch NOT ENFORCED + NOT BREAKING other websites
-makehost(
+makeHost(
     "safesearch_easy",
     "Safe Search Engines ONLY (Easy Version)",
     "Only allow search engines with Safe Mode enabled (but don't break other sites)",
@@ -82,7 +81,7 @@ makehost(
     )
 
 // Blocking ALL Search Engines + SafeSearch NOT ENFORCED + BREAKING other websites
-makehost(
+makeHost(
     "safesearch_strict",
     "Safe Search Engines ONLY (Strict Version)",
     "Only allow search engines with Safe Mode enabled (EVEN IF other sites break)",
