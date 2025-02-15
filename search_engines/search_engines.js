@@ -3,6 +3,11 @@ import {makeHost} from "../hostTools.js"
 
 const DIRECTORY_OUTPUT = "search_engines";
 
+/**
+ * Info for later
+ * https://support.google.com/websearch/answer/186669?hl=en
+ */
+
 /*
 List of search engines to block
 */ 

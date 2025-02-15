@@ -125,7 +125,7 @@ Ensure to use the following format when requesting to add a new search engine:
     },
     {
         "url": "extra.example.com",
-        "comment": ""
+        "comment": "",
         "safesearch": true | false,
         "has_graphics": true | false,
         "damaging_if_disabled": true | false
