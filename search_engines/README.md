@@ -72,10 +72,10 @@ A search engine **is not always a single unit** that delivers all information be
 
 **1.** Besides **[DuckDuckGo.com](https://duckduckgo.com)**, DuckDuckGo (the company) offers **4 more variants** of its search engine:
 
-- **[DuckDuckGo Safe](safe.duckduckgo.com)** (it has SafeSearch strictly enforced!)
-- **[DuckDuckGo HTML](html.duckduckgo.com)** (No JavaScript to serve Images, News, Videos, etc.)
-- **[DuckDuckGo Lite](html.duckduckgo.com)** (Clone of DuckDuckGo HTML, but with a different look)
-- **[DuckDuckGo Start](start.duckduckgo.com)** (I have no clue about its purpose)
+- **[DuckDuckGo Safe](https://safe.duckduckgo.com)** (it has SafeSearch strictly enforced!)
+- **[DuckDuckGo HTML](https://html.duckduckgo.com)** (No JavaScript to serve Images, News, Videos, etc.)
+- **[DuckDuckGo Lite](https://lite.duckduckgo.com)** (Clone of DuckDuckGo HTML, but with a different look)
+- **[DuckDuckGo Start](https://start.duckduckgo.com)** (I have no clue about its purpose)
 
 Given that there _4 variants_ of DuckDuckGo's _Search Engine_, and **all 4 share the same components used to deliver information**, those common components---**[links.duckduckgo.com](links.duckduckgo.com)** & **[external-content.duckduckgo.com](links.duckduckgo.com)**---must also be evaluated for being included in the blacklist.
 
