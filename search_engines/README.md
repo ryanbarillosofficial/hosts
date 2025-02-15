@@ -134,4 +134,4 @@ Ensure to use the following format when requesting to add a new search engine:
 ],
 ```
 
-Once done, [Make a Pull Request!](https://github.com/ryanbarillosofficial/hosts/pulls){: .btn}
+Once done, **[Make a Pull Request Here!](https://github.com/ryanbarillosofficial/hosts/pulls)**
