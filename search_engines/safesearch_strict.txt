@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 53     
+# 54     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillos/hosts     
@@ -61,6 +61,8 @@
 0.0.0.0 www.lite.duckduckgo.com
 0.0.0.0 start.duckduckgo.com
 0.0.0.0 www.start.duckduckgo.com
+0.0.0.0 external-content.duckduckgo.com
+0.0.0.0 www.external-content.duckduckgo.com
 0.0.0.0 ecosia.org
 0.0.0.0 www.ecosia.org
 0.0.0.0 ap.ecosia.org
@@ -172,6 +174,8 @@
 ::1 www.lite.duckduckgo.com
 ::1 start.duckduckgo.com
 ::1 www.start.duckduckgo.com
+::1 external-content.duckduckgo.com
+::1 www.external-content.duckduckgo.com
 ::1 ecosia.org
 ::1 www.ecosia.org
 ::1 ap.ecosia.org

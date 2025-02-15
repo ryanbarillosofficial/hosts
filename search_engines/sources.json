@@ -160,7 +160,7 @@
         },
         {
             "url": "external-content.duckduckgo.com",
-            "safesearch": true,
+            "safesearch": false,
             "has_graphics": true,
             "damaging_if_disabled": true
         }
