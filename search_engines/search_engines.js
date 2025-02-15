@@ -6,6 +6,7 @@ const DIRECTORY_OUTPUT = "search_engines";
 /**
  * Info for later
  * https://support.google.com/websearch/answer/186669?hl=en
+ * https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ
  */
 
 /*
