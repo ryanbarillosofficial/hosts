@@ -1,521 +1,927 @@
 {
-    "active_search_results": [
-        {
-            "url": "activesearchresults.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],    
-    "aol": [
-        {
-            "url": "search.aol.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],    
-    "ask": [
-        {
-            "url": "ask.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],
-    "baidu": [
-        {
-            "url": "baidu.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],
-    "bing": [
-        {
-            "url": "bing.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "bing.net",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "tse1.explicit.bing.net",
-            "comment": "Relied upon by Bing, Yahoo Search & Ecosia for explicit graphics when SafeSearch is off",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-            
-        },
-        {
-            "url": "tse2.explicit.bing.net",
-            "comment": "Relied upon by Bing, Yahoo Search & Ecosia for explicit graphics when SafeSearch is off",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-            
-        },
-        {
-            "url": "tse1.mm.bing.net",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "tse2.mm.bing.net",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "th.bing.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }        
-    ],
-    "blackle": [
-        {
-            "url": "blackle.com",
-            "comment": "",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],
-    "boardreader": [
-        {
-            "url": "boardreader.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],    
-    "brave_search": [
-        {
-            "url": "search.brave.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "imgs.search.brave.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        } 
-    ],
-    "dogpile": [
-        {
-            "url": "dogpile.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],    
-    "duckduckgo": [
-        {
-            "url": "duckduckgo.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "safe.duckduckgo.com",
-            "safesearch": true,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "html.duckduckgo.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "lite.duckduckgo.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "start.duckduckgo.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "external-content.duckduckgo.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-        }
-    ],
-    "ecosia": [
-        {
-            "url": "ecosia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "ap.ecosia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "api.ecosia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": true
-        },        
-        {
-            "url": "cdn.ecosia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": true
-        }
-    ],
-    "entireweb": [
-        {
-            "url": "entireweb.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "search.entireweb.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "cdn.entireweb.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "affiliate.entireweb.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }        
-    ],      
-    "excite": [
-        {
-            "url": "results.excite.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],      
-    "google": [
-        {
-            "url": "google.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "images.google.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-
-        }
-    ],
-    "hotbot": [
-        {
-            "url": "hakia.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],    
-    "info": [
-        {
-            "url": "info.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "lycos": [
-        {
-            "url": "lycos.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "metacrawler": [
-        {
-            "url": "metacrawler.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "metager": [
-        {
-            "url": "metager.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "mojeek": [
-        {
-            "url": "mojeek.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ], 
-    "mullvad_leta": [
-        {
-            "url": "leta.mullvad.net",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],        
-    "qwant": [
-        {
-            "url": "qwant.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "qwantjunior.com",
-            "safesearch": true,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "lite.qwant.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "s2.qwant.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-        }
-    ],
-    "recipebridge": [
-        {
-            "url": "recipebridge.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],     
-    "refseek": [
-        {
-            "url": "refseek.com",
-            "safesearch": true,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],    
-    "swisscows": [
-        {
-            "url": "swisscows.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "searx": [
-        {
-            "url": "searx.be",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "shutterstock": [
-        {
-            "url": "shutterstock.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "images.shutterstock.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "plus.shutterstock.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }   
-    ],    
-    "startpage": [
-        {
-            "url": "startpage.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "eu-browse.startpage.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ],
-    "stockphotos": [
-        {
-            "url": "everystockphoto.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "stockphotos.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "image.stockphotos.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "images.stockphotos.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "static.stockphotos.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },  
-        {
-            "url": "vector.stockphotos.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],
-    "tinyeye": [
-        {
-            "url": "tineye.com",
-            "safesearch": true,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }
-    ],     
-    "vadlo": [
-        {
-            "url": "vadlo.com",
-            "safesearch": true,
-            "has_graphics": false
-        }
-    ],    
-    "vecteezy": [
-        {
-            "url": "vecteezy.com",
-            "safesearch": true,
-            "has_graphics": false
-        },
-        {
-            "url": "static.vecteezy.com",
-            "safesearch": true,
-            "has_graphics": false
-        },
-        {
-            "url": "files.vecteezy.com",
-            "safesearch": true,
-            "has_graphics": false
-        }
-    ],
-    "wikimedia": [
-        {
-            "url": "wikipedia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "upload.wikimedia.org",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "meta.wikimedia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "commons.wikimedia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": true
-        },
-        {
-            "url": "commons.m.wikimedia.org",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": true
-        }        
-    ],   
-    "yahoo": [
-        {
-            "url": "search.yahoo.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "images.search.yahoo.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        },
-        {
-            "url": "s.yimg.com",
-            "safesearch": false,
-            "has_graphics": true,
-            "damaging_if_disabled": false
-        }    
-    ],
-    "you": [
-        {
-            "url": "you.com",
-            "safesearch": false,
-            "has_graphics": false,
-            "damaging_if_disabled": false
-        }
-    ]
+	"active_search_results": [
+		{
+			"url": "activesearchresults.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"aol": [
+		{
+			"url": "search.aol.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"ask": [
+		{
+			"url": "ask.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"baidu": [
+		{
+			"url": "baidu.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"bing": [
+		{
+			"url": "bing.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		},
+		{
+			"url": "bing.net",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		},
+		{
+			"url": "tse1.explicit.bing.net",
+			"comment": "Relied upon by Bing, Yahoo Search & Ecosia for explicit graphics when SafeSearch is off",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		},
+		{
+			"url": "tse2.explicit.bing.net",
+			"comment": "Relied upon by Bing, Yahoo Search & Ecosia for explicit graphics when SafeSearch is off",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		},
+		{
+			"url": "tse1.mm.bing.net",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "tse2.mm.bing.net",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "th.bing.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"blackle": [
+		{
+			"url": "blackle.com",
+			"comment": "",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"boardreader": [
+		{
+			"url": "boardreader.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"brave_search": [
+		{
+			"url": "search.brave.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "imgs.search.brave.com",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"dogpile": [
+		{
+			"url": "dogpile.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"duckduckgo": {
+		"affixes": [
+			"lite",
+			"html",
+			"start"
+		],
+		"subdomains": [
+			{
+				"url": "duckduckgo.com",
+				"safesearch": false,
+				"has_graphics": false,
+				"damaging_if_disabled": false,
+				"redirect_to": "40.89.244.237"
+			},
+			{
+				"url": "^.duckduckgo.com",
+				"safesearch": false,
+				"has_graphics": false,
+				"damaging_if_disabled": false,
+				"redirect_to": "40.89.244.237"
+			},
+			{
+				"url": "safe.duckduckgo.com",
+				"safesearch": true,
+				"has_graphics": false,
+				"damaging_if_disabled": false,
+				"redirect_to": ""
+			},
+			{
+				"url": "external-content.duckduckgo.com",
+				"safesearch": false,
+				"has_graphics": true,
+				"damaging_if_disabled": true,
+				"redirect_to": ""
+			}
+		]
+	},
+	"ecosia": {
+		"affixes": [
+			"api",
+			"cdn",
+			"ap",
+			"ac"
+		],
+		"subdomains": [
+			{
+				"url": "ecosia.org",
+				"safesearch": false,
+				"has_graphics": false,
+				"damaging_if_disabled": false,
+				"redirect_to": "140.99.233.1"
+			},
+			{
+				"url": "^.ecosia.org",
+				"safesearch": false,
+				"has_graphics": false,
+				"damaging_if_disabled": false,
+				"redirect_to": ""
+			},
+			{
+				"url": "strict-safe-search.ecosia.org",
+				"safesearch": true,
+				"has_graphics": false,
+				"damaging_if_disabled": true,
+				"redirect_to": ""
+			}
+		]
+	},
+	"entireweb": {
+		"affixes": [
+			"search",
+			"cdn",
+			"affiliate"
+		],
+		"subdomains": [
+			{
+				"url": "entireweb.com",
+				"safesearch": false,
+				"has_graphics": true,
+				"damaging_if_disabled": false,
+				"redirect_to": ""
+			},
+			{
+				"url": "^.entireweb.com",
+				"safesearch": false,
+				"has_graphics": true,
+				"damaging_if_disabled": false,
+				"redirect_to": ""
+			}
+		]
+	},
+	"excite": [
+		{
+			"url": "results.excite.com",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"google": {
+		"affixes": {
+			"subdomains": [],
+			"countries": [
+				"ac",
+				"ad",
+				"ae",
+				"af",
+				"ag",
+				"al",
+				"am",
+				"as",
+				"at",
+				"az",
+				"ba",
+				"be",
+				"bf",
+				"bg",
+				"bi",
+				"bj",
+				"bs",
+				"bt",
+				"by",
+				"bo",
+				"ca",
+				"cat",
+				"cc",
+				"cd",
+				"cf",
+				"cg",
+				"ch",
+				"ci",
+				"cl",
+				"cm",
+				"co",
+				"cv",
+				"cz",
+				"co.ao",
+				"co.bw",
+				"co.ck",
+				"co.cr",
+				"co.hu",
+				"co.id",
+				"co.il",
+				"co.im",
+				"co.in",
+				"co.je",
+				"co.jp",
+				"co.ke",
+				"co.kr",
+				"co.ls",
+				"co.ma",
+				"co.mz",
+				"co.nz",
+				"co.th",
+				"co.tz",
+				"co.ug",
+				"co.uk",
+				"co.uz",
+				"co.ve",
+				"co.vi",
+				"co.za",
+				"co.zm",
+				"co.zw",
+				"de",
+				"dj",
+				"dk",
+				"dm",
+				"do",
+				"dz",
+				"ec",
+				"ee",
+				"es",
+				"hk",
+				"mx",
+				"ng",
+				"ph",
+				"pk",
+				"pl",
+				"pn",
+				"ps",
+				"pt",
+				"qa",
+				"ro",
+				"rs",
+				"ru",
+				"rw",
+				"sc",
+				"se",
+				"sh",
+				"si",
+				"sk",
+				"sm",
+				"sn",
+				"so",
+				"st",
+				"sg",
+				"sl",
+				"td",
+				"tg",
+				"tw",
+				"tk",
+				"tl",
+				"tm",
+				"tn",
+				"to",
+				"tt",
+				"ua",
+				"vg",
+				"vn",
+				"vu",
+				"ws",
+				"com",
+				"com.af",
+				"com.ag",
+				"com.ai",
+				"com.ar",
+				"com.au",
+				"com.bd",
+				"com.bh",
+				"com.bn",
+				"com.bo",
+				"com.br",
+				"com.by",
+				"com.bz",
+				"com.co",
+				"com.cu",
+				"com.cy",
+				"com.do",
+				"com.ec",
+				"com.eg",
+				"com.et",
+				"com.fj",
+				"com.ge",
+				"com.gh",
+				"com.gi",
+				"com.gr",
+				"com.gt",
+				"com.hk",
+				"com.iq",
+				"com.jm",
+				"com.jo",
+				"com.kh",
+				"com.kw",
+				"com.lb",
+				"com.ly",
+				"com.mm",
+				"com.mt",
+				"com.mx",
+				"com.my",
+				"com.na",
+				"com.nf",
+				"com.ng",
+				"com.ni",
+				"com.np",
+				"com.nr",
+				"com.om",
+				"com.pa",
+				"com.pe",
+				"com.pg",
+				"com.ph",
+				"com.pk",
+				"com.pr",
+				"com.py",
+				"com.qa",
+				"com.ru",
+				"com.sa",
+				"com.sb",
+				"com.sg",
+				"com.sl",
+				"com.sv",
+				"com.tj",
+				"com.tr",
+				"com.tw",
+				"com.ua",
+				"com.uy",
+				"com.vc",
+				"com.vn"
+			]
+		},
+		"subdomains": [
+			{
+				"url": "google.^",
+				"safesearch": false,
+				"has_graphics": true,
+				"damaging_if_disabled": true,
+				"redirect_to": "216.239.38.120"
+			},
+			{
+				"url": "images.google.com",
+				"safesearch": false,
+				"has_graphics": true,
+				"damaging_if_disabled": true,
+				"redirect_to": ""
+			}
+		]
+	},
+	"hotbot": [
+		{
+			"url": "hakia.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"info": [
+		{
+			"url": "info.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"lycos": [
+		{
+			"url": "lycos.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"metacrawler": [
+		{
+			"url": "metacrawler.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"metager": [
+		{
+			"url": "metager.org",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"mojeek": [
+		{
+			"url": "mojeek.com",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"mullvad_leta": [
+		{
+			"url": "leta.mullvad.net",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"qwant": [
+		{
+			"url": "qwant.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "qwantjunior.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "lite.qwant.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "s2.qwant.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		}
+	],
+	"recipebridge": [
+		{
+			"url": "recipebridge.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"refseek": [
+		{
+			"url": "refseek.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"swisscows": [
+		{
+			"url": "swisscows.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"searx": [
+		{
+			"url": "searx.be",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"shutterstock": [
+		{
+			"url": "shutterstock.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "images.shutterstock.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "plus.shutterstock.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"startpage": [
+		{
+			"url": "startpage.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "eu-browse.startpage.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"stockphotos": [
+		{
+			"url": "everystockphoto.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "image.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "images.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "static.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "vector.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"tinyeye": [
+		{
+			"url": "tineye.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"vadlo": [
+		{
+			"url": "vadlo.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		}
+	],
+	"vecteezy": [
+		{
+			"url": "vecteezy.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		},
+		{
+			"url": "static.vecteezy.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		},
+		{
+			"url": "files.vecteezy.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": ""
+		}
+	],
+	"wikimedia": {
+		"affixes": {
+			"subdomains": [
+				"upload",
+				"meta",
+				"commons",
+				"commons.m"
+			],
+			"countries": [
+				"ar",
+				"en",
+				"de",
+				"fr",
+				"es",
+				"ja",
+				"ru",
+				"pt",
+				"it",
+				"zh",
+				"fa",
+				"pl",
+				"nl",
+				"uk",
+				"no",
+				"ro",
+				"he",
+				"id",
+				"tr",
+				"cs",
+				"sr",
+				"sv",
+				"da",
+				"ko",
+				"simple",
+				"fi",
+				"hu",
+				"vi",
+				"ca",
+				"bn",
+				"th",
+				"el",
+				"hi",
+				"zh-yue",
+				"sw",
+				"bg",
+				"ms",
+				"hy",
+				"et",
+				"az",
+				"sk",
+				"eu",
+				"hr",
+				"uz",
+				"sh",
+				"sl",
+				"lt",
+				"ta",
+				"eo",
+				"kk",
+				"lv",
+				"be",
+				"ur",
+				"sq",
+				"gl",
+				"te",
+				"ka",
+				"ml",
+				"mk",
+				"arz",
+				"af",
+				"is",
+				"ha",
+				"as",
+				"la",
+				"mn",
+				"ceb",
+				"bs",
+				"mr",
+				"ckb",
+				"my",
+				"tl",
+				"nn",
+				"kn",
+				"ga",
+				"cy",
+				"ast",
+				"ne",
+				"azb",
+				"be-tarask",
+				"ku",
+				"oc",
+				"ky",
+				"ig",
+				"als",
+				"br",
+				"sco",
+				"tt",
+				"su",
+				"jv",
+				"pa",
+				"lb",
+				"zh-min-nan",
+				"tg",
+				"fy",
+				"si",
+				"km",
+				"wuu",
+				"so",
+				"ba",
+				"war",
+				"co",
+				"an",
+				"zh-classical",
+				"dtp",
+				"io",
+				"lmo",
+				"nds",
+				"pnb",
+				"ps",
+				"yo",
+				"min",
+				"ban",
+				"or",
+				"ce",
+				"yi",
+				"ang",
+				"gu",
+				"bcl",
+				"hif",
+				"vec",
+				"am",
+				"mt",
+				"scn",
+				"bar",
+				"mzn",
+				"cv",
+				"fo",
+				"xmf",
+				"ary",
+				"lo",
+				"sah",
+				"rw",
+				"mg",
+				"tk",
+				"diq",
+				"gag",
+				"ia",
+				"ie",
+				"rue",
+				"lld",
+				"kaa",
+				"crh",
+				"dag",
+				"qu",
+				"ht",
+				"szl",
+				"hyw",
+				"sa",
+				"sat",
+				"ff",
+				"mad",
+				"bh",
+				"sd",
+				"bjn"
+			]
+		},
+		"subdomains": [
+			{
+				"url": "wikipedia.org",
+				"safesearch": false,
+				"has_graphics": false,
+				"damaging_if_disabled": true,
+				"redirect_to": ""
+			},
+			{
+				"url": "^.wikipedia.org",
+				"safesearch": false,
+				"has_graphics": false,
+				"damaging_if_disabled": true,
+				"redirect_to": ""
+			},
+			{
+				"url": "*.wikimedia.org",
+				"safesearch": false,
+				"has_graphics": true,
+				"damaging_if_disabled": true,
+				"redirect_to": ""
+			}
+		]
+	},
+	"yahoo": [
+		{
+			"url": "search.yahoo.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "images.search.yahoo.com",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "s.yimg.com",
+			"safesearch": false,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		}
+	],
+	"you": [
+		{
+			"url": "you.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": ""
+		},
+		{
+			"url": "^.you.com",
+			"safesearch": false,
+			"has_graphics": false,
+			"damaging_if_disabled": false,
+			"redirect_to": "",
+			"affixes": [
+				"cdn",
+				"auth"
+			]
+		}
+	]
 }

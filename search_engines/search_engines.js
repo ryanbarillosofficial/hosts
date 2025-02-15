@@ -1,5 +1,6 @@
 import sources from "./sources.json" with {type: "json"}
-import {makeHost} from "../hostTools.js"
+import {makeHost, getAllUrlVariants} from "../hostTools.js"
+import process from "process";
 
 const DIRECTORY_OUTPUT = "search_engines";
 
@@ -7,6 +8,9 @@ const DIRECTORY_OUTPUT = "search_engines";
  * Info for later
  * https://support.google.com/websearch/answer/186669?hl=en
  * https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ
+ * https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814
+ * https://safe.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
+ * https://ecosia.helpscoutdocs.com/article/562-how-to-enforce-safe-search-at-your-organization
  */
 
 /*
@@ -42,22 +46,39 @@ for (const search_engine in sources) {
 
     for (const domain of domains) {
         // Prepare two distinct versions of the URL
-        let url_sans_www = domain.url;
-        let url_with_www = `www.${domain.url}`;
+        const URL_SANS_WWW = domain.url
+        const URL_WITH_WWW = `www.${domain.url}`;
         
         // Add to normal blacklist
-        domains_sans_www_prefix.add(url_sans_www)
-        domains_with_www_prefix.add(url_with_www)
+        domains_sans_www_prefix.add(URL_SANS_WWW)
+        domains_with_www_prefix.add(URL_WITH_WWW)
 
-        // Check if it has SafeSearch enabled
+        /**
+         * Check if it has SafeSearch enabled
+         * 
+         * Two Ways:
+         * - if domain.safesearh == false, block it!
+         * - if domain.redirect_to is NOT EMPTY, redirect it to its SafeSearch variant
+         */
+        if(domain.url.includes("^")) {
+            const ALL_URL_VARIANTS__SANS_WWW = domain.redirect_to !== ""
+        ? getAllUrlVariants(URL_SANS_WWW, domain.affixes, domain.redirect_to).union(getAllUrlVariants(URL_WITH_WWW, domain.affixes, domain.redirect_to)) 
+        : getAllUrlVariants(URL_SANS_WWW, domain.affixes).union(getAllUrlVariants(URL_WITH_WWW, domain.affixes));
+
+        for (const URL of ALL_URL_VARIANTS) {
+            console.log(URL)
+        }
+        process.exit()
+        }
+
         if (domain.safesearch == false) {
-            safesearch_strict__domains_sans_www_prefix.add(url_sans_www)
-            safesearch_strict__domains_with_www_prefix.add(url_with_www)
+            safesearch_strict__domains_sans_www_prefix.add(URL_SANS_WWW)
+            safesearch_strict__domains_with_www_prefix.add(URL_WITH_WWW)
 
             // Now check if blocking it damages other websites---by which, don't block at all
             if (domain.damaging_if_disabled == false) {
-                safesearch_easy__domains_sans_www_prefix.add(url_sans_www)
-                safesearch_easy__domains_with_www_prefix.add(url_with_www)
+                safesearch_easy__domains_sans_www_prefix.add(URL_SANS_WWW)
+                safesearch_easy__domains_with_www_prefix.add(URL_WITH_WWW)
             }
         }
     }
