@@ -4,13 +4,39 @@ import process from "process";
 
 const DIRECTORY_OUTPUT = "search_engines";
 
+const a = "__test__I love U";
+const aa = a.replace("__test__", "")
+console.log(`${aa} + ${aa[0]}`)
+process.exit()
+
 /**
  * Info for later
- * https://support.google.com/websearch/answer/186669?hl=en
- * https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ
- * https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814
- * https://safe.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
- * https://ecosia.helpscoutdocs.com/article/562-how-to-enforce-safe-search-at-your-organization
+ * 
+ * Searching for other live search engines
+ * - https://gist.github.com/NaveenDA/b1ff7d43812a3c79354f9b2fd9868186
+ * 
+ * Bing
+ * - https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814
+ * 
+ * Google & YouTube
+ * - https://support.google.com/websearch/answer/186669?hl=en
+ * - https://support.google.com/a/answer/6214622
+ * 
+ * DuckDuckGo
+ * - https://safe.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
+ * 
+ * Ecosia
+ * - https://ecosia.helpscoutdocs.com/article/562-how-to-enforce-safe-search-at-your-organization
+ * 
+ * Startpage
+ * - https://support.startpage.com/hc/en-us/articles/31709891174420-Whitelisting-Startpage-at-the-DNS-level-safe-startpage-com
+ * 
+ * Searx
+ * - https://searx.space/
+ * - https://searx.space/data/instances.json
+ * 
+ * Wikipedia (why it's blocked)
+ * - https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ
  */
 
 /*

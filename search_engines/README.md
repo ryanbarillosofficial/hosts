@@ -8,15 +8,15 @@ From only those strictly enforcing SafeSearch on, to every single one!
 
 For our purposes, a <strong>Search Engine</strong> it is a website that provides hyperlinks to web pages and other relevant information that the user would like to know.
 
-A domain qualifies as a <strong>Search Engine</strong> if itmeets the following criteria:
+A domain qualifies as a <strong>Search Engine</strong> if it meets the following criteria:
 
 1. Provides a search tool to search for information
-2. Delivers any following info according to the user's query:
+2. Delivers following info **_simultaneously_** according to the user's query:
    - Documents
      - PDF's
      - EPUB's
      - Office-formatted Documents
-       - e.g., Any document made from Microsoft Office or LibreOffice
+       - e.g., Documents made from Microsoft Office or LibreOffice
      - etc.
    - Graphical Content (motion or static)
      - Pictures
@@ -27,7 +27,9 @@ A domain qualifies as a <strong>Search Engine</strong> if itmeets the following 
    - Textual Information
      - Dictionaries
      - Encyclopedias
-   - Referral to Other Websites
+   - Referrals to Other Websites
+   - Topics from Various Subjects to Explore
+     - (This excludes anything dedicated to one topic, like a cookbook recipe search engine)
 
 If these criterias are met, that site is a <strong>Search Engine</strong>!
 
