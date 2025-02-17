@@ -3,12 +3,6 @@ import {makeHost, getAllUrlVariants} from "../hostTools.js"
 import process from "process";
 
 const DIRECTORY_OUTPUT = "search_engines";
-
-const a = "__test__I love U";
-const aa = a.replace("__test__", "")
-console.log(`${aa} + ${aa[0]}`)
-process.exit()
-
 /**
  * Info for later
  * 
@@ -34,6 +28,7 @@ process.exit()
  * Searx
  * - https://searx.space/
  * - https://searx.space/data/instances.json
+ * - https://github.com/searxng/searxng
  * 
  * Wikipedia (why it's blocked)
  * - https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ

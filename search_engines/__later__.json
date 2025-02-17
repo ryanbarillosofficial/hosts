@@ -1,0 +1,108 @@
+{
+	"shutterstock": {
+		"affixes": {
+			"countries": null,
+			"prefixes": null,
+			"suffixes": null
+		},
+		"subdomains": [
+			{
+				"url": "shutterstock.com",
+				"safesearch": true,
+				"has_graphics": true,
+				"damaging_if_disabled": false,
+				"redirect_to": null
+			},
+			{
+				"url": "images.shutterstock.com",
+				"safesearch": true,
+				"has_graphics": true,
+				"damaging_if_disabled": true,
+				"redirect_to": null
+			},
+			{
+				"url": "plus.shutterstock.com",
+				"safesearch": true,
+				"has_graphics": true,
+				"damaging_if_disabled": false,
+				"redirect_to": null
+			}
+		]
+	},
+	"stockphotos": [
+		{
+			"url": "everystockphoto.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		},
+		{
+			"url": "stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		},
+		{
+			"url": "image.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		},
+		{
+			"url": "images.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		},
+		{
+			"url": "static.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		},
+		{
+			"url": "vector.stockphotos.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		}
+	],
+	"vecteezy": [
+		{
+			"url": "vecteezy.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": null
+		},
+		{
+			"url": "static.vecteezy.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": null
+		},
+		{
+			"url": "files.vecteezy.com",
+			"safesearch": true,
+			"has_graphics": false,
+			"damaging_if_disabled": true,
+			"redirect_to": null
+		}
+	],
+	"tinyeye": [
+		{
+			"url": "tineye.com",
+			"safesearch": true,
+			"has_graphics": true,
+			"damaging_if_disabled": false,
+			"redirect_to": null
+		}
+	]
+}
