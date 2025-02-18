@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 228     
+# 223     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillos/hosts     
@@ -20,16 +20,6 @@
 #===============
 # IPv4 Addresses
 #===============
-216.239.38.119 m.youtube.com
-216.239.38.119 www.m.youtube.com
-216.239.38.119 youtube-nocookie.com
-216.239.38.119 www.youtube-nocookie.com
-216.239.38.119 youtube.com
-216.239.38.119 www.youtube.com
-216.239.38.119 youtube.googleapis.com
-216.239.38.119 www.youtube.googleapis.com
-216.239.38.119 youtubei.googleapis.com
-216.239.38.119 www.youtubei.googleapis.com
 216.239.38.120 google.ac
 216.239.38.120 www.google.ac
 216.239.38.120 google.ad

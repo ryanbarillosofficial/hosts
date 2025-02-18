@@ -53,7 +53,9 @@ const AFFIX_KEYWORDS = {
 // console.log(count)
 // process.exit()
 
-const resolveRedirect = (ipAddress, url) => {return `${ipAddress} ${url}`}
+const resolveRedirect = (ipAddress, url) => {
+	return `${ipAddress} ${url}`;
+};
 function resolveUrlAffixes(URL, AFFIXES) {
 	let urlList = new Set();
 
@@ -145,6 +147,11 @@ function main() {
 	 *
 	 */
 	for (const ENGINE in sources) {
+        /**
+         * For the moment, ignore YouTube
+         * In the future, it will be made into a separate file to be applied
+         */
+		if (ENGINE == "youtube") break;
 		// Variables for use
 		const SEARCH_ENGINE = sources[ENGINE],
 			AFFIXES = SEARCH_ENGINE.affixes,
@@ -173,7 +180,7 @@ function main() {
 			 *
 			 */
 			if (AFFIX_KEYWORDS_ARRAY.some((AFFIX) => URL.includes(AFFIX))) {
-				const URL_LIST = resolveUrlAffixes(URL, AFFIXES);   // Data type is array
+				const URL_LIST = resolveUrlAffixes(URL, AFFIXES); // Data type is array
 				/**
 				 * Check if each URL has a "redirect_to" object (AKA !== null)
 				 * So it can be resolved to another IP address
@@ -183,8 +190,11 @@ function main() {
 				 * - No need for extra procedures
 				 */
 				URL_LIST.forEach((URL_CURRENT) => {
-                    const URL_SANS_WWW = URL_CURRENT
-                    const URL_WITH_WWW = (/^www/).test(URL_CURRENT) === false ? `www.${URL_CURRENT}`: URL_CURRENT
+					const URL_SANS_WWW = URL_CURRENT;
+					const URL_WITH_WWW =
+						/^www/.test(URL_CURRENT) === false
+							? `www.${URL_CURRENT}`
+							: URL_CURRENT;
 					// Check if there are IP addreses to redirect to
 					if (REDIRECT_TO !== null) {
 						const IP_ADDRESS_MODERATE = REDIRECT_TO.moderate.url,
@@ -194,21 +204,29 @@ function main() {
 						 * - For redirection to SafeSearch / Moderate mode of Search Engine provided
 						 * - This CANNOT BREAK other websites
 						 */
-						domainsSansPrefixWWW_Safesearch_Moderate.add(resolveRedirect(IP_ADDRESS_MODERATE, URL_SANS_WWW));
-						domainsWithPrefixWWW_Safesearch_Moderate.add(resolveRedirect(IP_ADDRESS_MODERATE, URL_WITH_WWW));
+						domainsSansPrefixWWW_Safesearch_Moderate.add(
+							resolveRedirect(IP_ADDRESS_MODERATE, URL_SANS_WWW)
+						);
+						domainsWithPrefixWWW_Safesearch_Moderate.add(
+							resolveRedirect(IP_ADDRESS_MODERATE, URL_WITH_WWW)
+						);
 						/**
 						 * Add URL to "Strict" blocklist first
 						 * - For redirection to SafeSearch / Restricted mode of Search Engine provided
 						 * - This CAN BREAK other websites
 						 */
-						domainsSansPrefixWWW_Safesearch_Aggressive.add(resolveRedirect(IP_ADDRESS_STRICT, URL_SANS_WWW));
-						domainsWithPrefixWWW_Safesearch_Aggressive.add(resolveRedirect(IP_ADDRESS_STRICT, URL_WITH_WWW));
+						domainsSansPrefixWWW_Safesearch_Aggressive.add(
+							resolveRedirect(IP_ADDRESS_STRICT, URL_SANS_WWW)
+						);
+						domainsWithPrefixWWW_Safesearch_Aggressive.add(
+							resolveRedirect(IP_ADDRESS_STRICT, URL_WITH_WWW)
+						);
 					} else {
-                        const URL_SANS_WWW = URL_CURRENT;
-                        const URL_WITH_WWW = "www." + URL_CURRENT;
-                        /**
-                         * 
-                         */
+						const URL_SANS_WWW = URL_CURRENT;
+						const URL_WITH_WWW = "www." + URL_CURRENT;
+						/**
+						 *
+						 */
 						if (HAS_SAFESEARCH !== true) {
 							/**
 							 * Verdict: URL has no REDIRECTS present!
@@ -229,9 +247,9 @@ function main() {
 							domainsWithPrefixWWW_Safesearch_Aggressive.add(URL_WITH_WWW);
 						}
 					}
-                    // Regardless, add it to the database of all search engines
-                    domainsSansPrefixWWW_All.add(URL_SANS_WWW);
-                    domainsWithPrefixWWW_All.add(URL_WITH_WWW);                    
+					// Regardless, add it to the database of all search engines
+					domainsSansPrefixWWW_All.add(URL_SANS_WWW);
+					domainsWithPrefixWWW_All.add(URL_WITH_WWW);
 				});
 			} else {
 				const URL_SANS_WWW = URL;
@@ -262,20 +280,18 @@ function main() {
 			}
 		}
 	}
-    // domainsWithPrefixWWW_Safesearch_Moderate.forEach((a) => console.log(a))
-    // process.exit()
 	/**
 	 * Now to create all appropriate host files
 	 */
-	// // Blocking ALL Search Engines
-	// makeHost(
-	// 	"all",
-	// 	"No Search Engines",
-	// 	"No search engines AT ALL",
-	// 	domainsSansPrefixWWW_All,
-	// 	domainsWithPrefixWWW_All,
-	// 	DIRECTORY_OUTPUT
-	// );
+	// Blocking ALL Search Engines
+	makeHost(
+		"all",
+		"No Search Engines",
+		"No search engines AT ALL",
+		domainsSansPrefixWWW_All,
+		domainsWithPrefixWWW_All,
+		DIRECTORY_OUTPUT
+	);
 	// Blocking ALL Search Engines + SafeSearch NOT ENFORCED + NOT BREAKING other websites
 	makeHost(
 		"safesearch_moderate",

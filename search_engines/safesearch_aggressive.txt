@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 417     
+# 412     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillos/hosts     
@@ -368,16 +368,6 @@
 216.239.38.120 www.google.vu
 216.239.38.120 google.ws
 216.239.38.120 www.google.ws
-216.239.38.120 m.youtube.com
-216.239.38.120 www.m.youtube.com
-216.239.38.120 youtube-nocookie.com
-216.239.38.120 www.youtube-nocookie.com
-216.239.38.120 youtube.com
-216.239.38.120 www.youtube.com
-216.239.38.120 youtube.googleapis.com
-216.239.38.120 www.youtube.googleapis.com
-216.239.38.120 youtubei.googleapis.com
-216.239.38.120 www.youtubei.googleapis.com
 40.89.244.237 duckduckgo.com
 40.89.244.237 www.duckduckgo.com
 40.89.244.237 html.duckduckgo.com
