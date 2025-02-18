@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 223     
+# 228     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillos/hosts     
@@ -20,6 +20,14 @@
 #===============
 # IPv4 Addresses
 #===============
+108.156.172.33 search.brave.com
+108.156.172.33 www.search.brave.com
+140.99.233.1 ecosia.org
+140.99.233.1 www.ecosia.org
+204.79.197.220 bing.com
+204.79.197.220 www.bing.com
+204.79.197.220 edgeservices.bing.com
+204.79.197.220 www.edgeservices.bing.com
 216.239.38.120 google.ac
 216.239.38.120 www.google.ac
 216.239.38.120 google.ad
@@ -376,6 +384,8 @@
 40.89.244.237 www.lite.duckduckgo.com
 40.89.244.237 start.duckduckgo.com
 40.89.244.237 www.start.duckduckgo.com
+67.63.61.130 startpage.com
+67.63.61.130 www.startpage.com
 0.0.0.0 ac.ecosia.org
 0.0.0.0 www.ac.ecosia.org
 0.0.0.0 activesearchresults.com

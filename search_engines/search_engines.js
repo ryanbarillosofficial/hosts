@@ -223,7 +223,10 @@ function main() {
 						);
 					} else {
 						const URL_SANS_WWW = URL_CURRENT;
-						const URL_WITH_WWW = "www." + URL_CURRENT;
+						const URL_WITH_WWW =
+						/^www/.test(URL_CURRENT) === false
+							? `www.${URL_CURRENT}`
+							: URL_CURRENT;
 						/**
 						 *
 						 */
@@ -253,27 +256,57 @@ function main() {
 				});
 			} else {
 				const URL_SANS_WWW = URL;
-				const URL_WITH_WWW = "www." + URL_SANS_WWW;
-				if (HAS_SAFESEARCH === false) {
-					/**
-					 * Verdict: URL has no affixes present!
-					 * Now add the subdomain to the blacklist based on these properties:
-					 *
-					 * 1. has_safesearch?
-					 *  - If "false", PREPARE to block it!
-					 *
-					 * 1a. Does blocking it DAMAGE other websites?
-					 *  - If "true", don't add in the "Moderate" blacklist
-					 *  - Regardless, add it to the "Strict" blacklist
-					 */
-
-					if (DAMAGING_IF_DISABLED === false) {
-						domainsSansPrefixWWW_Safesearch_Moderate.add(URL_SANS_WWW);
-						domainsWithPrefixWWW_Safesearch_Moderate.add(URL_WITH_WWW);
-					}
-					domainsSansPrefixWWW_Safesearch_Aggressive.add(URL_SANS_WWW);
-					domainsWithPrefixWWW_Safesearch_Aggressive.add(URL_WITH_WWW);
-				}
+				const URL_WITH_WWW =(/^www/.test(URL) === false? `www.${URL}`: URL);
+                /**
+                 * Verdict: URL has no affixes present!
+                 * Before going further, CHECK if URL needs redirecting 
+                 */
+                if (REDIRECT_TO !== null) {
+                    const IP_ADDRESS_MODERATE = REDIRECT_TO.moderate.url,
+                        IP_ADDRESS_STRICT = REDIRECT_TO.strict.url;
+                    /**
+                     * Add URL to "moderate" blocklist first
+                     * - For redirection to SafeSearch / Moderate mode of Search Engine provided
+                     * - This CANNOT BREAK other websites
+                     */
+                    domainsSansPrefixWWW_Safesearch_Moderate.add(
+                        resolveRedirect(IP_ADDRESS_MODERATE, URL_SANS_WWW)
+                    );
+                    domainsWithPrefixWWW_Safesearch_Moderate.add(
+                        resolveRedirect(IP_ADDRESS_MODERATE, URL_WITH_WWW)
+                    );
+                    /**
+                     * Add URL to "Strict" blocklist first
+                     * - For redirection to SafeSearch / Restricted mode of Search Engine provided
+                     * - This CAN BREAK other websites
+                     */
+                    domainsSansPrefixWWW_Safesearch_Aggressive.add(
+                        resolveRedirect(IP_ADDRESS_STRICT, URL_SANS_WWW)
+                    );
+                    domainsWithPrefixWWW_Safesearch_Aggressive.add(
+                        resolveRedirect(IP_ADDRESS_STRICT, URL_WITH_WWW)
+                    );
+                } else {
+                    if (HAS_SAFESEARCH !== true) {
+                        /**
+                         * Verdict: URL has no REDIRECTS present!
+                         * Now add the subdomain to the blacklist based on these properties:
+                         *
+                         * 1. has_safesearch?
+                         *  - If "false", PREPARE to block it!
+                         *
+                         * 1a. Does blocking it DAMAGE other websites?
+                         *  - If "true", don't add in the "Moderate" blacklist
+                         *  - Regardless, add it to the "Strict" blacklist
+                         */
+                        if (DAMAGING_IF_DISABLED !== true) {
+                            domainsSansPrefixWWW_Safesearch_Moderate.add(URL_SANS_WWW);
+                            domainsWithPrefixWWW_Safesearch_Moderate.add(URL_WITH_WWW);
+                        }
+                        domainsSansPrefixWWW_Safesearch_Aggressive.add(URL_SANS_WWW);
+                        domainsWithPrefixWWW_Safesearch_Aggressive.add(URL_WITH_WWW);
+                    }
+                }
 				// Regardless, add it to the database of all search engines
 				domainsSansPrefixWWW_All.add(URL_SANS_WWW);
 				domainsWithPrefixWWW_All.add(URL_WITH_WWW);
