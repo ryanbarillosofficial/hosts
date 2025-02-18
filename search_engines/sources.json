@@ -920,6 +920,14 @@
 				"redirect_to": null
 			},
 			{
+				"url": "__country__.m.wikipedia.org",
+				"about": "",
+				"has_safesearch": false,
+				"has_graphic_content": false,
+				"damaging_if_disabled": true,
+				"redirect_to": null
+			},
+			{
 				"url": "__prefix__.wikimedia.org",
 				"about": "",
 				"has_safesearch": false,
