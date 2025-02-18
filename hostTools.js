@@ -38,75 +38,89 @@ const IP_MODE = {
 };
 
 function makeHost(
-	host_name,
-	host_title,
-	host_description,
-	domains_sans_www_prefix,
-	domains_with_www_prefix,
-	directory_output = ""
+	hostName,
+	hostTitle,
+	hostDescription,
+	domainsSansPrefixWWW,
+	domainsWithPrefixWWW,
+	directoryOutput
 ) {
-	/*
-  Convert sets into arrays for iteration
-  And then sort them alphabetically
-  */
-	const DOMAINS_WITH_WWW_PREFIX = Array.from(domains_with_www_prefix).sort(
-		(a, b) => a - b
-	);
-	const DOMAINS_SANS_WWW_PREFIX = Array.from(domains_sans_www_prefix).sort(
-		(a, b) => a - b
-	);
+	/**
+	 * Convert sets into arrays for iteration
+	 * And then sort them alphabetically
+	 */
+	const DOMAINS_SANS_PREFIX_WWW = Array.from(domainsSansPrefixWWW).sort();
+	const DOMAINS_WITH_PREFIX_WWW = Array.from(domainsWithPrefixWWW).sort();
 
 	// Info for each host file
-	const FILE_NAME = `${host_name}.txt`;
+	const FILE_NAME = `${hostName}.txt`;
 	const FILE_PATH = path.join(DIRECTORY_CURRENT, FILE_NAME);
 
-	// console.log(`Host file will be placed here:\n${FILE_PATH}\n`);
-
 	const HOST_COMMENT = `# Title: \
-    \n# ${host_title} \
+    \n# ${hostTitle} \
     \n# \
     \n# Description: \
-    \n# ${host_description} — simple as that! \
+    \n# ${hostDescription} — simple as that! \
     \n# \
     \n# Compatible with AdAway on Android and multiple ad blockers. \
     \n# \
     \n# Source(s) Used: \
-    \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${directory_output}/sources.json \
+    \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${directoryOutput}/sources.json \
     \n# \
     \n# Number of Unique Domains (without their "www." variants): \
-    \n# ${domains_sans_www_prefix.size} \
+    \n# ${domainsSansPrefixWWW.size} \
     \n# \
     \n# Project Home Page: \
     \n# https://github.com/ryanbarillos/hosts \
     \n#${BREAK_BLOCK}`;
 
-	// String of each domain blocked in IPv4 format
-	const IPV4_ADDRESSES =
-		`${BREAK_LINE}\n# IPv4 Addresses\n${BREAK_LINE}\n` +
-		(() => {
-			let output = "";
-			for (let i = 0; i < DOMAINS_WITH_WWW_PREFIX.length; i++) {
-				output += `\n${IP_MODE.V4.PREFIX} ${DOMAINS_SANS_WWW_PREFIX[i]}`;
-				output += `\n${IP_MODE.V4.PREFIX} ${DOMAINS_WITH_WWW_PREFIX[i]}`;
+	/**
+	 * OJBECTIVE:
+	 * Build the string
+	 * containing all IPv4 addresses
+	 */
+	let allDomains_Text = `${BREAK_LINE}\n# IPv4 Addresses\n${BREAK_LINE}`;
+	for (let i = 0; i < DOMAINS_SANS_PREFIX_WWW.length; i++) {
+		/**
+		 * Double-check if the domain already has an IP address appended to it
+		 * If so, it's a domain being redirected to its safer version (or one of those versions)
+		 */
+		if (IP_MODE.V4.REGEX.test(DOMAINS_SANS_PREFIX_WWW[i]) === true) {
+			allDomains_Text += `\n${DOMAINS_SANS_PREFIX_WWW[i]}`;
+			allDomains_Text += `\n${DOMAINS_SANS_PREFIX_WWW[i].replace(
+				" ",
+				" www."
+			)}`;
+		} else {
+			allDomains_Text += `\n${IP_MODE.V4.PREFIX} ${DOMAINS_SANS_PREFIX_WWW[i]}`;
+			allDomains_Text += `\n${IP_MODE.V4.PREFIX} ${DOMAINS_WITH_PREFIX_WWW[i]}`;
+		}
+	}
+	allDomains_Text += BREAK_BLOCK;
+	/**
+	 * OJBECTIVE:
+	 * Build the string
+	 * containing all IPv6 addresses
+	 */
+	allDomains_Text += `${BREAK_LINE}\n# IPv6 Addresses\n${BREAK_LINE}\n`;
+	for (let i = 0; i < DOMAINS_SANS_PREFIX_WWW.length; i++) {
+		/**
+		 * Double-check if the domain already has an IP address appended to it
+		 * If so, it's a domain being redirected to its safer version (or one of those versions)
+		 * - If the redirect is to an IPv4 address, IGNORE IT
+		 */
+		if (IP_MODE.V4.REGEX.test(DOMAINS_SANS_PREFIX_WWW[i]) === false) {
+			if (IP_MODE.V6.REGEX.test(DOMAINS_SANS_PREFIX_WWW[i]) === true) {
+				allDomains_Text += `\n${DOMAINS_SANS_PREFIX_WWW[i]}`;
+			} else {
+				allDomains_Text += `\n${IP_MODE.V6.PREFIX} ${DOMAINS_SANS_PREFIX_WWW[i]}`;
+				allDomains_Text += `\n${IP_MODE.V6.PREFIX} ${DOMAINS_WITH_PREFIX_WWW[i]}`;
 			}
-			return output;
-		})() +
-		BREAK_BLOCK;
-	// String of each domain blocked in IPv6 format
-	const IPV6_ADDRESSES =
-		`${BREAK_LINE}\n# IPv6 Addresses\n${BREAK_LINE}\n` +
-		(() => {
-			let output = "";
-			for (let i = 0; i < DOMAINS_WITH_WWW_PREFIX.length; i++) {
-				output += `${IP_MODE.V6.PREFIX} ${DOMAINS_SANS_WWW_PREFIX[i]}\n`;
-				output += `${IP_MODE.V6.PREFIX} ${DOMAINS_WITH_WWW_PREFIX[i]}\n`;
-			}
-			return output;
-		})();
-
+		}
+	}
 	// Make the host text file
-	fs.writeFileSync(FILE_PATH, HOST_COMMENT + IPV4_ADDRESSES + IPV6_ADDRESSES);
-	console.log(`Created \"${FILE_NAME}\" for \"${host_title}\"`);
+	fs.writeFileSync(FILE_PATH, HOST_COMMENT + allDomains_Text);
+	console.log(`Created \"${FILE_NAME}\" for \"${hostTitle}\"`);
 }
 
 async function getHost(url) {
