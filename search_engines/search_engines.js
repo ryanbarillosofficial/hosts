@@ -88,6 +88,7 @@ function resolveUrlAffixes(URL, AFFIXES) {
 	 * Given that any domain can have 1 to 9999+ variations of its domain
 	 * Only the first 10 will be resolved
 	 * - In the future, when I've learnt alternatives to hostname blocking, I'll utilize simpler methods (like RegExp)
+	 * - Other alternative is IP address blocking, but hostname blocking won't allow that
 	 */
 	if (URL.includes(AFFIX_KEYWORDS.number)) {
 		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.number}\"`)
