@@ -1,18 +1,92 @@
-// Imports
-import fs from "fs";
-import path from "path";
-
 /*
 Imports for debugging (not used very often)
 The one I use most from these:
 - process.exit();
 */
 import process from "process";
+import fs from "fs";
+import path from "path";
 
 // Constant variables
 const DIRECTORY_CURRENT = process.cwd();
 const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
+const AFFIX_KEYWORDS = {
+	country: "__country__",
+	number: "__number__",
+	prefix: "__prefix__",
+	suffix: "__suffix__",
+}
+
+export const resolveRedirect = (ipAddress, url) => {
+	return `${ipAddress} ${url}`;
+};
+export function resolveUrlAffixes(URL, AFFIXES) {
+	let urlList = new Set();
+
+	/**
+	 * "Country" Affix Substitutor for URL's
+	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+	 */
+	const resolveAffix = (URL, keyword, affix) => {
+		// console.log(URL.replace(keyword, affix))
+		return URL.replace(keyword, affix);
+	};
+
+	/**
+	 * Check if "URL" has the affix "country"
+	 * Then add each URL variant into the list
+	 */
+	if (URL.includes(AFFIX_KEYWORDS.country)) {
+		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.country}\"`)
+		for (let i = 0; i < AFFIXES.countries.length; i++) {
+			urlList.add(
+				resolveAffix(URL, AFFIX_KEYWORDS.country, AFFIXES.countries[i])
+			);
+		}
+	}
+	/**
+	 * Check if "URL" has the affix "number"
+	 * Then add each URL variant into the list
+	 * 
+	 * NOTE:
+	 * Given that any domain can have 1 to 9999+ variations of its domain
+	 * Only the first 10 will be resolved
+	 * - In the future, when I've learnt alternatives to hostname blocking, I'll utilize simpler methods (like RegExp)
+	 * - Other alternative is IP address blocking, but hostname blocking won't allow that
+	 */
+	if (URL.includes(AFFIX_KEYWORDS.number)) {
+		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.number}\"`)
+		for (let i = 0; i <= 10; i++) {
+			urlList.add(resolveAffix(URL, AFFIX_KEYWORDS.number, i.toString()));
+		}
+	}
+	/**
+	 * Check if "URL" has the affix "prefix"
+	 * Then add each URL variant into the list
+	 */
+	if (URL.includes(AFFIX_KEYWORDS.prefix)) {
+		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.prefix}\"`)
+		for (let i = 0; i < AFFIXES.prefixes.length; i++) {
+			urlList.add(
+				resolveAffix(URL, AFFIX_KEYWORDS.prefix, AFFIXES.prefixes[i])
+			);
+		}
+	}
+	/**
+	 * Check if "URL" has the affix "suffix"
+	 * Then add each URL variant into the list
+	 */
+	if (URL.includes(AFFIX_KEYWORDS.suffix)) {
+		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.suffix}\"`)
+		for (let i = 0; i < AFFIXES.suffixes.length; i++) {
+			urlList.add(
+				resolveAffix(URL, AFFIX_KEYWORDS.suffix, AFFIXES.suffixes[i])
+			);
+		}
+	}
+	return urlList;
+}
 
 /**
  * Source of IPv6 Regex
@@ -147,4 +221,4 @@ function getAllUrlVariants(url, affixes, redirect_to = "") {
 	return allUrlVariants;
 }
 
-export { makeHost, getHost, getAllUrlVariants, IP_MODE, KEYWORDS_TO_IGNORE };
+export { makeHost, getHost, getAllUrlVariants, IP_MODE, KEYWORDS_TO_IGNORE, AFFIX_KEYWORDS };

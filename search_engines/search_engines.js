@@ -1,5 +1,5 @@
 import sources from "./sources.json" with {type: "json"}
-import { makeHost } from "../hostTools.js";
+import { makeHost, resolveRedirect, resolveUrlAffixes, AFFIX_KEYWORDS } from "../hostTools.js";
 import process from "process";
 /**
  * Info for later
@@ -32,13 +32,7 @@ import process from "process";
  * - https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ
  */
 const DIRECTORY_OUTPUT = "search_engines";
-const AFFIX_KEYWORDS = {
-		country: "__country__",
-		number: "__number__",
-		prefix: "__prefix__",
-		suffix: "__suffix__",
-	},
-	AFFIX_KEYWORDS_ARRAY = Object.values(AFFIX_KEYWORDS);
+const AFFIX_KEYWORDS_ARRAY = Object.values(AFFIX_KEYWORDS);
 
 /**
  * DO NOT DELETE
@@ -52,76 +46,6 @@ const AFFIX_KEYWORDS = {
 // AFFIX_KEYWORDS_ARRAY.forEach((AFFIX) => {if (test.includes(AFFIX)) count++})
 // console.log(count)
 // process.exit()
-
-const resolveRedirect = (ipAddress, url) => {
-	return `${ipAddress} ${url}`;
-};
-function resolveUrlAffixes(URL, AFFIXES) {
-	let urlList = new Set();
-
-	/**
-	 * "Country" Affix Substitutor for URL's
-	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
-	 */
-	const resolveAffix = (URL, keyword, affix) => {
-		// console.log(URL.replace(keyword, affix))
-		return URL.replace(keyword, affix);
-	};
-
-	/**
-	 * Check if "URL" has the affix "country"
-	 * Then add each URL variant into the list
-	 */
-	if (URL.includes(AFFIX_KEYWORDS.country)) {
-		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.country}\"`)
-		for (let i = 0; i < AFFIXES.countries.length; i++) {
-			urlList.add(
-				resolveAffix(URL, AFFIX_KEYWORDS.country, AFFIXES.countries[i])
-			);
-		}
-	}
-	/**
-	 * Check if "URL" has the affix "number"
-	 * Then add each URL variant into the list
-	 * 
-	 * NOTE:
-	 * Given that any domain can have 1 to 9999+ variations of its domain
-	 * Only the first 10 will be resolved
-	 * - In the future, when I've learnt alternatives to hostname blocking, I'll utilize simpler methods (like RegExp)
-	 * - Other alternative is IP address blocking, but hostname blocking won't allow that
-	 */
-	if (URL.includes(AFFIX_KEYWORDS.number)) {
-		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.number}\"`)
-		for (let i = 0; i <= 10; i++) {
-			urlList.add(resolveAffix(URL, AFFIX_KEYWORDS.number, i.toString()));
-		}
-	}
-	/**
-	 * Check if "URL" has the affix "prefix"
-	 * Then add each URL variant into the list
-	 */
-	if (URL.includes(AFFIX_KEYWORDS.prefix)) {
-		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.prefix}\"`)
-		for (let i = 0; i < AFFIXES.prefixes.length; i++) {
-			urlList.add(
-				resolveAffix(URL, AFFIX_KEYWORDS.prefix, AFFIXES.prefixes[i])
-			);
-		}
-	}
-	/**
-	 * Check if "URL" has the affix "suffix"
-	 * Then add each URL variant into the list
-	 */
-	if (URL.includes(AFFIX_KEYWORDS.suffix)) {
-		//console.log(`${URL} has\t\t\"${AFFIX_KEYWORDS.suffix}\"`)
-		for (let i = 0; i < AFFIXES.suffixes.length; i++) {
-			urlList.add(
-				resolveAffix(URL, AFFIX_KEYWORDS.suffix, AFFIXES.suffixes[i])
-			);
-		}
-	}
-	return urlList;
-}
 
 function main() {
 	// /**
