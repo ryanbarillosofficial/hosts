@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 562     
+# 573     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillos/hosts     
@@ -1070,6 +1070,28 @@
 0.0.0.0 www.ur.m.wikipedia.org
 0.0.0.0 ur.wikipedia.org
 0.0.0.0 www.ur.wikipedia.org
+0.0.0.0 us0-browse.startpage.com
+0.0.0.0 www.us0-browse.startpage.com
+0.0.0.0 us1-browse.startpage.com
+0.0.0.0 www.us1-browse.startpage.com
+0.0.0.0 us10-browse.startpage.com
+0.0.0.0 www.us10-browse.startpage.com
+0.0.0.0 us2-browse.startpage.com
+0.0.0.0 www.us2-browse.startpage.com
+0.0.0.0 us3-browse.startpage.com
+0.0.0.0 www.us3-browse.startpage.com
+0.0.0.0 us4-browse.startpage.com
+0.0.0.0 www.us4-browse.startpage.com
+0.0.0.0 us5-browse.startpage.com
+0.0.0.0 www.us5-browse.startpage.com
+0.0.0.0 us6-browse.startpage.com
+0.0.0.0 www.us6-browse.startpage.com
+0.0.0.0 us7-browse.startpage.com
+0.0.0.0 www.us7-browse.startpage.com
+0.0.0.0 us8-browse.startpage.com
+0.0.0.0 www.us8-browse.startpage.com
+0.0.0.0 us9-browse.startpage.com
+0.0.0.0 www.us9-browse.startpage.com
 0.0.0.0 uz.m.wikipedia.org
 0.0.0.0 www.uz.m.wikipedia.org
 0.0.0.0 uz.wikipedia.org
@@ -2199,6 +2221,28 @@
 ::1 www.ur.m.wikipedia.org
 ::1 ur.wikipedia.org
 ::1 www.ur.wikipedia.org
+::1 us0-browse.startpage.com
+::1 www.us0-browse.startpage.com
+::1 us1-browse.startpage.com
+::1 www.us1-browse.startpage.com
+::1 us10-browse.startpage.com
+::1 www.us10-browse.startpage.com
+::1 us2-browse.startpage.com
+::1 www.us2-browse.startpage.com
+::1 us3-browse.startpage.com
+::1 www.us3-browse.startpage.com
+::1 us4-browse.startpage.com
+::1 www.us4-browse.startpage.com
+::1 us5-browse.startpage.com
+::1 www.us5-browse.startpage.com
+::1 us6-browse.startpage.com
+::1 www.us6-browse.startpage.com
+::1 us7-browse.startpage.com
+::1 www.us7-browse.startpage.com
+::1 us8-browse.startpage.com
+::1 www.us8-browse.startpage.com
+::1 us9-browse.startpage.com
+::1 www.us9-browse.startpage.com
 ::1 uz.m.wikipedia.org
 ::1 www.uz.m.wikipedia.org
 ::1 uz.wikipedia.org

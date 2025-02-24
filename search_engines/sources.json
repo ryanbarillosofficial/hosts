@@ -753,7 +753,15 @@
 				"has_graphic_content": false,
 				"damaging_if_disabled": false,
 				"redirect_to": null
-			}
+			},
+			{
+				"url": "us__number__-browse.startpage.com",
+				"about": "Domain of Startpage's 'Anonymous View'",
+				"has_safesearch": false,
+				"has_graphic_content": false,
+				"damaging_if_disabled": false,
+				"redirect_to": null
+			}			
 		]
 	},
 	"wikimedia": {
