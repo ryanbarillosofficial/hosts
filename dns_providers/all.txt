@@ -1,20 +1,79 @@
-# No DNS Providers - All Foreign
+# Title:     
+# No Foreign DNS Providers     
+#     
+# Description:     
+# No Foreign DNS Providers (except your own) AT ALL — simple as that!     
+#     
+# Compatible with AdAway on Android and multiple ad blockers.     
+#     
+# Source(s) Used:     
+# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
+#     
+# Number of Unique Domains (without their "www." variants):     
+# 13     
+#     
+# Project Home Page:     
+# https://github.com/ryanbarillos/hosts     
 #
-# Block any DNS servers that aren't yours
-# Last Updated: 3 Jul 2024
 
-# Adguard DNS
-0.0.0.0 dns.adguard-dns.com
-::1 dns.adguard-dns.com
 
-# Google
-#0.0.0.0 dns.google.com
-#::1 dns.google.com
-
-# Mullvad (Default)
-0.0.0.0 dns.mullvad.net
-::1 dns.mullvad.net
-
-# Mullvad (Ad-blocking)
+#===============
+# IPv4 Addresses
+#===============
 0.0.0.0 adblock.dns.mullvad.net
+0.0.0.0 www.adblock.dns.mullvad.net
+0.0.0.0 api.nextdns.io
+0.0.0.0 www.api.nextdns.io
+0.0.0.0 apple.nextdns.io
+0.0.0.0 www.apple.nextdns.io
+0.0.0.0 dns.adguard-dns.com
+0.0.0.0 www.dns.adguard-dns.com
+0.0.0.0 dns.google
+0.0.0.0 www.dns.google
+0.0.0.0 dns.google.com
+0.0.0.0 www.dns.google.com
+0.0.0.0 dns.mullvad.net
+0.0.0.0 www.dns.mullvad.net
+0.0.0.0 dns.nextdns.io
+0.0.0.0 www.dns.nextdns.io
+0.0.0.0 dns1.nextdns.io
+0.0.0.0 www.dns1.nextdns.io
+0.0.0.0 link-ip.nextdns.io
+0.0.0.0 www.link-ip.nextdns.io
+0.0.0.0 my.nextdns.io
+0.0.0.0 www.my.nextdns.io
+0.0.0.0 nextdns.io
+0.0.0.0 www.nextdns.io
+0.0.0.0 test-ipv6.nextdns.io
+0.0.0.0 www.test-ipv6.nextdns.io
+
+
+#===============
+# IPv6 Addresses
+#===============
 ::1 adblock.dns.mullvad.net
+::1 www.adblock.dns.mullvad.net
+::1 api.nextdns.io
+::1 www.api.nextdns.io
+::1 apple.nextdns.io
+::1 www.apple.nextdns.io
+::1 dns.adguard-dns.com
+::1 www.dns.adguard-dns.com
+::1 dns.google
+::1 www.dns.google
+::1 dns.google.com
+::1 www.dns.google.com
+::1 dns.mullvad.net
+::1 www.dns.mullvad.net
+::1 dns.nextdns.io
+::1 www.dns.nextdns.io
+::1 dns1.nextdns.io
+::1 www.dns1.nextdns.io
+::1 link-ip.nextdns.io
+::1 www.link-ip.nextdns.io
+::1 my.nextdns.io
+::1 www.my.nextdns.io
+::1 nextdns.io
+::1 www.nextdns.io
+::1 test-ipv6.nextdns.io
+::1 www.test-ipv6.nextdns.io
