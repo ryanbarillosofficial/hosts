@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 587     
+# 562     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillos/hosts     
@@ -22,8 +22,6 @@
 #===============
 0.0.0.0 ac.ecosia.org
 0.0.0.0 www.ac.ecosia.org
-0.0.0.0 activesearchresults.com
-0.0.0.0 www.activesearchresults.com
 0.0.0.0 af.m.wikipedia.org
 0.0.0.0 www.af.m.wikipedia.org
 0.0.0.0 af.wikipedia.org
@@ -66,8 +64,6 @@
 0.0.0.0 www.as.m.wikipedia.org
 0.0.0.0 as.wikipedia.org
 0.0.0.0 www.as.wikipedia.org
-0.0.0.0 ask.com
-0.0.0.0 www.ask.com
 0.0.0.0 ast.m.wikipedia.org
 0.0.0.0 www.ast.m.wikipedia.org
 0.0.0.0 ast.wikipedia.org
@@ -86,8 +82,6 @@
 0.0.0.0 www.ba.m.wikipedia.org
 0.0.0.0 ba.wikipedia.org
 0.0.0.0 www.ba.wikipedia.org
-0.0.0.0 baidu.com
-0.0.0.0 www.baidu.com
 0.0.0.0 ban.m.wikipedia.org
 0.0.0.0 www.ban.m.wikipedia.org
 0.0.0.0 ban.wikipedia.org
@@ -118,8 +112,6 @@
 0.0.0.0 www.bh.wikipedia.org
 0.0.0.0 bing.com
 0.0.0.0 www.bing.com
-0.0.0.0 bing.net
-0.0.0.0 www.bing.net
 0.0.0.0 bjn.m.wikipedia.org
 0.0.0.0 www.bjn.m.wikipedia.org
 0.0.0.0 bjn.wikipedia.org
@@ -200,8 +192,6 @@
 0.0.0.0 www.diq.m.wikipedia.org
 0.0.0.0 diq.wikipedia.org
 0.0.0.0 www.diq.wikipedia.org
-0.0.0.0 dogpile.com
-0.0.0.0 www.dogpile.com
 0.0.0.0 dtp.m.wikipedia.org
 0.0.0.0 www.dtp.m.wikipedia.org
 0.0.0.0 dtp.wikipedia.org
@@ -234,14 +224,10 @@
 0.0.0.0 www.et.m.wikipedia.org
 0.0.0.0 et.wikipedia.org
 0.0.0.0 www.et.wikipedia.org
-0.0.0.0 eu-browse.startpage.com
-0.0.0.0 www.eu-browse.startpage.com
 0.0.0.0 eu.m.wikipedia.org
 0.0.0.0 www.eu.m.wikipedia.org
 0.0.0.0 eu.wikipedia.org
 0.0.0.0 www.eu.wikipedia.org
-0.0.0.0 external-content.duckduckgo.com
-0.0.0.0 www.external-content.duckduckgo.com
 0.0.0.0 fa.m.wikipedia.org
 0.0.0.0 www.fa.m.wikipedia.org
 0.0.0.0 fa.wikipedia.org
@@ -654,8 +640,6 @@
 0.0.0.0 www.ht.m.wikipedia.org
 0.0.0.0 ht.wikipedia.org
 0.0.0.0 www.ht.wikipedia.org
-0.0.0.0 html.duckduckgo.com
-0.0.0.0 www.html.duckduckgo.com
 0.0.0.0 hu.m.wikipedia.org
 0.0.0.0 www.hu.m.wikipedia.org
 0.0.0.0 hu.wikipedia.org
@@ -688,8 +672,6 @@
 0.0.0.0 www.images.google.com
 0.0.0.0 images.search.yahoo.com
 0.0.0.0 www.images.search.yahoo.com
-0.0.0.0 imgs.search.brave.com
-0.0.0.0 www.imgs.search.brave.com
 0.0.0.0 info.com
 0.0.0.0 www.info.com
 0.0.0.0 io.m.wikipedia.org
@@ -752,10 +734,6 @@
 0.0.0.0 www.lb.m.wikipedia.org
 0.0.0.0 lb.wikipedia.org
 0.0.0.0 www.lb.wikipedia.org
-0.0.0.0 leta.mullvad.net
-0.0.0.0 www.leta.mullvad.net
-0.0.0.0 lite.duckduckgo.com
-0.0.0.0 www.lite.duckduckgo.com
 0.0.0.0 lite.qwant.com
 0.0.0.0 www.lite.qwant.com
 0.0.0.0 lld.m.wikipedia.org
@@ -786,10 +764,6 @@
 0.0.0.0 www.mad.wikipedia.org
 0.0.0.0 meta.wikimedia.org
 0.0.0.0 www.meta.wikimedia.org
-0.0.0.0 metacrawler.com
-0.0.0.0 www.metacrawler.com
-0.0.0.0 metager.org
-0.0.0.0 www.metager.org
 0.0.0.0 mg.m.wikipedia.org
 0.0.0.0 www.mg.m.wikipedia.org
 0.0.0.0 mg.wikipedia.org
@@ -810,8 +784,6 @@
 0.0.0.0 www.mn.m.wikipedia.org
 0.0.0.0 mn.wikipedia.org
 0.0.0.0 www.mn.wikipedia.org
-0.0.0.0 mojeek.com
-0.0.0.0 www.mojeek.com
 0.0.0.0 mr.m.wikipedia.org
 0.0.0.0 www.mr.m.wikipedia.org
 0.0.0.0 mr.wikipedia.org
@@ -886,12 +858,6 @@
 0.0.0.0 www.qu.wikipedia.org
 0.0.0.0 qwant.com
 0.0.0.0 www.qwant.com
-0.0.0.0 qwantjunior.com
-0.0.0.0 www.qwantjunior.com
-0.0.0.0 refseek.com
-0.0.0.0 www.refseek.com
-0.0.0.0 results.excite.com
-0.0.0.0 www.results.excite.com
 0.0.0.0 ro.m.wikipedia.org
 0.0.0.0 www.ro.m.wikipedia.org
 0.0.0.0 ro.wikipedia.org
@@ -908,8 +874,6 @@
 0.0.0.0 www.rw.m.wikipedia.org
 0.0.0.0 rw.wikipedia.org
 0.0.0.0 www.rw.wikipedia.org
-0.0.0.0 s.yimg.com
-0.0.0.0 www.s.yimg.com
 0.0.0.0 s0.qwant.com
 0.0.0.0 www.s0.qwant.com
 0.0.0.0 s1.qwant.com
@@ -936,8 +900,6 @@
 0.0.0.0 www.sa.m.wikipedia.org
 0.0.0.0 sa.wikipedia.org
 0.0.0.0 www.sa.wikipedia.org
-0.0.0.0 safe.search.brave.com
-0.0.0.0 www.safe.search.brave.com
 0.0.0.0 sah.m.wikipedia.org
 0.0.0.0 www.sah.m.wikipedia.org
 0.0.0.0 sah.wikipedia.org
@@ -960,8 +922,6 @@
 0.0.0.0 www.sd.m.wikipedia.org
 0.0.0.0 sd.wikipedia.org
 0.0.0.0 www.sd.wikipedia.org
-0.0.0.0 search.aol.com
-0.0.0.0 www.search.aol.com
 0.0.0.0 search.brave.com
 0.0.0.0 www.search.brave.com
 0.0.0.0 search.entireweb.com
@@ -970,10 +930,6 @@
 0.0.0.0 www.search.info.com
 0.0.0.0 search.lycos.com
 0.0.0.0 www.search.lycos.com
-0.0.0.0 search.yahoo.com
-0.0.0.0 www.search.yahoo.com
-0.0.0.0 searx.be
-0.0.0.0 www.searx.be
 0.0.0.0 sh.m.wikipedia.org
 0.0.0.0 www.sh.m.wikipedia.org
 0.0.0.0 sh.wikipedia.org
@@ -1010,8 +966,6 @@
 0.0.0.0 www.sr.wikipedia.org
 0.0.0.0 start.duckduckgo.com
 0.0.0.0 www.start.duckduckgo.com
-0.0.0.0 startpage.com
-0.0.0.0 www.startpage.com
 0.0.0.0 su.m.wikipedia.org
 0.0.0.0 www.su.m.wikipedia.org
 0.0.0.0 su.wikipedia.org
@@ -1024,8 +978,6 @@
 0.0.0.0 www.sw.m.wikipedia.org
 0.0.0.0 sw.wikipedia.org
 0.0.0.0 www.sw.wikipedia.org
-0.0.0.0 swisscows.com
-0.0.0.0 www.swisscows.com
 0.0.0.0 szl.m.wikipedia.org
 0.0.0.0 www.szl.m.wikipedia.org
 0.0.0.0 szl.wikipedia.org
@@ -1136,8 +1088,6 @@
 0.0.0.0 www.war.m.wikipedia.org
 0.0.0.0 war.wikipedia.org
 0.0.0.0 www.war.wikipedia.org
-0.0.0.0 wikipedia.org
-0.0.0.0 www.wikipedia.org
 0.0.0.0 wuu.m.wikipedia.org
 0.0.0.0 www.wuu.m.wikipedia.org
 0.0.0.0 wuu.wikipedia.org
@@ -1199,11 +1149,8 @@
 #===============
 # IPv6 Addresses
 #===============
-
 ::1 ac.ecosia.org
 ::1 www.ac.ecosia.org
-::1 activesearchresults.com
-::1 www.activesearchresults.com
 ::1 af.m.wikipedia.org
 ::1 www.af.m.wikipedia.org
 ::1 af.wikipedia.org
@@ -1246,8 +1193,6 @@
 ::1 www.as.m.wikipedia.org
 ::1 as.wikipedia.org
 ::1 www.as.wikipedia.org
-::1 ask.com
-::1 www.ask.com
 ::1 ast.m.wikipedia.org
 ::1 www.ast.m.wikipedia.org
 ::1 ast.wikipedia.org
@@ -1266,8 +1211,6 @@
 ::1 www.ba.m.wikipedia.org
 ::1 ba.wikipedia.org
 ::1 www.ba.wikipedia.org
-::1 baidu.com
-::1 www.baidu.com
 ::1 ban.m.wikipedia.org
 ::1 www.ban.m.wikipedia.org
 ::1 ban.wikipedia.org
@@ -1298,8 +1241,6 @@
 ::1 www.bh.wikipedia.org
 ::1 bing.com
 ::1 www.bing.com
-::1 bing.net
-::1 www.bing.net
 ::1 bjn.m.wikipedia.org
 ::1 www.bjn.m.wikipedia.org
 ::1 bjn.wikipedia.org
@@ -1380,8 +1321,6 @@
 ::1 www.diq.m.wikipedia.org
 ::1 diq.wikipedia.org
 ::1 www.diq.wikipedia.org
-::1 dogpile.com
-::1 www.dogpile.com
 ::1 dtp.m.wikipedia.org
 ::1 www.dtp.m.wikipedia.org
 ::1 dtp.wikipedia.org
@@ -1414,14 +1353,10 @@
 ::1 www.et.m.wikipedia.org
 ::1 et.wikipedia.org
 ::1 www.et.wikipedia.org
-::1 eu-browse.startpage.com
-::1 www.eu-browse.startpage.com
 ::1 eu.m.wikipedia.org
 ::1 www.eu.m.wikipedia.org
 ::1 eu.wikipedia.org
 ::1 www.eu.wikipedia.org
-::1 external-content.duckduckgo.com
-::1 www.external-content.duckduckgo.com
 ::1 fa.m.wikipedia.org
 ::1 www.fa.m.wikipedia.org
 ::1 fa.wikipedia.org
@@ -1834,8 +1769,6 @@
 ::1 www.ht.m.wikipedia.org
 ::1 ht.wikipedia.org
 ::1 www.ht.wikipedia.org
-::1 html.duckduckgo.com
-::1 www.html.duckduckgo.com
 ::1 hu.m.wikipedia.org
 ::1 www.hu.m.wikipedia.org
 ::1 hu.wikipedia.org
@@ -1868,8 +1801,6 @@
 ::1 www.images.google.com
 ::1 images.search.yahoo.com
 ::1 www.images.search.yahoo.com
-::1 imgs.search.brave.com
-::1 www.imgs.search.brave.com
 ::1 info.com
 ::1 www.info.com
 ::1 io.m.wikipedia.org
@@ -1932,10 +1863,6 @@
 ::1 www.lb.m.wikipedia.org
 ::1 lb.wikipedia.org
 ::1 www.lb.wikipedia.org
-::1 leta.mullvad.net
-::1 www.leta.mullvad.net
-::1 lite.duckduckgo.com
-::1 www.lite.duckduckgo.com
 ::1 lite.qwant.com
 ::1 www.lite.qwant.com
 ::1 lld.m.wikipedia.org
@@ -1966,10 +1893,6 @@
 ::1 www.mad.wikipedia.org
 ::1 meta.wikimedia.org
 ::1 www.meta.wikimedia.org
-::1 metacrawler.com
-::1 www.metacrawler.com
-::1 metager.org
-::1 www.metager.org
 ::1 mg.m.wikipedia.org
 ::1 www.mg.m.wikipedia.org
 ::1 mg.wikipedia.org
@@ -1990,8 +1913,6 @@
 ::1 www.mn.m.wikipedia.org
 ::1 mn.wikipedia.org
 ::1 www.mn.wikipedia.org
-::1 mojeek.com
-::1 www.mojeek.com
 ::1 mr.m.wikipedia.org
 ::1 www.mr.m.wikipedia.org
 ::1 mr.wikipedia.org
@@ -2066,12 +1987,6 @@
 ::1 www.qu.wikipedia.org
 ::1 qwant.com
 ::1 www.qwant.com
-::1 qwantjunior.com
-::1 www.qwantjunior.com
-::1 refseek.com
-::1 www.refseek.com
-::1 results.excite.com
-::1 www.results.excite.com
 ::1 ro.m.wikipedia.org
 ::1 www.ro.m.wikipedia.org
 ::1 ro.wikipedia.org
@@ -2088,8 +2003,6 @@
 ::1 www.rw.m.wikipedia.org
 ::1 rw.wikipedia.org
 ::1 www.rw.wikipedia.org
-::1 s.yimg.com
-::1 www.s.yimg.com
 ::1 s0.qwant.com
 ::1 www.s0.qwant.com
 ::1 s1.qwant.com
@@ -2116,8 +2029,6 @@
 ::1 www.sa.m.wikipedia.org
 ::1 sa.wikipedia.org
 ::1 www.sa.wikipedia.org
-::1 safe.search.brave.com
-::1 www.safe.search.brave.com
 ::1 sah.m.wikipedia.org
 ::1 www.sah.m.wikipedia.org
 ::1 sah.wikipedia.org
@@ -2140,8 +2051,6 @@
 ::1 www.sd.m.wikipedia.org
 ::1 sd.wikipedia.org
 ::1 www.sd.wikipedia.org
-::1 search.aol.com
-::1 www.search.aol.com
 ::1 search.brave.com
 ::1 www.search.brave.com
 ::1 search.entireweb.com
@@ -2150,10 +2059,6 @@
 ::1 www.search.info.com
 ::1 search.lycos.com
 ::1 www.search.lycos.com
-::1 search.yahoo.com
-::1 www.search.yahoo.com
-::1 searx.be
-::1 www.searx.be
 ::1 sh.m.wikipedia.org
 ::1 www.sh.m.wikipedia.org
 ::1 sh.wikipedia.org
@@ -2190,8 +2095,6 @@
 ::1 www.sr.wikipedia.org
 ::1 start.duckduckgo.com
 ::1 www.start.duckduckgo.com
-::1 startpage.com
-::1 www.startpage.com
 ::1 su.m.wikipedia.org
 ::1 www.su.m.wikipedia.org
 ::1 su.wikipedia.org
@@ -2204,8 +2107,6 @@
 ::1 www.sw.m.wikipedia.org
 ::1 sw.wikipedia.org
 ::1 www.sw.wikipedia.org
-::1 swisscows.com
-::1 www.swisscows.com
 ::1 szl.m.wikipedia.org
 ::1 www.szl.m.wikipedia.org
 ::1 szl.wikipedia.org
@@ -2316,8 +2217,6 @@
 ::1 www.war.m.wikipedia.org
 ::1 war.wikipedia.org
 ::1 www.war.wikipedia.org
-::1 wikipedia.org
-::1 www.wikipedia.org
 ::1 wuu.m.wikipedia.org
 ::1 www.wuu.m.wikipedia.org
 ::1 wuu.wikipedia.org

@@ -212,7 +212,7 @@
 	"duckduckgo": {
 		"affixes": {
 			"countries": [],
-			"prefixes": ["", "lite.", "html.", "start."],
+			"prefixes": ["", "start."],
 			"suffixes": []
 		},
 		"subdomains": [
@@ -232,6 +232,22 @@
 						"about": "IP address of safe.duckduckgo.com"
 					}
 				}
+			},
+			{
+				"url": "html.duckduckgo.com",
+				"about": "",
+				"has_safesearch": false,
+				"has_graphic_content": true,
+				"damaging_if_disabled": false,
+				"redirect_to": null
+			},
+			{
+				"url": "lite.duckduckgo.com",
+				"about": "",
+				"has_safesearch": false,
+				"has_graphic_content": true,
+				"damaging_if_disabled": false,
+				"redirect_to": null
 			},
 			{
 				"url": "external-content.duckduckgo.com",
@@ -716,7 +732,7 @@
 			{
 				"url": "startpage.com",
 				"about": "",
-				"has_safesearch": true,
+				"has_safesearch": false,
 				"has_graphic_content": true,
 				"damaging_if_disabled": true,
 				"redirect_to": {

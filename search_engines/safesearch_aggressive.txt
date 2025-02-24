@@ -378,14 +378,8 @@
 216.239.38.120 www.google.ws
 40.89.244.237 duckduckgo.com
 40.89.244.237 www.duckduckgo.com
-40.89.244.237 html.duckduckgo.com
-40.89.244.237 www.html.duckduckgo.com
-40.89.244.237 lite.duckduckgo.com
-40.89.244.237 www.lite.duckduckgo.com
 40.89.244.237 start.duckduckgo.com
 40.89.244.237 www.start.duckduckgo.com
-67.63.61.130 startpage.com
-67.63.61.130 www.startpage.com
 0.0.0.0 ac.ecosia.org
 0.0.0.0 www.ac.ecosia.org
 0.0.0.0 activesearchresults.com
@@ -664,6 +658,8 @@
 0.0.0.0 www.ht.m.wikipedia.org
 0.0.0.0 ht.wikipedia.org
 0.0.0.0 www.ht.wikipedia.org
+0.0.0.0 html.duckduckgo.com
+0.0.0.0 www.html.duckduckgo.com
 0.0.0.0 hu.m.wikipedia.org
 0.0.0.0 www.hu.m.wikipedia.org
 0.0.0.0 hu.wikipedia.org
@@ -762,6 +758,8 @@
 0.0.0.0 www.lb.wikipedia.org
 0.0.0.0 leta.mullvad.net
 0.0.0.0 www.leta.mullvad.net
+0.0.0.0 lite.duckduckgo.com
+0.0.0.0 www.lite.duckduckgo.com
 0.0.0.0 lite.qwant.com
 0.0.0.0 www.lite.qwant.com
 0.0.0.0 lld.m.wikipedia.org
@@ -984,6 +982,8 @@
 0.0.0.0 www.sr.m.wikipedia.org
 0.0.0.0 sr.wikipedia.org
 0.0.0.0 www.sr.wikipedia.org
+0.0.0.0 startpage.com
+0.0.0.0 www.startpage.com
 0.0.0.0 su.m.wikipedia.org
 0.0.0.0 www.su.m.wikipedia.org
 0.0.0.0 su.wikipedia.org
@@ -1169,7 +1169,6 @@
 #===============
 # IPv6 Addresses
 #===============
-
 ::1 ac.ecosia.org
 ::1 www.ac.ecosia.org
 ::1 activesearchresults.com
@@ -1448,6 +1447,8 @@
 ::1 www.ht.m.wikipedia.org
 ::1 ht.wikipedia.org
 ::1 www.ht.wikipedia.org
+::1 html.duckduckgo.com
+::1 www.html.duckduckgo.com
 ::1 hu.m.wikipedia.org
 ::1 www.hu.m.wikipedia.org
 ::1 hu.wikipedia.org
@@ -1546,6 +1547,8 @@
 ::1 www.lb.wikipedia.org
 ::1 leta.mullvad.net
 ::1 www.leta.mullvad.net
+::1 lite.duckduckgo.com
+::1 www.lite.duckduckgo.com
 ::1 lite.qwant.com
 ::1 www.lite.qwant.com
 ::1 lld.m.wikipedia.org
@@ -1768,6 +1771,8 @@
 ::1 www.sr.m.wikipedia.org
 ::1 sr.wikipedia.org
 ::1 www.sr.wikipedia.org
+::1 startpage.com
+::1 www.startpage.com
 ::1 su.m.wikipedia.org
 ::1 www.su.m.wikipedia.org
 ::1 su.wikipedia.org

@@ -102,7 +102,7 @@ function makeHost(
 	 * Build the string
 	 * containing all IPv6 addresses
 	 */
-	allDomains_Text += `${BREAK_LINE}\n# IPv6 Addresses\n${BREAK_LINE}\n`;
+	allDomains_Text += `${BREAK_LINE}\n# IPv6 Addresses\n${BREAK_LINE}`;
 	for (let i = 0; i < DOMAINS_SANS_PREFIX_WWW.length; i++) {
 		/**
 		 * Double-check if the domain already has an IP address appended to it
