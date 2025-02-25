@@ -13,7 +13,7 @@
 # 573     
 #     
 # Project Home Page:     
-# https://github.com/ryanbarillos/hosts     
+# https://github.com/ryanbarillosofficial/hosts     
 #
 
 
