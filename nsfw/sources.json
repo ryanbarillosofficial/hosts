@@ -1,10 +1,22 @@
 {
-    "stevenBlack": {
-        "name": "StevenBlack's Porn-only Hosts",
-        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts"
-    },
-    "sinfonietta": {
-        "name": "Sinfonietta's Pornography Hosts",
-        "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/pornography-hosts"
-    }
+  "stevenBlack": {
+    "title": "StevenBlack's Porn-only Hosts",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
+        "title": "StevenBlack's Porn-only Hosts",
+        "keyword": null
+      }
+    ]
+  },
+  "sinfonietta": {
+    "title": "Sinfonietta's Pornography Hosts",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/pornography-hosts",
+        "title": "Sinfonietta's Pornography Hosts",
+        "keyword": null
+      }
+    ]
+  }
 }

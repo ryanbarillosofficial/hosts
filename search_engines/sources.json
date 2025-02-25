@@ -1,1057 +1,1069 @@
 {
-	"active_search_results": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "activesearchresults.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"aol": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "search.aol.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"ask": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "ask.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"baidu": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "baidu.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"bing": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["th", "sr"],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "edgeservices.bing.com",
-				"about": "DNS domain for Microsoft Edge sidebar",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "204.79.197.220",
-						"about": "IP address of strict.bing.com"
-					},
-					"strict": {
-						"url": "204.79.197.220",
-						"about": "IP address of strict.bing.com"
-					}
-				}
-			},
-			{
-				"url": "bing.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "204.79.197.220",
-						"about": "IP address of strict.bing.com"
-					},
-					"strict": {
-						"url": "204.79.197.220",
-						"about": "IP address of strict.bing.com"
-					}
-				}
-			},
-			{
-				"url": "www__number__.bing.com",
-				"about": "The IP address of this: 13.107.21.237",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "bing.net",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "tse__number__.explicit.bing.net",
-				"about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving explicit 'Graphical Content' when SafeSearch is off. The IP Address of this domain: \"204.79.197.201\"",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "tse__number__.mm.bing.net",
-				"about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving tame 'Graphical Content'; the IP address of this domain: \"204.79.197.200\"",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "__prefix__.bing.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"brave_search": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "search.brave.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "108.156.172.33",
-						"about": "IP address of safe.search.brave.com"
-					},
-					"strict": {
-						"url": "108.156.172.33",
-						"about": "IP address of safe.search.brave.com"
-					}
-				}
-			},
-			{
-				"url": "safe.search.brave.com",
-				"about": "Brave Search with SafeSearch STRICTLY enabled. The IP Address of this domain: 108.156.172.33",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "imgs.search.brave.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"dogpile": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "dogpile.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"duckduckgo": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "start."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__duckduckgo.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "40.89.244.237",
-						"about": "IP address of safe.duckduckgo.com"
-					},
-					"strict": {
-						"url": "40.89.244.237",
-						"about": "IP address of safe.duckduckgo.com"
-					}
-				}
-			},
-			{
-				"url": "html.duckduckgo.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "lite.duckduckgo.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "external-content.duckduckgo.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			}
-		]
-	},
-	"ecosia": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["api", "cdn", "ap", "ac"],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "ecosia.org",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "140.99.233.1",
-						"about": "IP address of strict-safe-search.ecosia.org"
-					},
-					"strict": {
-						"url": "140.99.233.1",
-						"about": "IP address of strict-safe-search.ecosia.org"
-					}
-				}
-			},
-			{
-				"url": "__prefix__.ecosia.org",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"entireweb": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "search.", "cdn.", "affiliate."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__entireweb.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"excite": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "results.excite.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"google": {
-		"affixes": {
-			"countries": [
-				"ac",
-				"ad",
-				"ae",
-				"af",
-				"ag",
-				"al",
-				"am",
-				"as",
-				"at",
-				"az",
-				"ba",
-				"be",
-				"bf",
-				"bg",
-				"bi",
-				"bj",
-				"bs",
-				"bt",
-				"by",
-				"bo",
-				"ca",
-				"cat",
-				"cc",
-				"cd",
-				"cf",
-				"cg",
-				"ch",
-				"ci",
-				"cl",
-				"cm",
-				"co",
-				"cv",
-				"cz",
-				"co.ao",
-				"co.bw",
-				"co.ck",
-				"co.cr",
-				"co.hu",
-				"co.id",
-				"co.il",
-				"co.im",
-				"co.in",
-				"co.je",
-				"co.jp",
-				"co.ke",
-				"co.kr",
-				"co.ls",
-				"co.ma",
-				"co.mz",
-				"co.nz",
-				"co.th",
-				"co.tz",
-				"co.ug",
-				"co.uk",
-				"co.uz",
-				"co.ve",
-				"co.vi",
-				"co.za",
-				"co.zm",
-				"co.zw",
-				"de",
-				"dj",
-				"dk",
-				"dm",
-				"do",
-				"dz",
-				"ec",
-				"ee",
-				"es",
-				"hk",
-				"mx",
-				"ng",
-				"ph",
-				"pk",
-				"pl",
-				"pn",
-				"ps",
-				"pt",
-				"qa",
-				"ro",
-				"rs",
-				"ru",
-				"rw",
-				"sc",
-				"se",
-				"sh",
-				"si",
-				"sk",
-				"sm",
-				"sn",
-				"so",
-				"st",
-				"sg",
-				"sl",
-				"td",
-				"tg",
-				"tw",
-				"tk",
-				"tl",
-				"tm",
-				"tn",
-				"to",
-				"tt",
-				"ua",
-				"vg",
-				"vn",
-				"vu",
-				"ws",
-				"com",
-				"com.af",
-				"com.ag",
-				"com.ai",
-				"com.ar",
-				"com.au",
-				"com.bd",
-				"com.bh",
-				"com.bn",
-				"com.bo",
-				"com.br",
-				"com.by",
-				"com.bz",
-				"com.co",
-				"com.cu",
-				"com.cy",
-				"com.do",
-				"com.ec",
-				"com.eg",
-				"com.et",
-				"com.fj",
-				"com.ge",
-				"com.gh",
-				"com.gi",
-				"com.gr",
-				"com.gt",
-				"com.hk",
-				"com.iq",
-				"com.jm",
-				"com.jo",
-				"com.kh",
-				"com.kw",
-				"com.lb",
-				"com.ly",
-				"com.mm",
-				"com.mt",
-				"com.mx",
-				"com.my",
-				"com.na",
-				"com.nf",
-				"com.ng",
-				"com.ni",
-				"com.np",
-				"com.nr",
-				"com.om",
-				"com.pa",
-				"com.pe",
-				"com.pg",
-				"com.ph",
-				"com.pk",
-				"com.pr",
-				"com.py",
-				"com.qa",
-				"com.ru",
-				"com.sa",
-				"com.sb",
-				"com.sg",
-				"com.sl",
-				"com.sv",
-				"com.tj",
-				"com.tr",
-				"com.tw",
-				"com.ua",
-				"com.uy",
-				"com.vc",
-				"com.vn"
-			],
-			"prefixes": ["images."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "google.__country__",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "216.239.38.120",
-						"about": "IP address of forcesafesearch.google.com"
-					},
-					"strict": {
-						"url": "216.239.38.120",
-						"about": "IP address of forcesafesearch.google.com"
-					}
-				}
-			},
-			{
-				"url": "__prefix__google.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			}
-		]
-	},
-	"info": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "search."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__info.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"lycos": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "search.", "scripts."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__lycos.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"metacrawler": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "metacrawler.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"metager": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "metager.org",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"mojeek": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "mojeek.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"mullvad_leta": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "leta.mullvad.net",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"qwant": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "lite."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__qwant.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "qwantjunior.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "s__number__.qwant.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			}
-		]
-	},
-	"refseek": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "refseek.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"swisscows": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "swisscows.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			}
-		]
-	},
-	"searx": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "searx.be",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"startpage": {
-		"affixes": {
-			"countries": [],
-			"prefixes": [],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "startpage.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "67.63.61.130",
-						"about": "IP address of safe.startpage.com"
-					},
-					"strict": {
-						"url": "67.63.61.130",
-						"about": "IP address of safe.startpage.com"
-					}
-				}
-			},
-			{
-				"url": "eu-browse.startpage.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "us__number__-browse.startpage.com",
-				"about": "Domain of Startpage's 'Anonymous View'",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}			
-		]
-	},
-	"wikimedia": {
-		"affixes": {
-			"countries": [
-				"ar",
-				"en",
-				"de",
-				"fr",
-				"es",
-				"ja",
-				"ru",
-				"pt",
-				"it",
-				"zh",
-				"fa",
-				"pl",
-				"nl",
-				"uk",
-				"no",
-				"ro",
-				"he",
-				"id",
-				"tr",
-				"cs",
-				"sr",
-				"sv",
-				"da",
-				"ko",
-				"simple",
-				"fi",
-				"hu",
-				"vi",
-				"ca",
-				"bn",
-				"th",
-				"el",
-				"hi",
-				"zh-yue",
-				"sw",
-				"bg",
-				"ms",
-				"hy",
-				"et",
-				"az",
-				"sk",
-				"eu",
-				"hr",
-				"uz",
-				"sh",
-				"sl",
-				"lt",
-				"ta",
-				"eo",
-				"kk",
-				"lv",
-				"be",
-				"ur",
-				"sq",
-				"gl",
-				"te",
-				"ka",
-				"ml",
-				"mk",
-				"arz",
-				"af",
-				"is",
-				"ha",
-				"as",
-				"la",
-				"mn",
-				"ceb",
-				"bs",
-				"mr",
-				"ckb",
-				"my",
-				"tl",
-				"nn",
-				"kn",
-				"ga",
-				"cy",
-				"ast",
-				"ne",
-				"azb",
-				"be-tarask",
-				"ku",
-				"oc",
-				"ky",
-				"ig",
-				"als",
-				"br",
-				"sco",
-				"tt",
-				"su",
-				"jv",
-				"pa",
-				"lb",
-				"zh-min-nan",
-				"tg",
-				"fy",
-				"si",
-				"km",
-				"wuu",
-				"so",
-				"ba",
-				"war",
-				"co",
-				"an",
-				"zh-classical",
-				"dtp",
-				"io",
-				"lmo",
-				"nds",
-				"pnb",
-				"ps",
-				"yo",
-				"min",
-				"ban",
-				"or",
-				"ce",
-				"yi",
-				"ang",
-				"gu",
-				"bcl",
-				"hif",
-				"vec",
-				"am",
-				"mt",
-				"scn",
-				"bar",
-				"mzn",
-				"cv",
-				"fo",
-				"xmf",
-				"ary",
-				"lo",
-				"sah",
-				"rw",
-				"mg",
-				"tk",
-				"diq",
-				"gag",
-				"ia",
-				"ie",
-				"rue",
-				"lld",
-				"kaa",
-				"crh",
-				"dag",
-				"qu",
-				"ht",
-				"szl",
-				"hyw",
-				"sa",
-				"sat",
-				"ff",
-				"mad",
-				"bh",
-				"sd",
-				"bjn"
-			],
-			"prefixes": ["upload", "meta", "commons", "commons.m"],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "wikipedia.org",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "__country__.wikipedia.org",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "__country__.m.wikipedia.org",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "__prefix__.wikimedia.org",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			}
-		]
-	},
-	"yahoo": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["images.", "video.", "ca."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "search.yahoo.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			},
-			{
-				"url": "__prefix__search.yahoo.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			},
-			{
-				"url": "s.yimg.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": true,
-				"damaging_if_disabled": true,
-				"redirect_to": null
-			}
-		]
-	},
-	"you": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "cdn.", "auth."],
-			"suffixes": []
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__you.com",
-				"about": "",
-				"has_safesearch": false,
-				"has_graphic_content": false,
-				"damaging_if_disabled": false,
-				"redirect_to": null
-			}
-		]
-	},
-	"youtube": {
-		"affixes": {
-			"countries": [],
-			"prefixes": ["", "m."],
-			"suffixes": [".googleapis.com", "-nocookie.com", "i.googleapis.com"]
-		},
-		"subdomains": [
-			{
-				"url": "__prefix__youtube.com",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "216.239.38.119",
-						"about": "IP Address of \"restrictmoderate.youtube.com\""
-					},
-					"strict": {
-						"url": "216.239.38.120",
-						"about": "IP Address of \"restrict.youtube.com\""
-					}
-				}
-			},
-			{
-				"url": "youtube__suffix__",
-				"about": "",
-				"has_safesearch": true,
-				"has_graphic_content": false,
-				"damaging_if_disabled": true,
-				"redirect_to": {
-					"moderate": {
-						"url": "216.239.38.119",
-						"about": "IP Address of \"restrictmoderate.youtube.com\""
-					},
-					"strict": {
-						"url": "216.239.38.120",
-						"about": "IP Address of \"restrict.youtube.com\""
-					}
-				}
-			}
-		]
-	}
+  "active_search_results": {
+    "title": "Active Search Results",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "activesearchresults.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "aol": {
+    "title": "AOL",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "search.aol.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "ask": {
+    "title": "Ask.com",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "ask.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "safesearch.ask.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "baidu": {
+    "title": "Baidu",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "baidu.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "bing": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["th", "sr"],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "edgeservices.bing.com",
+        "about": "DNS domain for Microsoft Edge sidebar",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "204.79.197.220",
+            "about": "IP address of strict.bing.com"
+          },
+          "strict": {
+            "url": "204.79.197.220",
+            "about": "IP address of strict.bing.com"
+          }
+        }
+      },
+      {
+        "url": "bing.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "204.79.197.220",
+            "about": "IP address of strict.bing.com"
+          },
+          "strict": {
+            "url": "204.79.197.220",
+            "about": "IP address of strict.bing.com"
+          }
+        }
+      },
+      {
+        "url": "www__number__.bing.com",
+        "about": "The IP address of this: 13.107.21.237",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "bing.net",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "tse__number__.explicit.bing.net",
+        "about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving explicit 'Graphical Content' when SafeSearch is off. The IP Address of this domain: \"204.79.197.201\"",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "tse__number__.mm.bing.net",
+        "about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving tame 'Graphical Content'; the IP address of this domain: \"204.79.197.200\"",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "__prefix__.bing.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "brave_search": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "search.brave.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "108.156.172.33",
+            "about": "IP address of safe.search.brave.com"
+          },
+          "strict": {
+            "url": "108.156.172.33",
+            "about": "IP address of safe.search.brave.com"
+          }
+        }
+      },
+      {
+        "url": "safe.search.brave.com",
+        "about": "Brave Search with SafeSearch STRICTLY enabled. The IP Address of this domain: 108.156.172.33",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "imgs.search.brave.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "dogpile": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "dogpile.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "duckduckgo": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "start."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__duckduckgo.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "40.89.244.237",
+            "about": "IP address of safe.duckduckgo.com"
+          },
+          "strict": {
+            "url": "40.89.244.237",
+            "about": "IP address of safe.duckduckgo.com"
+          }
+        }
+      },
+      {
+        "url": "html.duckduckgo.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "lite.duckduckgo.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "external-content.duckduckgo.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      }
+    ]
+  },
+  "ecosia": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["api", "cdn", "ap", "ac"],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "ecosia.org",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "140.99.233.1",
+            "about": "IP address of strict-safe-search.ecosia.org"
+          },
+          "strict": {
+            "url": "140.99.233.1",
+            "about": "IP address of strict-safe-search.ecosia.org"
+          }
+        }
+      },
+      {
+        "url": "__prefix__.ecosia.org",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "entireweb": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "search.", "cdn.", "affiliate."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__entireweb.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "excite": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "results.excite.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "google": {
+    "affixes": {
+      "countries": [
+        "ac",
+        "ad",
+        "ae",
+        "af",
+        "ag",
+        "al",
+        "am",
+        "as",
+        "at",
+        "az",
+        "ba",
+        "be",
+        "bf",
+        "bg",
+        "bi",
+        "bj",
+        "bs",
+        "bt",
+        "by",
+        "bo",
+        "ca",
+        "cat",
+        "cc",
+        "cd",
+        "cf",
+        "cg",
+        "ch",
+        "ci",
+        "cl",
+        "cm",
+        "co",
+        "cv",
+        "cz",
+        "co.ao",
+        "co.bw",
+        "co.ck",
+        "co.cr",
+        "co.hu",
+        "co.id",
+        "co.il",
+        "co.im",
+        "co.in",
+        "co.je",
+        "co.jp",
+        "co.ke",
+        "co.kr",
+        "co.ls",
+        "co.ma",
+        "co.mz",
+        "co.nz",
+        "co.th",
+        "co.tz",
+        "co.ug",
+        "co.uk",
+        "co.uz",
+        "co.ve",
+        "co.vi",
+        "co.za",
+        "co.zm",
+        "co.zw",
+        "de",
+        "dj",
+        "dk",
+        "dm",
+        "do",
+        "dz",
+        "ec",
+        "ee",
+        "es",
+        "hk",
+        "mx",
+        "ng",
+        "ph",
+        "pk",
+        "pl",
+        "pn",
+        "ps",
+        "pt",
+        "qa",
+        "ro",
+        "rs",
+        "ru",
+        "rw",
+        "sc",
+        "se",
+        "sh",
+        "si",
+        "sk",
+        "sm",
+        "sn",
+        "so",
+        "st",
+        "sg",
+        "sl",
+        "td",
+        "tg",
+        "tw",
+        "tk",
+        "tl",
+        "tm",
+        "tn",
+        "to",
+        "tt",
+        "ua",
+        "vg",
+        "vn",
+        "vu",
+        "ws",
+        "com",
+        "com.af",
+        "com.ag",
+        "com.ai",
+        "com.ar",
+        "com.au",
+        "com.bd",
+        "com.bh",
+        "com.bn",
+        "com.bo",
+        "com.br",
+        "com.by",
+        "com.bz",
+        "com.co",
+        "com.cu",
+        "com.cy",
+        "com.do",
+        "com.ec",
+        "com.eg",
+        "com.et",
+        "com.fj",
+        "com.ge",
+        "com.gh",
+        "com.gi",
+        "com.gr",
+        "com.gt",
+        "com.hk",
+        "com.iq",
+        "com.jm",
+        "com.jo",
+        "com.kh",
+        "com.kw",
+        "com.lb",
+        "com.ly",
+        "com.mm",
+        "com.mt",
+        "com.mx",
+        "com.my",
+        "com.na",
+        "com.nf",
+        "com.ng",
+        "com.ni",
+        "com.np",
+        "com.nr",
+        "com.om",
+        "com.pa",
+        "com.pe",
+        "com.pg",
+        "com.ph",
+        "com.pk",
+        "com.pr",
+        "com.py",
+        "com.qa",
+        "com.ru",
+        "com.sa",
+        "com.sb",
+        "com.sg",
+        "com.sl",
+        "com.sv",
+        "com.tj",
+        "com.tr",
+        "com.tw",
+        "com.ua",
+        "com.uy",
+        "com.vc",
+        "com.vn"
+      ],
+      "prefixes": ["images."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "google.__country__",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "216.239.38.120",
+            "about": "IP address of forcesafesearch.google.com"
+          },
+          "strict": {
+            "url": "216.239.38.120",
+            "about": "IP address of forcesafesearch.google.com"
+          }
+        }
+      },
+      {
+        "url": "__prefix__google.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      }
+    ]
+  },
+  "info": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "search."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__info.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "lycos": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "search.", "scripts."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__lycos.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "metacrawler": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "metacrawler.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "metager": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "metager.org",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "mojeek": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "mojeek.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "mullvad_leta": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "leta.mullvad.net",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "qwant": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "lite."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__qwant.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "qwantjunior.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "s__number__.qwant.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      }
+    ]
+  },
+  "refseek": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "refseek.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "swisscows": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "swisscows.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      }
+    ]
+  },
+  "searx": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "searx.be",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "startpage": {
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "startpage.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "67.63.61.130",
+            "about": "IP address of safe.startpage.com"
+          },
+          "strict": {
+            "url": "67.63.61.130",
+            "about": "IP address of safe.startpage.com"
+          }
+        }
+      },
+      {
+        "url": "eu-browse.startpage.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "us__number__-browse.startpage.com",
+        "about": "Domain of Startpage's 'Anonymous View'",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "wikimedia": {
+    "affixes": {
+      "countries": [
+        "ar",
+        "en",
+        "de",
+        "fr",
+        "es",
+        "ja",
+        "ru",
+        "pt",
+        "it",
+        "zh",
+        "fa",
+        "pl",
+        "nl",
+        "uk",
+        "no",
+        "ro",
+        "he",
+        "id",
+        "tr",
+        "cs",
+        "sr",
+        "sv",
+        "da",
+        "ko",
+        "simple",
+        "fi",
+        "hu",
+        "vi",
+        "ca",
+        "bn",
+        "th",
+        "el",
+        "hi",
+        "zh-yue",
+        "sw",
+        "bg",
+        "ms",
+        "hy",
+        "et",
+        "az",
+        "sk",
+        "eu",
+        "hr",
+        "uz",
+        "sh",
+        "sl",
+        "lt",
+        "ta",
+        "eo",
+        "kk",
+        "lv",
+        "be",
+        "ur",
+        "sq",
+        "gl",
+        "te",
+        "ka",
+        "ml",
+        "mk",
+        "arz",
+        "af",
+        "is",
+        "ha",
+        "as",
+        "la",
+        "mn",
+        "ceb",
+        "bs",
+        "mr",
+        "ckb",
+        "my",
+        "tl",
+        "nn",
+        "kn",
+        "ga",
+        "cy",
+        "ast",
+        "ne",
+        "azb",
+        "be-tarask",
+        "ku",
+        "oc",
+        "ky",
+        "ig",
+        "als",
+        "br",
+        "sco",
+        "tt",
+        "su",
+        "jv",
+        "pa",
+        "lb",
+        "zh-min-nan",
+        "tg",
+        "fy",
+        "si",
+        "km",
+        "wuu",
+        "so",
+        "ba",
+        "war",
+        "co",
+        "an",
+        "zh-classical",
+        "dtp",
+        "io",
+        "lmo",
+        "nds",
+        "pnb",
+        "ps",
+        "yo",
+        "min",
+        "ban",
+        "or",
+        "ce",
+        "yi",
+        "ang",
+        "gu",
+        "bcl",
+        "hif",
+        "vec",
+        "am",
+        "mt",
+        "scn",
+        "bar",
+        "mzn",
+        "cv",
+        "fo",
+        "xmf",
+        "ary",
+        "lo",
+        "sah",
+        "rw",
+        "mg",
+        "tk",
+        "diq",
+        "gag",
+        "ia",
+        "ie",
+        "rue",
+        "lld",
+        "kaa",
+        "crh",
+        "dag",
+        "qu",
+        "ht",
+        "szl",
+        "hyw",
+        "sa",
+        "sat",
+        "ff",
+        "mad",
+        "bh",
+        "sd",
+        "bjn"
+      ],
+      "prefixes": ["upload", "meta", "commons", "commons.m"],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "wikipedia.org",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "__country__.wikipedia.org",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "__country__.m.wikipedia.org",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "__prefix__.wikimedia.org",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      }
+    ]
+  },
+  "yahoo": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["images.", "video.", "ca."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "search.yahoo.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      },
+      {
+        "url": "__prefix__search.yahoo.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      },
+      {
+        "url": "s.yimg.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": true,
+        "damaging_if_disabled": true,
+        "redirect_to": null
+      }
+    ]
+  },
+  "you": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "cdn.", "auth."],
+      "suffixes": null
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__you.com",
+        "about": "",
+        "has_safesearch": false,
+        "has_graphic_content": false,
+        "damaging_if_disabled": false,
+        "redirect_to": null
+      }
+    ]
+  },
+  "youtube": {
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "m."],
+      "suffixes": [".googleapis.com", "-nocookie.com", "i.googleapis.com"]
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__youtube.com",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "216.239.38.119",
+            "about": "IP Address of \"restrictmoderate.youtube.com\""
+          },
+          "strict": {
+            "url": "216.239.38.120",
+            "about": "IP Address of \"restrict.youtube.com\""
+          }
+        }
+      },
+      {
+        "url": "youtube__suffix__",
+        "about": "",
+        "has_safesearch": true,
+        "has_graphic_content": false,
+        "damaging_if_disabled": true,
+        "redirect_to": {
+          "moderate": {
+            "url": "216.239.38.119",
+            "about": "IP Address of \"restrictmoderate.youtube.com\""
+          },
+          "strict": {
+            "url": "216.239.38.120",
+            "about": "IP Address of \"restrict.youtube.com\""
+          }
+        }
+      }
+    ]
+  }
 }

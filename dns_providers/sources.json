@@ -9,10 +9,20 @@
   },
   "mullvad": {
     "title": "Mullvad",
+    "affixes": ["", "adblock."],
     "urls": ["dns.mullvad.net", "adblock.dns.mullvad.net"]
   },
   "nextdns": {
     "title": "NextDNS",
+    "affixes": [
+      "",
+      "my.",
+      "api.",
+      "link-ip.",
+      "test-ipv6.",
+      "apple.",
+      "steering."
+    ],
     "urls": [
       "nextdns.io",
       "my.nextdns.io",
@@ -21,11 +31,8 @@
       "link-ip.nextdns.io",
       "dns1.nextdns.io",
       "test-ipv6.nextdns.io",
-      "apple.nextdns.io"
+      "apple.nextdns.io",
+      "steering.nextdns.io"
     ]
-  },
-  "opendns": {
-    "title": "OpenDNS",
-    "urls": []
   }
 }

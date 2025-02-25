@@ -1,32 +1,32 @@
 {
-    "pinterest": {
-        "name": "pinterest",
-        "sources":{
-            "0": {
-                "name": "StevenBlack's Social-only Hosts",
-                "link": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
-                "keyword": "# Pinterest"
-            }
-        }
-    },
-    "reddit": {
-        "name": "reddit",
-        "sources":{
-            "0": {
-                "name": "StevenBlack's Social-only Hosts",
-                "link": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
-                "keyword": "# Reddit"
-            }
-        }
-    },
-    "tumblr": {
-        "name": "tumblr",
-        "sources":{
-            "0": {
-                "name": "StevenBlack's Social-only Hosts",
-                "link": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
-                "keyword": "# Tumblr"
-            }
-        }
-    }    
+  "pinterest": {
+    "title": "Pinterest",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
+        "title": "StevenBlack's Social-only Hosts",
+        "keyword": "# Pinterest"
+      }
+    ]
+  },
+  "reddit": {
+    "title": "Reddit",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
+        "title": "StevenBlack's Social-only Hosts",
+        "keyword": "# Reddit"
+      }
+    ]
+  },
+  "tumblr": {
+    "title": "Tumblr",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
+        "title": "StevenBlack's Social-only Hosts",
+        "keyword": "# Tumblr"
+      }
+    ]
+  }
 }
