@@ -1,6 +1,6 @@
 {
   "stevenBlack": {
-    "title": "StevenBlack's Porn-only Hosts",
+    "title": "StevenBlack",
     "sources": [
       {
         "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
@@ -10,7 +10,7 @@
     ]
   },
   "sinfonietta": {
-    "title": "Sinfonietta's Pornography Hosts",
+    "title": "Sinfonietta",
     "sources": [
       {
         "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/pornography-hosts",

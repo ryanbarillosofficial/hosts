@@ -15,4 +15,3 @@ Current Methods of Blocking:
 5. Search Engines (that DON'T FILTER adult content)
 6. Social Media
 7. Tor Browser (and other Tor-related Projects)
-8. Invidious

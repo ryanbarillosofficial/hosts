@@ -8,6 +8,7 @@ import fs from "fs";
 import path from "path";
 
 // Constant variables
+export const WWW_REGEX = /^www\./;
 const DIRECTORY_CURRENT = process.cwd();
 const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
@@ -198,7 +199,7 @@ function makeHost(
 
 async function getHost(url) {
   /**
-   * Assuning that @url fetches a .txt file of domains to be blocked
+   * Assuming that @url fetches a .txt file of domains to be blocked
    * Then we split the response by whitespaces
    * And return it as an array
    */

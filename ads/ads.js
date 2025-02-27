@@ -1,5 +1,10 @@
 import SOURCES from "./sources.json" with { type: "json" }
-import { KEYWORDS_TO_IGNORE, IP_MODE, makeHost } from "../hostTools.js";
+import {
+  KEYWORDS_TO_IGNORE,
+  IP_MODE,
+  makeHost,
+  WWW_REGEX,
+} from "../hostTools.js";
 
 const HOST_NAME = "ads",
   HOST_TITLE = "No Ads",
@@ -42,7 +47,7 @@ async function main() {
              */
             const DOMAIN = line.split(" ")[1];
             // Now Add to list
-            if (DOMAIN.includes("www.")) {
+            if (WWW_REGEX.test(DOMAIN) == true) {
               domainsSansPrefixWWW.add(DOMAIN.slice(4)); // Add to set of domains WITHOUT "www." prefix
               domainsWithPrefixWWW.add(DOMAIN); // Add to set of domains with "www." prefix
             } else {
