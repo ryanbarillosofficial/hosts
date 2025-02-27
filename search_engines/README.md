@@ -59,7 +59,7 @@ Based on the previous section, the following table will best describe the use ca
 |Host File |Has SafeSearch? |Has Graphical Content? |Can Damages Other Sites?|
 |:-------------------:|:-----------------------:|:-----------------------:|:------------------:|
 |SafeSearch_Moderate |<strong>Yes</strong> |Yes |No |
-|SafeSearch_Moderate |<strong>Yes</strong> |<strong>No</strong> |<strong>Yes</strong>|
+|SafeSearch_Aggressive |<strong>Yes</strong> |<strong>No</strong> |<strong>Yes</strong>|
 |All |<strong>Yes & No</strong>|<strong>Yes & No</strong>|<strong>Yes</strong>|
 
 In summary:
