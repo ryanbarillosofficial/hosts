@@ -10,10 +10,10 @@
       {
         "url": "activesearchresults.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -28,10 +28,10 @@
       {
         "url": "search.aol.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -46,18 +46,18 @@
       {
         "url": "ask.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "safesearch.ask.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": true,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -72,10 +72,10 @@
       {
         "url": "baidu.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -89,76 +89,64 @@
       {
         "url": "edgeservices.bing.com",
         "about": "DNS domain for Microsoft Edge sidebar",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "204.79.197.220",
-            "about": "IP address of strict.bing.com"
-          },
-          "strict": {
-            "url": "204.79.197.220",
-            "about": "IP address of strict.bing.com"
-          }
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "204.79.197.220",
+          "about": "IP address of strict.bing.com"
         }
       },
       {
         "url": "bing.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "204.79.197.220",
-            "about": "IP address of strict.bing.com"
-          },
-          "strict": {
-            "url": "204.79.197.220",
-            "about": "IP address of strict.bing.com"
-          }
+        "hasSafeSearch": true,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "204.79.197.220",
+          "about": "IP address of strict.bing.com"
         }
       },
       {
         "url": "www__number__.bing.com",
         "about": "The IP address of this: 13.107.21.237",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "bing.net",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "tse__number__.explicit.bing.net",
         "about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving explicit 'Graphical Content' when SafeSearch is off. The IP Address of this domain: \"204.79.197.201\"",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "tse__number__.mm.bing.net",
         "about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving tame 'Graphical Content'; the IP address of this domain: \"204.79.197.200\"",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "__prefix__.bing.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -172,35 +160,29 @@
       {
         "url": "search.brave.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "108.156.172.33",
-            "about": "IP address of safe.search.brave.com"
-          },
-          "strict": {
-            "url": "108.156.172.33",
-            "about": "IP address of safe.search.brave.com"
-          }
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "108.156.172.33",
+          "about": "IP address of safe.search.brave.com"
         }
       },
       {
         "url": "safe.search.brave.com",
         "about": "Brave Search with SafeSearch STRICTLY enabled. The IP Address of this domain: 108.156.172.33",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "imgs.search.brave.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -214,10 +196,10 @@
       {
         "url": "dogpile.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -231,43 +213,37 @@
       {
         "url": "__prefix__duckduckgo.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "40.89.244.237",
-            "about": "IP address of safe.duckduckgo.com"
-          },
-          "strict": {
-            "url": "40.89.244.237",
-            "about": "IP address of safe.duckduckgo.com"
-          }
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "40.89.244.237",
+          "about": "IP address of safe.duckduckgo.com"
         }
       },
       {
         "url": "html.duckduckgo.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "lite.duckduckgo.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "external-content.duckduckgo.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       }
     ]
   },
@@ -281,27 +257,21 @@
       {
         "url": "ecosia.org",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "140.99.233.1",
-            "about": "IP address of strict-safe-search.ecosia.org"
-          },
-          "strict": {
-            "url": "140.99.233.1",
-            "about": "IP address of strict-safe-search.ecosia.org"
-          }
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "140.99.233.1",
+          "about": "IP address of strict-safe-search.ecosia.org"
         }
       },
       {
         "url": "__prefix__.ecosia.org",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -315,10 +285,10 @@
       {
         "url": "__prefix__entireweb.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -332,10 +302,10 @@
       {
         "url": "results.excite.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -524,27 +494,21 @@
       {
         "url": "google.__country__",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "216.239.38.120",
-            "about": "IP address of forcesafesearch.google.com"
-          },
-          "strict": {
-            "url": "216.239.38.120",
-            "about": "IP address of forcesafesearch.google.com"
-          }
+        "hasSafeSearch": true,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "216.239.38.120",
+          "about": "IP address of forcesafesearch.google.com"
         }
       },
       {
         "url": "__prefix__google.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       }
     ]
   },
@@ -558,10 +522,10 @@
       {
         "url": "__prefix__info.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -575,10 +539,10 @@
       {
         "url": "__prefix__lycos.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -592,10 +556,10 @@
       {
         "url": "metacrawler.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -609,10 +573,10 @@
       {
         "url": "metager.org",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -626,10 +590,10 @@
       {
         "url": "mojeek.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -643,10 +607,10 @@
       {
         "url": "leta.mullvad.net",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -660,26 +624,26 @@
       {
         "url": "__prefix__qwant.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "qwantjunior.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "s__number__.qwant.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": true,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       }
     ]
   },
@@ -693,10 +657,10 @@
       {
         "url": "refseek.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": true,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -710,10 +674,10 @@
       {
         "url": "swisscows.com",
         "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": true,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       }
     ]
   },
@@ -727,10 +691,10 @@
       {
         "url": "searx.be",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -744,35 +708,29 @@
       {
         "url": "startpage.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "67.63.61.130",
-            "about": "IP address of safe.startpage.com"
-          },
-          "strict": {
-            "url": "67.63.61.130",
-            "about": "IP address of safe.startpage.com"
-          }
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "67.63.61.130",
+          "about": "IP address of safe.startpage.com"
         }
       },
       {
         "url": "eu-browse.startpage.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "us__number__-browse.startpage.com",
         "about": "Domain of Startpage's 'Anonymous View'",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   },
@@ -942,34 +900,34 @@
       {
         "url": "wikipedia.org",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "__country__.wikipedia.org",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "__country__.m.wikipedia.org",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "__prefix__.wikimedia.org",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       }
     ]
   },
@@ -983,26 +941,26 @@
       {
         "url": "search.yahoo.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       },
       {
         "url": "__prefix__search.yahoo.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       },
       {
         "url": "s.yimg.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": true,
-        "damaging_if_disabled": true,
-        "redirect_to": null
+        "hasSafeSearch": false,
+        "hasGraphicContent": true,
+        "damagingIfDisabled": true,
+        "redirectTo": null
       }
     ]
   },
@@ -1016,53 +974,10 @@
       {
         "url": "__prefix__you.com",
         "about": "",
-        "has_safesearch": false,
-        "has_graphic_content": false,
-        "damaging_if_disabled": false,
-        "redirect_to": null
-      }
-    ]
-  },
-  "youtube": {
-    "affixes": {
-      "countries": null,
-      "prefixes": ["", "m."],
-      "suffixes": [".googleapis.com", "-nocookie.com", "i.googleapis.com"]
-    },
-    "subdomains": [
-      {
-        "url": "__prefix__youtube.com",
-        "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "216.239.38.119",
-            "about": "IP Address of \"restrictmoderate.youtube.com\""
-          },
-          "strict": {
-            "url": "216.239.38.120",
-            "about": "IP Address of \"restrict.youtube.com\""
-          }
-        }
-      },
-      {
-        "url": "youtube__suffix__",
-        "about": "",
-        "has_safesearch": true,
-        "has_graphic_content": false,
-        "damaging_if_disabled": true,
-        "redirect_to": {
-          "moderate": {
-            "url": "216.239.38.119",
-            "about": "IP Address of \"restrictmoderate.youtube.com\""
-          },
-          "strict": {
-            "url": "216.239.38.120",
-            "about": "IP Address of \"restrict.youtube.com\""
-          }
-        }
+        "hasSafeSearch": false,
+        "hasGraphicContent": false,
+        "damagingIfDisabled": false,
+        "redirectTo": null
       }
     ]
   }

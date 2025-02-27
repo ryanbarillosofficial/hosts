@@ -61,10 +61,27 @@ export class SourceUrlNative {
       throw '"damagingIfDisabled" MUST be a boolean!';
     }
     // Redirect URL of given subdomain
-    if (redirectTo === null || typeof redirectTo === "string") {
+    if (redirectTo instanceof SourceUrl_RedirectTo || redirectTo == null) {
       this.redirectTo = redirectTo;
     } else {
-      throw '"redirectTo" MUST either be null OR string!';
+      throw '"redirectTo" MUST either be an instance of "SourceUrl_RedirectTo"!';
+    }
+  }
+}
+
+export class SourceUrl_RedirectTo {
+  constructor(url, about) {
+    // URL or IP address of the redirect
+    if (typeof url === "string") {
+      this.url = url;
+    } else {
+      throw new Error('"url" MUST be a string!');
+    }
+    // Information about this redirect's URL or IP address
+    if (typeof about === "string") {
+      this.about = about;
+    } else {
+      throw new Error('"about" MUST be a string!');
     }
   }
 }

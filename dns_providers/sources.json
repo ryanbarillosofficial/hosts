@@ -1,6 +1,11 @@
 {
   "adguard": {
     "title": "AdGuard",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
     "urls": ["dns.adguard-dns.com"]
   },
   "google": {
@@ -9,8 +14,12 @@
   },
   "mullvad": {
     "title": "Mullvad",
-    "affixes": ["", "adblock."],
-    "urls": ["dns.mullvad.net", "adblock.dns.mullvad.net"]
+    "affixes": {
+      "countries": null,
+      "prefixes": ["", "adblock."],
+      "suffixes": null
+    },
+    "urls": ["__prefix__dns.mullvad.net"]
   },
   "nextdns": {
     "title": "NextDNS",
@@ -23,16 +32,6 @@
       "apple.",
       "steering."
     ],
-    "urls": [
-      "nextdns.io",
-      "my.nextdns.io",
-      "dns.nextdns.io",
-      "api.nextdns.io",
-      "link-ip.nextdns.io",
-      "dns1.nextdns.io",
-      "test-ipv6.nextdns.io",
-      "apple.nextdns.io",
-      "steering.nextdns.io"
-    ]
+    "urls": ["__prefix__nextdns.io"]
   }
 }

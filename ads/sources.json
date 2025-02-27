@@ -1,18 +1,37 @@
 {
-    "0": {
-        "name": "AdAway Official Hosts",
-        "link": "https://adaway.org/hosts.txt"
-    },
-    "1": {
-        "name": "AdGuard Mobile Ads",
-        "link": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt"
-    },
-    "2": {
-        "name": "AdGuard Mobile Spyware",
-        "link": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt"
-    },    
-    "3": {
-        "name": "Goodbye Ads",
-        "link": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt"
-    } 
+  "adaway": {
+    "title": "AdAway",
+    "sources": [
+      {
+        "url": "https://adaway.org/hosts.txt",
+        "title": "AdAway Official Hosts",
+        "keyword": null
+      }
+    ]
+  },
+  "adguard": {
+    "title": "AdGuard",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt",
+        "title": "AdGuard Mobile Ads",
+        "keyword": null
+      },
+      {
+        "url": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
+        "title": "AdGuard Mobile Spyware",
+        "keyword": null
+      }
+    ]
+  },
+  "goodbyeAds": {
+    "title": "Goodbye Ads",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt",
+        "title": "Goodbye Ads",
+        "keyword": null
+      }
+    ]
+  }
 }

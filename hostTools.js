@@ -17,6 +17,28 @@ const AFFIX_KEYWORDS = {
   prefix: "__prefix__",
   suffix: "__suffix__",
 };
+/**
+ * Source of IPv6 Regex
+ * https://github.com/sindresorhus/ip-regex/blob/main/index.js
+ */
+const KEYWORDS_TO_IGNORE = [
+  "local",
+  "localhost",
+  "broadcasthost",
+  "#",
+  "undefined",
+];
+const IP_MODE = {
+  V4: {
+    PREFIX: "0.0.0.0",
+    REGEX: /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
+  },
+  V6: {
+    PREFIX: "::1",
+    REGEX:
+      /(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?::[a-fA-F\d]{1,4}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,6}|:|)(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,7}|:))(?:%[0-9a-zA-Z]{1,})?/,
+  },
+};
 
 export const resolveRedirect = (ipAddress, url) => {
   return `${ipAddress} ${url}`;
@@ -87,29 +109,6 @@ export function resolveUrlAffixes(URL, AFFIXES) {
   }
   return urlList;
 }
-
-/**
- * Source of IPv6 Regex
- * https://github.com/sindresorhus/ip-regex/blob/main/index.js
- */
-const KEYWORDS_TO_IGNORE = [
-  "local",
-  "localhost",
-  "broadcasthost",
-  "#",
-  "undefined",
-];
-const IP_MODE = {
-  V4: {
-    PREFIX: "0.0.0.0",
-    REGEX: /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
-  },
-  V6: {
-    PREFIX: "::1",
-    REGEX:
-      /(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?::[a-fA-F\d]{1,4}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,6}|:|)(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,7}|:))(?:%[0-9a-zA-Z]{1,})?/,
-  },
-};
 
 function makeHost(
   hostName,
