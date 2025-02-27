@@ -10,10 +10,12 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 238     
+# 237     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
+#     
+# Last Updated: Feb 27 2025    
 #
 
 
@@ -390,8 +392,6 @@
 0.0.0.0 www.ap.ecosia.org
 0.0.0.0 api.ecosia.org
 0.0.0.0 www.api.ecosia.org
-0.0.0.0 ask.com
-0.0.0.0 www.ask.com
 0.0.0.0 auth.you.com
 0.0.0.0 www.auth.you.com
 0.0.0.0 baidu.com
@@ -511,8 +511,6 @@
 ::1 www.ap.ecosia.org
 ::1 api.ecosia.org
 ::1 www.api.ecosia.org
-::1 ask.com
-::1 www.ask.com
 ::1 auth.you.com
 ::1 www.auth.you.com
 ::1 baidu.com

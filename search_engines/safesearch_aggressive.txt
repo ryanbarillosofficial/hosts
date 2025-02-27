@@ -10,10 +10,12 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/search_engines/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 583     
+# 582     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
+#     
+# Last Updated: Feb 27 2025    
 #
 
 
@@ -426,8 +428,6 @@
 0.0.0.0 www.as.m.wikipedia.org
 0.0.0.0 as.wikipedia.org
 0.0.0.0 www.as.wikipedia.org
-0.0.0.0 ask.com
-0.0.0.0 www.ask.com
 0.0.0.0 ast.m.wikipedia.org
 0.0.0.0 www.ast.m.wikipedia.org
 0.0.0.0 ast.wikipedia.org
@@ -1237,8 +1237,6 @@
 ::1 www.as.m.wikipedia.org
 ::1 as.wikipedia.org
 ::1 www.as.wikipedia.org
-::1 ask.com
-::1 www.ask.com
 ::1 ast.m.wikipedia.org
 ::1 www.ast.m.wikipedia.org
 ::1 ast.wikipedia.org

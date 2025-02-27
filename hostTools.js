@@ -6,9 +6,10 @@ The one I use most from these:
 import process from "process";
 import fs from "fs";
 import path from "path";
+import { printDate } from "./__tools__/printDate.js";
 
 // Constant variables
-export const WWW_REGEX = /^www\./;
+export const WWW_REGEX = /^www/;
 const DIRECTORY_CURRENT = process.cwd();
 const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
@@ -146,6 +147,8 @@ function makeHost(
     \n# \
     \n# Project Home Page: \
     \n# https://github.com/ryanbarillosofficial/hosts \
+    \n# \
+    \n# Last Updated: ${printDate()}\
     \n#${BREAK_BLOCK}`;
 
   /**

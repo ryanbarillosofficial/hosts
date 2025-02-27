@@ -35,32 +35,6 @@
       }
     ]
   },
-  "ask": {
-    "title": "Ask.com",
-    "affixes": {
-      "countries": null,
-      "prefixes": null,
-      "suffixes": null
-    },
-    "subdomains": [
-      {
-        "url": "ask.com",
-        "about": "",
-        "hasSafeSearch": false,
-        "hasGraphicContent": true,
-        "damagingIfDisabled": false,
-        "redirectTo": null
-      },
-      {
-        "url": "safesearch.ask.com",
-        "about": "",
-        "hasSafeSearch": true,
-        "hasGraphicContent": true,
-        "damagingIfDisabled": false,
-        "redirectTo": null
-      }
-    ]
-  },
   "baidu": {
     "title": "Baidu",
     "affixes": {
