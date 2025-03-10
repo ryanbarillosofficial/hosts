@@ -24,6 +24,11 @@ async function main() {
      */
     for (let i = 0; i < ENTRY.sources.length; i++) {
       const SOURCE = ENTRY.sources[i];
+      // 09 Mar 2025: Skipping this for testing
+      if (SOURCE.title == "AdGuard Mobile Spyware")  {
+        console.log("skip");
+        continue;
+      }
       console.log(`- Source #${i + 1}: "${SOURCE.title}"`);
       const HOST_ARRAY = (await (await fetch(SOURCE.url)).text()).split("\n");
       HOST_ARRAY.forEach((line) => {
