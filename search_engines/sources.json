@@ -954,5 +954,58 @@
         "redirectTo": null
       }
     ]
+  },
+  "youtube": {
+    "affixes": {
+      "countries": [],
+      "prefixes": ["", "m."],
+      "suffixes": [".googleapis.com", "-nocookie.com", "i.googleapis.com"]
+    },
+    "subdomains": [
+      {
+        "url": "__prefix__youtube.com",
+        "about": "",
+        "hasSafeSearch": true,
+        "hasGraphicalContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "216.239.38.119",
+          "about": "IP Address of restrictmoderate.youtube.com"
+        }
+      },
+      {
+        "url": "youtube__suffix__",
+        "about": "",
+        "hasSafeSearch": true,
+        "hasGraphicalContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "216.239.38.119",
+          "about": "IP Address of restrictmoderate.youtube.com"
+        }
+      },
+      {
+        "url": "__prefix__youtube.com",
+        "about": "",
+        "hasSafeSearch": true,
+        "hasGraphicalContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "216.239.38.120",
+          "about": "IP Address of \"restrict.youtube.com\""
+        }
+      },
+      {
+        "url": "youtube__suffix__",
+        "about": "",
+        "hasSafeSearch": true,
+        "hasGraphicalContent": false,
+        "damagingIfDisabled": true,
+        "redirectTo": {
+          "url": "216.239.38.120",
+          "about": "IP Address of \"restrict.youtube.com\""
+        }
+      }
+    ]
   }
 }
