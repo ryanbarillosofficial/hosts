@@ -9,7 +9,7 @@ import path from "path";
 import { printDate } from "./__tools__/printDate.js";
 
 // Constant variables
-export const WWW_REGEX = /^www/;
+export const WWW_REGEX = /^www\./;
 const DIRECTORY_CURRENT = process.cwd();
 const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
