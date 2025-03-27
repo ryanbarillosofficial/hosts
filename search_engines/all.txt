@@ -15,7 +15,7 @@
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
 #     
-# Last Updated: Feb 27 2025    
+# Last Updated: Mar 26 2025    
 #
 
 

@@ -1,0 +1,29 @@
+{
+  "bromite": {
+    "title": "Bromite",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "urls": ["bromite.org", "fdroid.bromite.org"]
+  },
+  "brave": {
+    "title": "Brave",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "urls": ["laptop-updates.brave.com"]
+  },
+  "cromite": {
+    "title": "Cromite",
+    "affixes": {
+      "countries": null,
+      "prefixes": null,
+      "suffixes": null
+    },
+    "urls": ["cromite.org"]
+  }
+}

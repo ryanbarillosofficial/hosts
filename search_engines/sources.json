@@ -125,6 +125,7 @@
     ]
   },
   "brave_search": {
+    "title": "Brave",
     "affixes": {
       "countries": null,
       "prefixes": null,
@@ -138,13 +139,13 @@
         "hasGraphicalContent": false,
         "damagingIfDisabled": true,
         "redirectTo": {
-          "url": "108.156.172.33",
+          "url": "3.163.158.37",
           "about": "IP address of safe.search.brave.com"
         }
       },
       {
         "url": "safe.search.brave.com",
-        "about": "Brave Search with SafeSearch STRICTLY enabled. The IP Address of this domain: 108.156.172.33",
+        "about": "Brave Search with SafeSearch STRICTLY enabled. The IP Address of this domain: 3.163.158.37",
         "hasSafeSearch": true,
         "hasGraphicalContent": false,
         "damagingIfDisabled": true,
@@ -952,59 +953,6 @@
         "hasGraphicalContent": false,
         "damagingIfDisabled": false,
         "redirectTo": null
-      }
-    ]
-  },
-  "youtube": {
-    "affixes": {
-      "countries": [],
-      "prefixes": ["", "m."],
-      "suffixes": [".googleapis.com", "-nocookie.com", "i.googleapis.com"]
-    },
-    "subdomains": [
-      {
-        "url": "__prefix__youtube.com",
-        "about": "",
-        "hasSafeSearch": true,
-        "hasGraphicalContent": false,
-        "damagingIfDisabled": true,
-        "redirectTo": {
-          "url": "216.239.38.119",
-          "about": "IP Address of restrictmoderate.youtube.com"
-        }
-      },
-      {
-        "url": "youtube__suffix__",
-        "about": "",
-        "hasSafeSearch": true,
-        "hasGraphicalContent": false,
-        "damagingIfDisabled": true,
-        "redirectTo": {
-          "url": "216.239.38.119",
-          "about": "IP Address of restrictmoderate.youtube.com"
-        }
-      },
-      {
-        "url": "__prefix__youtube.com",
-        "about": "",
-        "hasSafeSearch": true,
-        "hasGraphicalContent": false,
-        "damagingIfDisabled": true,
-        "redirectTo": {
-          "url": "216.239.38.120",
-          "about": "IP Address of \"restrict.youtube.com\""
-        }
-      },
-      {
-        "url": "youtube__suffix__",
-        "about": "",
-        "hasSafeSearch": true,
-        "hasGraphicalContent": false,
-        "damagingIfDisabled": true,
-        "redirectTo": {
-          "url": "216.239.38.120",
-          "about": "IP Address of \"restrict.youtube.com\""
-        }
       }
     ]
   }

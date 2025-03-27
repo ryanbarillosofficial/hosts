@@ -15,15 +15,13 @@
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
 #     
-# Last Updated: Feb 27 2025    
+# Last Updated: Mar 26 2025    
 #
 
 
 #===============
 # IPv4 Addresses
 #===============
-108.156.172.33 search.brave.com
-108.156.172.33 www.search.brave.com
 140.99.233.1 ecosia.org
 140.99.233.1 www.ecosia.org
 204.79.197.220 bing.com
@@ -378,6 +376,8 @@
 216.239.38.120 www.google.vu
 216.239.38.120 google.ws
 216.239.38.120 www.google.ws
+3.163.158.37 search.brave.com
+3.163.158.37 www.search.brave.com
 40.89.244.237 duckduckgo.com
 40.89.244.237 www.duckduckgo.com
 40.89.244.237 start.duckduckgo.com

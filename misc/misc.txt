@@ -1,0 +1,45 @@
+# Title:     
+# No Misc. Stuffs     
+#     
+# Description:     
+# No Misc. Stuffs (for personal use) — simple as that!     
+#     
+# Compatible with AdAway on Android and multiple ad blockers.     
+#     
+# Source(s) Used:     
+# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/misc/sources.json     
+#     
+# Number of Unique Domains (without their "www." variants):     
+# 4     
+#     
+# Project Home Page:     
+# https://github.com/ryanbarillosofficial/hosts     
+#     
+# Last Updated: Mar 26 2025    
+#
+
+
+#===============
+# IPv4 Addresses
+#===============
+0.0.0.0 bromite.org
+0.0.0.0 www.bromite.org
+0.0.0.0 cromite.org
+0.0.0.0 www.cromite.org
+0.0.0.0 fdroid.bromite.org
+0.0.0.0 www.fdroid.bromite.org
+0.0.0.0 laptop-updates.brave.com
+0.0.0.0 www.laptop-updates.brave.com
+
+
+#===============
+# IPv6 Addresses
+#===============
+::1 bromite.org
+::1 www.bromite.org
+::1 cromite.org
+::1 www.cromite.org
+::1 fdroid.bromite.org
+::1 www.fdroid.bromite.org
+::1 laptop-updates.brave.com
+::1 www.laptop-updates.brave.com

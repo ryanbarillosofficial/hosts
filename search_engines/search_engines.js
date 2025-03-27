@@ -1,4 +1,5 @@
 import __SOURCES__ from "./sources.json" with {type: "json"}
+// import process from "process";
 import {
   makeHost,
   resolveRedirect,
