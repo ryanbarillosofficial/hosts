@@ -139,24 +139,16 @@
         "hasGraphicalContent": false,
         "damagingIfDisabled": true,
         "redirectTo": {
-          "url": "3.163.158.37",
-          "about": "IP address of safe.search.brave.com"
+          "url": "52.222.144.60",
+          "about": "IP address of safe.search.brave.com (different from forcesafe.search.brave.com)"
         }
-      },
-      {
-        "url": "safe.search.brave.com",
-        "about": "Brave Search with SafeSearch STRICTLY enabled. The IP Address of this domain: 3.163.158.37",
-        "hasSafeSearch": true,
-        "hasGraphicalContent": false,
-        "damagingIfDisabled": true,
-        "redirectTo": null
       },
       {
         "url": "imgs.search.brave.com",
         "about": "",
         "hasSafeSearch": false,
         "hasGraphicalContent": true,
-        "damagingIfDisabled": false,
+        "damagingIfDisabled": true,
         "redirectTo": null
       }
     ]
@@ -200,7 +192,7 @@
         "url": "html.duckduckgo.com",
         "about": "",
         "hasSafeSearch": false,
-        "hasGraphicalContent": true,
+        "hasGraphicalContent": false,
         "damagingIfDisabled": false,
         "redirectTo": null
       },
@@ -208,7 +200,7 @@
         "url": "lite.duckduckgo.com",
         "about": "",
         "hasSafeSearch": false,
-        "hasGraphicalContent": true,
+        "hasGraphicalContent": false,
         "damagingIfDisabled": false,
         "redirectTo": null
       },
@@ -683,7 +675,7 @@
       {
         "url": "startpage.com",
         "about": "",
-        "hasSafeSearch": false,
+        "hasSafeSearch": true,
         "hasGraphicalContent": true,
         "damagingIfDisabled": true,
         "redirectTo": {
