@@ -24,6 +24,8 @@
 #===============
 140.99.233.1 ecosia.org
 140.99.233.1 www.ecosia.org
+15.197.160.66 search.brave.com
+15.197.160.66 www.search.brave.com
 204.79.197.220 bing.com
 204.79.197.220 www.bing.com
 204.79.197.220 edgeservices.bing.com
@@ -380,8 +382,6 @@
 40.89.244.237 www.duckduckgo.com
 40.89.244.237 start.duckduckgo.com
 40.89.244.237 www.start.duckduckgo.com
-52.222.144.60 search.brave.com
-52.222.144.60 www.search.brave.com
 67.63.61.130 startpage.com
 67.63.61.130 www.startpage.com
 0.0.0.0 ac.ecosia.org

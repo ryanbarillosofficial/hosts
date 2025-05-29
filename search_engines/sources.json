@@ -139,8 +139,8 @@
         "hasGraphicalContent": false,
         "damagingIfDisabled": true,
         "redirectTo": {
-          "url": "52.222.144.60",
-          "about": "IP address of safe.search.brave.com (different from forcesafe.search.brave.com)"
+          "url": "15.197.160.66",
+          "about": "IP address of forcesafe.search.brave.com (different from safe.search.brave.com)"
         }
       },
       {
