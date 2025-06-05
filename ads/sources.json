@@ -24,12 +24,42 @@
       }
     ]
   },
+  "danPollock": {
+    "title": "Dan Pollock",
+    "sources": [
+      {
+        "url": "https://someonewhocares.org/hosts/hosts",
+        "title": "Hosts",
+        "keyword": null
+      }
+    ]
+  },
   "goodbyeAds": {
     "title": "Goodbye Ads",
     "sources": [
       {
         "url": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt",
         "title": "Goodbye Ads",
+        "keyword": null
+      }
+    ]
+  },
+  "pglYoyo": {
+    "title": "PGL Yoyo",
+    "sources": [
+      {
+        "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+        "title": "Ad Servers",
+        "keyword": null
+      }
+    ]
+  },
+  "stevenBlack": {
+    "title": "StevenBlack",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        "title": "Unified Hosts (Adware + Malware)",
         "keyword": null
       }
     ]
