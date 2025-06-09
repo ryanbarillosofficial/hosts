@@ -1,37 +1,432 @@
 {
   "adguard": {
     "title": "AdGuard",
-    "affixes": {
-      "countries": null,
-      "prefixes": null,
-      "suffixes": null
-    },
-    "urls": ["dns.adguard-dns.com"]
+    "source": ["https://adguard-dns.io/en/public-dns.html"],
+    "subdomains": [
+      {
+        "url": "dns.adguard-dns.com",
+        "about": "(1 of 3) IPv4 - Default server - AdGuard DNS will block ads and trackers.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "94.140.14.15",
+          "about": "(1 of 2) IPv4 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "94.140.14.14",
+        "about": "(2 of 3) IPv4 - Default server - AdGuard DNS will block ads and trackers.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "94.140.14.15",
+          "about": "(1 of 2) IPv4 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "94.140.15.15",
+        "about": "(3 of 3) IPv4 - Default server - AdGuard DNS will block ads and trackers.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "94.140.15.16",
+          "about": "(2 of 2) IPv4 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "unfiltered.adguard-dns.com",
+        "about": "(1 of 3) IPv4 - Non-filtering servers - AdGuard DNS will not block ads, trackers, or any other DNS requests.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "94.140.14.15",
+          "about": "(1 of 2) IPv4 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "94.140.14.140",
+        "about": "(2 of 3) IPv4 - Non-filtering servers - AdGuard DNS will not block ads, trackers, or any other DNS requests.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "94.140.14.15",
+          "about": "(1 of 2) IPv4 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "94.140.14.141",
+        "about": "(3 of 3) IPv4 - Non-filtering servers - AdGuard DNS will not block ads, trackers, or any other DNS requests.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "94.140.15.16",
+          "about": "(2 of 2) Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "dns.adguard-dns.com",
+        "about": "(1 of 3) IPv6 - Default server - AdGuard DNS will block ads and trackers.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a10:50c0::bad1:ff",
+          "about": "(1 of 2) IPv6 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "2a10:50c0::ad1:ff",
+        "about": "(2 of 3) IPv6 - Default server - AdGuard DNS will block ads and trackers.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a10:50c0::bad1:ff",
+          "about": "(1 of 2) IPv6 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "2a10:50c0::ad2:ff",
+        "about": "(3 of 3) Default server - AdGuard DNS will block ads and trackers.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a10:50c0::bad2:ff",
+          "about": "(2 of 2) IPv6 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "unfiltered.adguard-dns.com",
+        "about": "(1 of 3) IPv6 - Non-filtering servers - AdGuard DNS will not block ads, trackers, or any other DNS requests.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a10:50c0::bad1:ff",
+          "about": "(1 of 2) IPv6 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "2a10:50c0::1:ff",
+        "about": "(2 of 3) IPv6 - Non-filtering servers - AdGuard DNS will not block ads, trackers, or any other DNS requests.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a10:50c0::bad1:ff",
+          "about": "(1 of 2) IPv6 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      },
+      {
+        "url": "2a10:50c0::2:ff",
+        "about": "(3 of 3) IPv6 - Non-filtering servers - AdGuard DNS will not block ads, trackers, or any other DNS requests.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a10:50c0::bad2:ff",
+          "about": "(2 of 2) IPv6 - Family protection servers - AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible."
+        }
+      }
+    ]
   },
-  "google": {
-    "title": "Google",
-    "urls": ["dns.google.com", "dns.google"]
+  "cloudflare": {
+    "title": "Cloudflare",
+    "source": [
+      "https://developers.cloudflare.com/1.1.1.1/",
+      "https://developers.cloudflare.com/1.1.1.1/ip-addresses/"
+    ],
+    "subdomains": [
+      {
+        "url": "one.one.one.one",
+        "about": "(1 of 3) Cloudflare’s public DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "1.1.1.3",
+          "about": "(1 of 2) IPv4 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "1.1.1.1",
+        "about": "(2 of 3) Cloudflare’s public DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "1.1.1.3",
+          "about": "(1 of 2) IPv4 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "1.0.0.1",
+        "about": "(3 of 3) Cloudflare’s public DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "1.0.0.3",
+          "about": "(2 of 2) IPv4 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "security.cloudflare-dns.com",
+        "about": "(1 of 3) Cloudflare’s Block malware DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "1.1.1.3",
+          "about": "(1 of 2) IPv4 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "1.1.1.2",
+        "about": "(2 of 3) Cloudflare’s Block malware DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "1.1.1.3",
+          "about": "(1 of 2) IPv4 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "1.0.0.2",
+        "about": "(3 of 3) Cloudflare’s Block malware DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "1.0.0.3",
+          "about": "(2 of 2) IPv4 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "one.one.one.one",
+        "about": "(1 of 3) IPv6 - Cloudflare’s public DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2606:4700:4700::1113",
+          "about": "(1 of 2) IPv6 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "2606:4700:4700::1111",
+        "about": "(2 of 3) IPv6 - Cloudflare’s public DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2606:4700:4700::1113",
+          "about": "(1 of 2) IPv6 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "2606:4700:4700::1001",
+        "about": "(3 of 3) IPv6 - Cloudflare’s public DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2606:4700:4700::1003",
+          "about": "(2 of 2) IPv6 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "security.cloudflare-dns.com",
+        "about": "(1 of 3) IPv6 - Cloudflare’s Block malware DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2606:4700:4700::1113",
+          "about": "(1 of 2) IPv6 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "2606:4700:4700::1112",
+        "about": "(2 of 3) IPv6 - Cloudflare’s Block malware DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2606:4700:4700::1113",
+          "about": "(1 of 2) IPv6 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      },
+      {
+        "url": "2606:4700:4700::1002",
+        "about": "(3 of 3) IPv6 - Cloudflare’s Block malware DNS resolver.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2606:4700:4700::1003",
+          "about": "(2 of 2) IPv6 - Cloudflare's Block malware and adult content DNS resolver."
+        }
+      }
+    ]
+  },
+  "dns0.eu": {
+    "title": "dns0.eu",
+    "source": [
+      "https://www.dns0.eu/",
+      "https://www.dns0.eu/zero",
+      "https://www.dns0.eu/kids"
+    ],
+    "subdomains": [
+      {
+        "url": "dns0.eu",
+        "about": "(1 of 3) IPv4 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "193.110.81.1",
+          "about": "(1 of 2) IPv4 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "193.110.81.0",
+        "about": "(2 of 3) IPv4 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "193.110.81.1",
+          "about": "(1 of 2) IPv4 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "185.253.5.0",
+        "about": "(3 of 3) IPv4 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "185.253.5.1",
+          "about": "(2 of 2) IPv4 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "dns0.eu",
+        "about": "(1 of 3) IPv6 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a0f:fc80::1",
+          "about": "(1 of 2) IPv6 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "2a0f:fc80::",
+        "about": "(2 of 3) IPv6 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a0f:fc80::1",
+          "about": "(1 of 2) IPv6 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "2a0f:fc81::",
+        "about": "(3 of 3) IPv6 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a0f:fc81::1",
+          "about": "(2 of 2) IPv6 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "zero.dns0.eu",
+        "about": "(1 of 3) IPv4 - ZERO Hardened Security DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "193.110.81.1",
+          "about": "(1 of 2) IPv4 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "193.110.81.9",
+        "about": "(2 of 3) IPv4 - ZERO Hardened Security DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "193.110.81.1",
+          "about": "(1 of 2) IPv4 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "185.253.5.9",
+        "about": "(3 of 3) IPv4 - ZERO Hardened Security DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "185.253.5.1",
+          "about": "(2 of 2) IPv4 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "zero.dns0.eu",
+        "about": "(1 of 3) IPv6 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a0f:fc80::1",
+          "about": "(1 of 2) IPv6 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "2a0f:fc80::9",
+        "about": "(2 of 3) IPv6 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a0f:fc80::1",
+          "about": "(1 of 2) IPv6 - IP address of kids.dns0.eu."
+        }
+      },
+      {
+        "url": "2a0f:fc81::9",
+        "about": "(3 of 3) IPv6 - Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a0f:fc81::1",
+          "about": "(2 of 2) IPv6 - IP address of kids.dns0.eu."
+        }
+      }
+    ]
   },
   "mullvad": {
     "title": "Mullvad",
-    "affixes": {
-      "countries": null,
-      "prefixes": ["", "adblock."],
-      "suffixes": null
-    },
-    "urls": ["__prefix__dns.mullvad.net"]
-  },
-  "nextdns": {
-    "title": "NextDNS",
-    "affixes": [
-      "",
-      "my.",
-      "api.",
-      "link-ip.",
-      "test-ipv6.",
-      "apple.",
-      "steering."
+    "source": [
+      "https://mullvad.net/en/help/dns-over-https-and-dns-over-tls",
+      "https://developers.cloudflare.com/1.1.1.1/ip-addresses/"
     ],
-    "urls": ["__prefix__nextdns.io"]
+    "subdomains": [
+      {
+        "url": "dns.mullvad.net",
+        "about": "Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "194.242.2.6",
+          "about": "(IPv4) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "dns.mullvad.net",
+        "about": "Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a07:e340::6",
+          "about": "(IPv6) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "adblock.dns.mullvad.net",
+        "about": "Ad-block DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "194.242.2.6",
+          "about": "(IPv4) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "adblock.dns.mullvad.net",
+        "about": "Ad-block DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a07:e340::6",
+          "about": "(IPv6) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "base.dns.mullvad.net",
+        "about": "Base DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "194.242.2.6",
+          "about": "(IPv4) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "base.dns.mullvad.net",
+        "about": "Base DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a07:e340::6",
+          "about": "(IPv6) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "extended.dns.mullvad.net",
+        "about": "Extended DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "194.242.2.6",
+          "about": "(IPv4) IP address of family.dns.mullvad.net."
+        }
+      },
+      {
+        "url": "extended.dns.mullvad.net",
+        "about": "Extended DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "2a07:e340::6",
+          "about": "(IPv6) IP address of family.dns.mullvad.net."
+        }
+      }
+    ]
   }
 }

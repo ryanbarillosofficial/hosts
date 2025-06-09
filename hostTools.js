@@ -116,16 +116,24 @@ function makeHost(
   hostName,
   hostTitle,
   hostDescription,
-  domainsSansPrefixWWW,
-  domainsWithPrefixWWW,
+  domainsSet,
   directoryOutput
 ) {
   /**
    * Convert sets into arrays for iteration
    * And then sort them alphabetically
    */
-  const DOMAINS_SANS_PREFIX_WWW = Array.from(domainsSansPrefixWWW).sort();
-  const DOMAINS_WITH_PREFIX_WWW = Array.from(domainsWithPrefixWWW).sort();
+  const DOMAINS_ARRAY = Array.from(domainsSet).sort();
+  const DOMAINS_ARRAY_OF_IPV4 = new Array();
+  const DOMAINS_ARRAY_OF_IPV6 = new Array();
+
+  DOMAINS_ARRAY.forEach((DOMAIN) => {
+    if (IP_MODE.V4.REGEX.test(DOMAIN) === true) {
+      DOMAINS_ARRAY_OF_IPV4.push(DOMAIN);
+    } else if (IP_MODE.V6.REGEX.test(DOMAIN) === true) {
+      DOMAINS_ARRAY_OF_IPV6.push(DOMAIN);
+    }
+  });
 
   // Info for each host file
   const FILE_NAME = `${hostName}.txt`;
@@ -143,7 +151,7 @@ function makeHost(
     \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${directoryOutput}/sources.json \
     \n# \
     \n# Number of Unique Domains (without their "www." variants): \
-    \n# ${domainsSansPrefixWWW.size} \
+    \n# ${DOMAINS_ARRAY.length} \
     \n# \
     \n# Project Home Page: \
     \n# https://github.com/ryanbarillosofficial/hosts \
@@ -157,22 +165,9 @@ function makeHost(
    * containing all IPv4 addresses
    */
   let allDomains_Text = `${BREAK_LINE}\n# IPv4 Addresses\n${BREAK_LINE}`;
-  for (let i = 0; i < DOMAINS_SANS_PREFIX_WWW.length; i++) {
-    /**
-     * Double-check if the domain already has an IP address appended to it
-     * If so, it's a domain being redirected to its safer version (or one of those versions)
-     */
-    if (IP_MODE.V4.REGEX.test(DOMAINS_SANS_PREFIX_WWW[i]) === true) {
-      allDomains_Text += `\n${DOMAINS_SANS_PREFIX_WWW[i]}`;
-      allDomains_Text += `\n${DOMAINS_SANS_PREFIX_WWW[i].replace(
-        " ",
-        " www."
-      )}`;
-    } else {
-      allDomains_Text += `\n${IP_MODE.V4.PREFIX} ${DOMAINS_SANS_PREFIX_WWW[i]}`;
-      allDomains_Text += `\n${IP_MODE.V4.PREFIX} ${DOMAINS_WITH_PREFIX_WWW[i]}`;
-    }
-  }
+  DOMAINS_ARRAY_OF_IPV4.forEach((DOMAIN) => {
+    allDomains_Text += `\n${DOMAIN}`;
+  });
   allDomains_Text += BREAK_BLOCK;
   /**
    * OJBECTIVE:
@@ -180,21 +175,9 @@ function makeHost(
    * containing all IPv6 addresses
    */
   allDomains_Text += `${BREAK_LINE}\n# IPv6 Addresses\n${BREAK_LINE}`;
-  for (let i = 0; i < DOMAINS_SANS_PREFIX_WWW.length; i++) {
-    /**
-     * Double-check if the domain already has an IP address appended to it
-     * If so, it's a domain being redirected to its safer version (or one of those versions)
-     * - If the redirect is to an IPv4 address, IGNORE IT
-     */
-    if (IP_MODE.V4.REGEX.test(DOMAINS_SANS_PREFIX_WWW[i]) === false) {
-      if (IP_MODE.V6.REGEX.test(DOMAINS_SANS_PREFIX_WWW[i]) === true) {
-        allDomains_Text += `\n${DOMAINS_SANS_PREFIX_WWW[i]}`;
-      } else {
-        allDomains_Text += `\n${IP_MODE.V6.PREFIX} ${DOMAINS_SANS_PREFIX_WWW[i]}`;
-        allDomains_Text += `\n${IP_MODE.V6.PREFIX} ${DOMAINS_WITH_PREFIX_WWW[i]}`;
-      }
-    }
-  }
+  DOMAINS_ARRAY_OF_IPV6.forEach((DOMAIN) => {
+    allDomains_Text += `\n${DOMAIN}`;
+  });
   // Make the host text file
   fs.writeFileSync(FILE_PATH, HOST_COMMENT + allDomains_Text);
   console.log(`Created \"${FILE_NAME}\" for \"${hostTitle}\"`);

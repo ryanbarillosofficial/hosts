@@ -10,70 +10,64 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 13     
+# 44     
 #     
 # Project Home Page:     
-# https://github.com/ryanbarillos/hosts     
+# https://github.com/ryanbarillosofficial/hosts     
+#     
+# Last Updated: Jun 09 2025    
 #
 
 
 #===============
 # IPv4 Addresses
 #===============
-0.0.0.0 adblock.dns.mullvad.net
-0.0.0.0 www.adblock.dns.mullvad.net
-0.0.0.0 api.nextdns.io
-0.0.0.0 www.api.nextdns.io
-0.0.0.0 apple.nextdns.io
-0.0.0.0 www.apple.nextdns.io
-0.0.0.0 dns.adguard-dns.com
-0.0.0.0 www.dns.adguard-dns.com
-0.0.0.0 dns.google
-0.0.0.0 www.dns.google
-0.0.0.0 dns.google.com
-0.0.0.0 www.dns.google.com
-0.0.0.0 dns.mullvad.net
-0.0.0.0 www.dns.mullvad.net
-0.0.0.0 dns.nextdns.io
-0.0.0.0 www.dns.nextdns.io
-0.0.0.0 dns1.nextdns.io
-0.0.0.0 www.dns1.nextdns.io
-0.0.0.0 link-ip.nextdns.io
-0.0.0.0 www.link-ip.nextdns.io
-0.0.0.0 my.nextdns.io
-0.0.0.0 www.my.nextdns.io
-0.0.0.0 nextdns.io
-0.0.0.0 www.nextdns.io
-0.0.0.0 test-ipv6.nextdns.io
-0.0.0.0 www.test-ipv6.nextdns.io
+1.0.0.3 1.0.0.1
+1.0.0.3 1.0.0.2
+1.1.1.3 1.1.1.1
+1.1.1.3 1.1.1.2
+1.1.1.3 one.one.one.one
+1.1.1.3 security.cloudflare-dns.com
+185.253.5.1 185.253.5.0
+185.253.5.1 185.253.5.9
+193.110.81.1 193.110.81.0
+193.110.81.1 193.110.81.9
+193.110.81.1 dns0.eu
+193.110.81.1 zero.dns0.eu
+194.242.2.6 adblock.dns.mullvad.net
+194.242.2.6 base.dns.mullvad.net
+194.242.2.6 dns.mullvad.net
+194.242.2.6 extended.dns.mullvad.net
+94.140.14.15 94.140.14.14
+94.140.14.15 94.140.14.140
+94.140.14.15 dns.adguard-dns.com
+94.140.14.15 unfiltered.adguard-dns.com
+94.140.15.16 94.140.14.141
+94.140.15.16 94.140.15.15
 
 
 #===============
 # IPv6 Addresses
 #===============
-::1 adblock.dns.mullvad.net
-::1 www.adblock.dns.mullvad.net
-::1 api.nextdns.io
-::1 www.api.nextdns.io
-::1 apple.nextdns.io
-::1 www.apple.nextdns.io
-::1 dns.adguard-dns.com
-::1 www.dns.adguard-dns.com
-::1 dns.google
-::1 www.dns.google
-::1 dns.google.com
-::1 www.dns.google.com
-::1 dns.mullvad.net
-::1 www.dns.mullvad.net
-::1 dns.nextdns.io
-::1 www.dns.nextdns.io
-::1 dns1.nextdns.io
-::1 www.dns1.nextdns.io
-::1 link-ip.nextdns.io
-::1 www.link-ip.nextdns.io
-::1 my.nextdns.io
-::1 www.my.nextdns.io
-::1 nextdns.io
-::1 www.nextdns.io
-::1 test-ipv6.nextdns.io
-::1 www.test-ipv6.nextdns.io
+2606:4700:4700::1003 2606:4700:4700::1001
+2606:4700:4700::1003 2606:4700:4700::1002
+2606:4700:4700::1113 2606:4700:4700::1111
+2606:4700:4700::1113 2606:4700:4700::1112
+2606:4700:4700::1113 one.one.one.one
+2606:4700:4700::1113 security.cloudflare-dns.com
+2a07:e340::6 adblock.dns.mullvad.net
+2a07:e340::6 base.dns.mullvad.net
+2a07:e340::6 dns.mullvad.net
+2a07:e340::6 extended.dns.mullvad.net
+2a0f:fc80::1 2a0f:fc80::
+2a0f:fc80::1 2a0f:fc80::9
+2a0f:fc80::1 dns0.eu
+2a0f:fc80::1 zero.dns0.eu
+2a0f:fc81::1 2a0f:fc81::
+2a0f:fc81::1 2a0f:fc81::9
+2a10:50c0::bad1:ff 2a10:50c0::1:ff
+2a10:50c0::bad1:ff 2a10:50c0::ad1:ff
+2a10:50c0::bad1:ff dns.adguard-dns.com
+2a10:50c0::bad1:ff unfiltered.adguard-dns.com
+2a10:50c0::bad2:ff 2a10:50c0::2:ff
+2a10:50c0::bad2:ff 2a10:50c0::ad2:ff
