@@ -9,7 +9,6 @@ import path from "path";
 import { printDate } from "./__tools__/printDate.js";
 
 // Constant variables
-export const WWW_REGEX = /^www\./;
 const DIRECTORY_CURRENT = process.cwd();
 const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
@@ -30,20 +29,50 @@ const KEYWORDS_TO_IGNORE = [
   "#",
   "undefined",
 ];
+export const WWW_MODE = {
+  prefix: "www.",
+  regex: /^www\./,
+};
 const IP_MODE = {
-  V4: {
-    PREFIX: "0.0.0.0",
-    REGEX: /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
+  v4: {
+    prefix: "0.0.0.0",
+    regex: /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
   },
-  V6: {
-    PREFIX: "::1",
-    REGEX:
+  v6: {
+    prefix: "::1",
+    regex:
       /(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?::[a-fA-F\d]{1,4}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,6}|:|)(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,7}|:))(?:%[0-9a-zA-Z]{1,})?/,
   },
 };
 
-export const resolveRedirect = (ipAddress, url) => {
-  return `${ipAddress} ${url}`;
+export const resolveRedirect = (url, urlRedirect = null) => {
+  let urlSet = new Set();
+
+  if (urlRedirect != null) {
+    urlSet.add(`${urlRedirect} ${url}`);
+    return urlSet;
+  }
+
+  /**
+   * If URL contains "www." prefix,
+   * then add both it and its non-"www." equivalent
+   */
+  if (WWW_MODE.regex.test(url) == true) {
+    // Step 01
+    urlSet.add(`${IP_MODE.v4.prefix} ${url}`);
+    urlSet.add(`${IP_MODE.v4.prefix} ${url.slice(4)}`);
+    // Step 02
+    urlSet.add(`${IP_MODE.v6.prefix} ${url}`);
+    urlSet.add(`${IP_MODE.v6.prefix} ${url.slice(4)}`);
+  } else {
+    // Step 01
+    urlSet.add(`${IP_MODE.v4.prefix} ${url}`);
+    urlSet.add(`${IP_MODE.v4.prefix} ${WWW_MODE.prefix}${url}`);
+    // Step 02
+    urlSet.add(`${IP_MODE.v6.prefix} ${url}`);
+    urlSet.add(`${IP_MODE.v6.prefix} ${WWW_MODE.prefix}${url}`);
+  }
+  return urlSet;
 };
 export function resolveUrlAffixes(URL, AFFIXES) {
   let urlList = new Set();
@@ -128,11 +157,14 @@ function makeHost(
   const DOMAINS_ARRAY_OF_IPV6 = new Array();
 
   DOMAINS_ARRAY.forEach((DOMAIN) => {
-    if (IP_MODE.V4.REGEX.test(DOMAIN) === true) {
+    if (IP_MODE.v4.regex.test(DOMAIN) === true) {
       DOMAINS_ARRAY_OF_IPV4.push(DOMAIN);
-    } else if (IP_MODE.V6.REGEX.test(DOMAIN) === true) {
+    } else {
       DOMAINS_ARRAY_OF_IPV6.push(DOMAIN);
     }
+    // } else if (IP_MODE.v6.regex.test(DOMAIN) === true) {
+    //   DOMAINS_ARRAY_OF_IPV6.push(DOMAIN);
+    // }
   });
 
   // Info for each host file

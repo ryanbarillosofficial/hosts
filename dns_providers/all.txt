@@ -10,24 +10,27 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 44     
+# 49     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
 #     
-# Last Updated: Jun 09 2025    
+# Last Updated: Jun 10 2025    
 #
 
 
 #===============
 # IPv4 Addresses
 #===============
+0.0.0.0 dot.sb
+0.0.0.0 www.dot.sb
 1.0.0.3 1.0.0.1
 1.0.0.3 1.0.0.2
 1.0.0.3 one.one.one.one
 1.0.0.3 security.cloudflare-dns.com
 1.1.1.3 1.1.1.1
 1.1.1.3 1.1.1.2
+146.112.41.3 doh.opendns.com
 185.253.5.1 185.253.5.0
 185.253.5.1 185.253.5.9
 193.110.81.1 193.110.81.0
@@ -71,3 +74,5 @@
 2a10:50c0::bad1:ff unfiltered.adguard-dns.com
 2a10:50c0::bad2:ff 2a10:50c0::2:ff
 2a10:50c0::bad2:ff 2a10:50c0::ad2:ff
+::1 dot.sb
+::1 www.dot.sb

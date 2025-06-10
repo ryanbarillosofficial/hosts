@@ -348,6 +348,18 @@
       }
     ]
   },
+  "dns.sb": {
+    "title": "DNS.SB",
+    "source": ["https://dns.sb/"],
+    "subdomains": [
+      {
+        "url": "dot.sb",
+        "about": "Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": null
+      }
+    ]
+  },
   "mullvad": {
     "title": "Mullvad",
     "source": [
@@ -425,6 +437,24 @@
         "redirectTo": {
           "url": "2a07:e340::6",
           "about": "(IPv6) IP address of family.dns.mullvad.net."
+        }
+      }
+    ]
+  },
+  "opendns": {
+    "title": "OpenDNS",
+    "source": [
+      "https://support.opendns.com/hc/en-us",
+      "https://support.opendns.com/hc/en-us/articles/360038086532-Using-DNS-over-HTTPS-DoH-with-OpenDNS"
+    ],
+    "subdomains": [
+      {
+        "url": "doh.opendns.com",
+        "about": "Default DNS server.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": {
+          "url": "146.112.41.3",
+          "about": "IPv4 - IP address of doh.familyshield.opendns.com"
         }
       }
     ]
