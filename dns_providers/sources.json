@@ -354,7 +354,25 @@
     "subdomains": [
       {
         "url": "dot.sb",
-        "about": "Default DNS server.",
+        "about": "Default DNS server (DNS over TLS).",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": null
+      },
+      {
+        "url": "doh.sb",
+        "about": "Default DNS server (DNS over HTTPS).",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": null
+      },
+      {
+        "url": "dns.sb",
+        "about": "Main website.",
+        "damagingIfDisabledOrRedirected": false,
+        "redirectTo": null
+      },
+      {
+        "url": "stat.dns.sb.cdn.cloudflare.net",
+        "about": "DNS.SB's Cloudflare CDN.",
         "damagingIfDisabledOrRedirected": false,
         "redirectTo": null
       }

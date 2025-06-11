@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 49     
+# 61     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
@@ -22,8 +22,14 @@
 #===============
 # IPv4 Addresses
 #===============
+0.0.0.0 dns.sb
+0.0.0.0 doh.sb
 0.0.0.0 dot.sb
+0.0.0.0 stat.dns.sb.cdn.cloudflare.net
+0.0.0.0 www.dns.sb
+0.0.0.0 www.doh.sb
 0.0.0.0 www.dot.sb
+0.0.0.0 www.stat.dns.sb.cdn.cloudflare.net
 1.0.0.3 1.0.0.1
 1.0.0.3 1.0.0.2
 1.0.0.3 one.one.one.one
@@ -74,5 +80,11 @@
 2a10:50c0::bad1:ff unfiltered.adguard-dns.com
 2a10:50c0::bad2:ff 2a10:50c0::2:ff
 2a10:50c0::bad2:ff 2a10:50c0::ad2:ff
+::1 dns.sb
+::1 doh.sb
 ::1 dot.sb
+::1 stat.dns.sb.cdn.cloudflare.net
+::1 www.dns.sb
+::1 www.doh.sb
 ::1 www.dot.sb
+::1 www.stat.dns.sb.cdn.cloudflare.net
