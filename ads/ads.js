@@ -2,6 +2,7 @@ import __SOURCES__ from "./sources.json" with { type: "json" }
 import {
   KEYWORDS_TO_IGNORE,
   IP_MODE,
+  getHost,
   makeHost,
   WWW_MODE,
 } from "../hostTools.js";
@@ -24,7 +25,7 @@ async function main() {
     for (let i = 0; i < ENTRY.sources.length; i++) {
       const source = ENTRY.sources[i];
       console.log(`- Source #${i + 1}: "${source.title}"`);
-      const hostArray = (await (await fetch(source.url)).text()).split("\n");
+      const hostArray = await getHost(source.url);
       hostArray.forEach((line) => {
         /**
          * Ignore lines that don't have IP addresses

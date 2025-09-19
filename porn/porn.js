@@ -1,33 +1,32 @@
-import SOURCES from "./sources.json" with { type: "json" }
+import __SOURCES__ from "./sources.json" with { type: "json" }
 import {
   KEYWORDS_TO_IGNORE,
   IP_MODE,
-  makeHost,
   getHost,
-  WWW_REGEX,
+  makeHost,
+  WWW_MODE,
 } from "../hostTools.js";
 
-const HOST_NAME = "porn",
-  HOST_TITLE = "No Porn",
-  HOST_DESC = "No pornographic websites",
-  DIRECTORY_OUTPUT = "nsfw";
+const HOST_NAME = "porn";
+const HOST_TITLE = "No Porn";
+const HOST_DESC = "No pornographic websites";
+const DIRECTORY_OUTPUT = "nsfw";
 
 async function main() {
-  let domainsSansPrefixWWW = new Set(),
-    domainsWithPrefixWWW = new Set();
+  let domainSet = new Set();
 
-  for (const __ENTRY__ in SOURCES) {
-    const ENTRY = SOURCES[__ENTRY__];
-    console.log("Pulling all domains from " + ENTRY.title);
+  for (const __ENTRY__ in __SOURCES__) {
+    const ENTRY = __SOURCES__[__ENTRY__];
+    console.log("Pulling sources from " + ENTRY.title);
     /**
      * Go through every source in the sources array
      * To add each domain to be blocked in the list
      */
     for (let i = 0; i < ENTRY.sources.length; i++) {
-      const SOURCE = ENTRY.sources[i];
-      console.log(`- Source #${i + 1}: "${SOURCE.title}"`);
-      const HOST_ARRAY = await getHost(SOURCE.url);
-      HOST_ARRAY.forEach((line) => {
+      const source = ENTRY.sources[i];
+      console.log(`- Source #${i + 1}: "${source.title}"`);
+      const hostArray = await getHost(source.url);
+      hostArray.forEach((line) => {
         /**
          * Ignore lines that don't have IP addresses
          * They are most likely whitespaces or comments
@@ -36,8 +35,8 @@ async function main() {
           KEYWORDS_TO_IGNORE.some((KEYWORD) => line.includes(KEYWORD)) == false
         ) {
           if (
-            IP_MODE.V4.REGEX.test(line) == true ||
-            IP_MODE.V6.REGEX.test(line) == true
+            IP_MODE.v4.regex.test(line) == true ||
+            IP_MODE.v6.regex.test(line) == true
           ) {
             /**
              * Splitting the line should present both the following:
@@ -46,14 +45,12 @@ async function main() {
              *
              * Only focus on Item 1
              */
-            const DOMAIN = line.split(" ")[1];
+            const domain = line.split(" ")[1];
             // Now Add to list
-            if (WWW_REGEX.test(DOMAIN) == true) {
-              domainsSansPrefixWWW.add(DOMAIN.slice(4)); // Add to set of domains WITHOUT "www." prefix
-              domainsWithPrefixWWW.add(DOMAIN); // Add to set of domains with "www." prefix
+            if (WWW_MODE.regex.test(domain) == true) {
+              domainSet.add(domain.slice(4)); // Add to set of domains WITHOUT "www." prefix
             } else {
-              domainsSansPrefixWWW.add(DOMAIN); // Add to set of domains without "www." prefix
-              domainsWithPrefixWWW.add(`www.${DOMAIN}`); // Add to set of domains WITH "www." prefix
+              domainSet.add(domain); // Add to set of domains without "www." prefix
             }
           }
         }
@@ -65,8 +62,7 @@ async function main() {
     HOST_NAME,
     HOST_TITLE,
     HOST_DESC,
-    domainsSansPrefixWWW,
-    domainsWithPrefixWWW,
+    domainSet,
     DIRECTORY_OUTPUT
   );
 }

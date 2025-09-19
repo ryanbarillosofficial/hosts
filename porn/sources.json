@@ -18,5 +18,20 @@
         "keyword": null
       }
     ]
+  },
+  "energizedPro": {
+    "title": "Energized Protection",
+    "sources": [
+      {
+        "url": "https://energized.pro/nsfw/hosts.txt",
+        "title": "NSFW Hosts (IPv4)",
+        "keyword": null
+      },
+      {
+        "url": "https://energized.pro/nsfw/hosts_v6.txt",
+        "title": "NSFW Hosts (IPv6)",
+        "keyword": null
+      }
+    ]
   }
 }
