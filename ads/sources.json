@@ -63,5 +63,20 @@
         "keyword": null
       }
     ]
+  },
+  "energizedPro": {
+    "title": "Energized Protection",
+    "sources": [
+      {
+        "url": "https://energized.pro/antipopads-re/hosts.txt",
+        "title": "Anti Pop-up Ads (IPv4)",
+        "keyword": null
+      },
+      {
+        "url": "https://energized.pro/antipopads-re/hosts_v6.txt",
+        "title": "Anti Pop-up Ads (IPv6)",
+        "keyword": null
+      }
+    ]
   }
 }
