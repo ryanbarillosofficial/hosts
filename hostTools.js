@@ -27,7 +27,7 @@ const KEYWORDS_TO_IGNORE = [
   "localhost",
   "broadcasthost",
   "#",
-  "undefined",
+  "localdomain",
 ];
 export const WWW_MODE = {
   prefix: "www.",
@@ -39,7 +39,7 @@ const IP_MODE = {
     regex: /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
   },
   v6: {
-    prefix: "::1",
+    prefix: "::",
     regex:
       /(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?::[a-fA-F\d]{1,4}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,6}|:|)(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:[a-fA-F\d]{1,4}|(?::[a-fA-F\d]{1,4}){1,7}|:))(?:%[0-9a-zA-Z]{1,})?/,
   },
@@ -141,80 +141,6 @@ export function resolveUrlAffixes(URL, AFFIXES) {
   return urlList;
 }
 
-function makeHost(
-  hostName,
-  hostTitle,
-  hostDescription,
-  domainsSet,
-  directoryOutput
-) {
-  /**
-   * Convert sets into arrays for iteration
-   * And then sort them alphabetically
-   */
-  const DOMAINS_ARRAY = Array.from(domainsSet).sort();
-  const DOMAINS_ARRAY_OF_IPV4 = new Array();
-  const DOMAINS_ARRAY_OF_IPV6 = new Array();
-
-  DOMAINS_ARRAY.forEach((DOMAIN) => {
-    if (IP_MODE.v4.regex.test(DOMAIN) === true) {
-      DOMAINS_ARRAY_OF_IPV4.push(DOMAIN);
-    } else {
-      DOMAINS_ARRAY_OF_IPV6.push(DOMAIN);
-    }
-    // } else if (IP_MODE.v6.regex.test(DOMAIN) === true) {
-    //   DOMAINS_ARRAY_OF_IPV6.push(DOMAIN);
-    // }
-  });
-
-  // Info for each host file
-  const FILE_NAME = `${hostName}.txt`;
-  const FILE_PATH = path.join(DIRECTORY_CURRENT, FILE_NAME);
-
-  const HOST_COMMENT = `# Title: \
-    \n# ${hostTitle} \
-    \n# \
-    \n# Description: \
-    \n# ${hostDescription} — simple as that! \
-    \n# \
-    \n# Compatible with AdAway on Android and multiple ad blockers. \
-    \n# \
-    \n# Source(s) Used: \
-    \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${directoryOutput}/sources.json \
-    \n# \
-    \n# Number of Unique Domains (without their "www." variants): \
-    \n# ${DOMAINS_ARRAY.length} \
-    \n# \
-    \n# Project Home Page: \
-    \n# https://github.com/ryanbarillosofficial/hosts \
-    \n# \
-    \n# Last Updated: ${printDate()}\
-    \n#${BREAK_BLOCK}`;
-
-  /**
-   * OJBECTIVE:
-   * Build the string
-   * containing all IPv4 addresses
-   */
-  let allDomains_Text = `${BREAK_LINE}\n# IPv4 Addresses\n${BREAK_LINE}`;
-  DOMAINS_ARRAY_OF_IPV4.forEach((DOMAIN) => {
-    allDomains_Text += `\n${DOMAIN}`;
-  });
-  allDomains_Text += BREAK_BLOCK;
-  /**
-   * OJBECTIVE:
-   * Build the string
-   * containing all IPv6 addresses
-   */
-  allDomains_Text += `${BREAK_LINE}\n# IPv6 Addresses\n${BREAK_LINE}`;
-  DOMAINS_ARRAY_OF_IPV6.forEach((DOMAIN) => {
-    allDomains_Text += `\n${DOMAIN}`;
-  });
-  // Make the host text file
-  fs.writeFileSync(FILE_PATH, HOST_COMMENT + allDomains_Text);
-  console.log(`Created \"${FILE_NAME}\" for \"${hostTitle}\"`);
-}
-
 async function getHost(url) {
   /**
    * Assuming that @url fetches a .txt file of domains to be blocked
@@ -237,6 +163,63 @@ function getAllUrlVariants(url, affixes, redirect_to = "") {
     );
   }
   return allUrlVariants;
+}
+
+function makeHost(
+  hostName,
+  hostTitle,
+  hostDescription,
+  domainSet,
+  directoryOutput
+) {
+  /**
+   * Convert sets into arrays for iteration
+   * And then sort them alphabetically
+   */
+  const domainsArray = Array.from(domainSet).sort();
+
+  // Info for each host file
+  const FILE_NAME = `${hostName}.txt`;
+  const FILE_PATH = path.join(DIRECTORY_CURRENT, FILE_NAME);
+
+  const HOST_COMMENT = `# Title: \
+    \n# ${hostTitle} \
+    \n# \
+    \n# Description: \
+    \n# ${hostDescription} — simple as that! \
+    \n# \
+    \n# Compatible with AdAway on Android and multiple ad blockers. \
+    \n# \
+    \n# Source(s) Used: \
+    \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${directoryOutput}/sources.json \
+    \n# \
+    \n# Number of Unique Domains (without their "www." variants): \
+    \n# ${domainsArray.length} \
+    \n# \
+    \n# Project Home Page: \
+    \n# https://github.com/ryanbarillosofficial/hosts \
+    \n# \
+    \n# Last Updated: ${printDate()}\
+    \n#${BREAK_BLOCK}`;
+
+  /**
+   * OJBECTIVE:
+   * Build the string
+   * containing all IPv4 addresses
+   */
+  let finalHostsText = "";
+
+  domainsArray.forEach((domain) => {
+    // Domain blocked in IPv4 format
+    finalHostsText += `\n${IP_MODE.v4.prefix} ${domain}`;
+    finalHostsText += `\n${IP_MODE.v4.prefix} ${WWW_MODE.prefix + domain}`;
+    // Same domain, but in IPv6 format
+    finalHostsText += `\n${IP_MODE.v6.prefix} ${domain}`;
+    finalHostsText += `\n${IP_MODE.v6.prefix} ${WWW_MODE.prefix + domain}`;
+  });
+  // Make the host text file
+  fs.writeFileSync(FILE_PATH, HOST_COMMENT + finalHostsText);
+  console.log(`Created \"${FILE_NAME}\" for \"${hostTitle}\"`);
 }
 
 export {
