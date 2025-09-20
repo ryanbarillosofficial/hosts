@@ -5,7 +5,7 @@ import {
 	resolveUrlAffixes,
 	AFFIX_KEYWORDS
 } from "../hostTools.js";
-import process from "process";
+// import process from "process";
 
 /**
  * Info for later
@@ -190,7 +190,6 @@ function main() {
 		domainSet.moderate,
 		true
 	);
-
 	// Blocking ALL Search Engines + SafeSearch NOT ENFORCED + BREAKING other websites
 	makeHost(
 		HOST.type.aggressive.name,
