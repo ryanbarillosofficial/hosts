@@ -1,4 +1,4 @@
-export function printDate() {
+export default function printDate() {
   const MONTH = [
     "Jan",
     "Feb",

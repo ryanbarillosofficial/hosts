@@ -6,11 +6,14 @@ import {
   makeHost,
   WWW_MODE,
 } from "../hostTools.js";
+// import process from "process";
 
-const HOST_NAME = "ads";
-const HOST_TITLE = "No Ads";
-const HOST_DESC = HOST_TITLE;
-const DIRECTORY_OUTPUT = "ads";
+const HOST = {
+  name: "ads",
+  title: "No Ads",
+  description: "No ads allowed",
+  directory: "ads",
+};
 
 async function main() {
   let domainSet = new Set();
@@ -58,13 +61,7 @@ async function main() {
     }
     console.log();
   }
-  makeHost(
-    HOST_NAME,
-    HOST_TITLE,
-    HOST_DESC,
-    domainSet,
-    DIRECTORY_OUTPUT
-  );
+  makeHost(HOST.name, HOST.title, HOST.description, HOST.directory, domainSet);
 }
 
 main();
