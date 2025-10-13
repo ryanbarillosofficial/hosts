@@ -13,7 +13,7 @@ const DIRECTORY_CURRENT = process.cwd();
 const BREAK_BLOCK = "\n\n\n";
 const BREAK_LINE = "#===============";
 const AFFIX_KEYWORDS = {
-	country: "__country__",
+	location: "__location__",
 	number: "__number__",
 	prefix: "__prefix__",
 	suffix: "__suffix__",
@@ -45,7 +45,7 @@ export const IP_MODE = {
 	},
 };
 
-export const resolveRedirect = (url, redirectAddress) => {
+export const resolveRedirect = (url, redirectAddress = null) => {
 	return {
 		url: url,
 		redirectAddress: redirectAddress,
@@ -58,13 +58,13 @@ export function resolveUrlAffixes(url, affixes) {
 		return url.replace(keyword, affix.toString());
 	};
 
-	if (url.includes(AFFIX_KEYWORDS.country)) {
+	if (url.includes(AFFIX_KEYWORDS.location)) {
 		/**
-		 * Check if "URL" has the affix "country"
+		 * Check if "URL" has the affix "location"
 		 * Then add each URL variant into the list
 		 */
-		for (const country of affixes.countries) {
-			urlSet.add(resolveAffix(url, AFFIX_KEYWORDS.country, country));
+		for (const location of affixes.locations) {
+			urlSet.add(resolveAffix(url, AFFIX_KEYWORDS.location, location));
 		}
 	} else if (url.includes(AFFIX_KEYWORDS.number)) {
 		/**
@@ -128,7 +128,7 @@ function makeHost(
 	hostName,
 	hostTitle,
 	hostDescription,
-	directoryOutput,
+	hostDirectory,
 	domainSet,
 	domainsContainRedirects = false
 ) {
@@ -169,7 +169,7 @@ function makeHost(
     \n# Compatible with AdAway on Android and multiple ad blockers. \
     \n# \
     \n# Source(s) Used: \
-    \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${directoryOutput}/sources.json \
+    \n# https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/${hostDirectory}/sources.json \
     \n# \
     \n# Number of Unique Domains (without their "www." variants): \
     \n# ${domainsArray.length} \
