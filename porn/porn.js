@@ -7,10 +7,12 @@ import {
   WWW_MODE,
 } from "../hostTools.js";
 
-const HOST_NAME = "porn";
-const HOST_TITLE = "No Porn";
-const HOST_DESC = "No pornographic websites";
-const DIRECTORY_OUTPUT = "nsfw";
+const HOST = {
+  name: "porn",
+  title: "No Porn",
+  description: "No pornographic websites",
+  directory: "nsfw"
+};
 
 async function main() {
   let domainSet = new Set();
@@ -24,6 +26,7 @@ async function main() {
      */
     for (let i = 0; i < ENTRY.sources.length; i++) {
       const source = ENTRY.sources[i];
+      if (source.isWorking){
       console.log(`- Source #${i + 1}: "${source.title}"`);
       const hostArray = await getHost(source.url);
       hostArray.forEach((line) => {
@@ -54,16 +57,16 @@ async function main() {
             }
           }
         }
-      });
+      })};
     }
     console.log();
   }
   makeHost(
-    HOST_NAME,
-    HOST_TITLE,
-    HOST_DESC,
+    HOST.name,
+    HOST.title,
+    HOST.description,
+    HOST.directory,
     domainSet,
-    DIRECTORY_OUTPUT
   );
 }
 

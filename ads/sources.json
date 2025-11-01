@@ -1,82 +1,91 @@
 {
-  "adaway": {
-    "title": "AdAway",
-    "sources": [
-      {
-        "url": "https://adaway.org/hosts.txt",
-        "title": "AdAway Official Hosts",
-        "keyword": null
-      }
-    ]
-  },
-  "adguard": {
-    "title": "AdGuard",
-    "sources": [
-      {
-        "url": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt",
-        "title": "AdGuard Mobile Ads",
-        "keyword": null
-      },
-      {
-        "url": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
-        "title": "AdGuard Mobile Spyware",
-        "keyword": null
-      }
-    ]
-  },
-  "danPollock": {
-    "title": "Dan Pollock",
-    "sources": [
-      {
-        "url": "https://someonewhocares.org/hosts/hosts",
-        "title": "Hosts",
-        "keyword": null
-      }
-    ]
-  },
-  "goodbyeAds": {
-    "title": "Goodbye Ads",
-    "sources": [
-      {
-        "url": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt",
-        "title": "Goodbye Ads",
-        "keyword": null
-      }
-    ]
-  },
-  "pglYoyo": {
-    "title": "PGL Yoyo",
-    "sources": [
-      {
-        "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
-        "title": "Ad Servers",
-        "keyword": null
-      }
-    ]
-  },
-  "stevenBlack": {
-    "title": "StevenBlack",
-    "sources": [
-      {
-        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-        "title": "Unified Hosts (Adware + Malware)",
-        "keyword": null
-      }
-    ]
-  },
-  "energizedPro": {
-    "title": "Energized Protection",
-    "sources": [
-      {
-        "url": "https://energized.pro/antipopads-re/hosts.txt",
-        "title": "Anti Pop-up Ads (IPv4)",
-        "keyword": null
-      },
-      {
-        "url": "https://energized.pro/antipopads-re/hosts_v6.txt",
-        "title": "Anti Pop-up Ads (IPv6)",
-        "keyword": null
-      }
-    ]
-  }
+	"adaway": {
+		"title": "AdAway",
+		"sources": [
+			{
+				"url": "https://adaway.org/hosts.txt",
+				"title": "AdAway Official Hosts",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"adguard": {
+		"title": "AdGuard",
+		"sources": [
+			{
+				"url": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt",
+				"title": "AdGuard Mobile Ads",
+				"keyword": null,
+				"isWorking": true
+			},
+			{
+				"url": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
+				"title": "AdGuard Mobile Spyware",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"danPollock": {
+		"title": "Dan Pollock",
+		"sources": [
+			{
+				"url": "https://someonewhocares.org/hosts/hosts",
+				"title": "Hosts",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"goodbyeAds": {
+		"title": "Goodbye Ads",
+		"sources": [
+			{
+				"url": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt",
+				"title": "Goodbye Ads",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"pglYoyo": {
+		"title": "PGL Yoyo",
+		"sources": [
+			{
+				"url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+				"title": "Ad Servers",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"stevenBlack": {
+		"title": "StevenBlack",
+		"sources": [
+			{
+				"url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+				"title": "Unified Hosts (Adware + Malware)",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"energizedPro": {
+		"title": "Energized Protection",
+		"sources": [
+			{
+				"url": "https://energized.pro/antipopads-re/hosts.txt",
+				"title": "Anti Pop-up Ads (IPv4)",
+				"keyword": null,
+				"isWorking": false
+			},
+			{
+				"url": "https://energized.pro/antipopads-re/hosts_v6.txt",
+				"title": "Anti Pop-up Ads (IPv6)",
+				"keyword": null,
+				"isWorking": false
+			}
+		]
+	}
 }

@@ -1,37 +1,41 @@
 {
-  "stevenBlack": {
-    "title": "StevenBlack",
-    "sources": [
-      {
-        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
-        "title": "StevenBlack's Porn-only Hosts",
-        "keyword": null
-      }
-    ]
-  },
-  "sinfonietta": {
-    "title": "Sinfonietta",
-    "sources": [
-      {
-        "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/pornography-hosts",
-        "title": "Sinfonietta's Pornography Hosts",
-        "keyword": null
-      }
-    ]
-  },
-  "energizedPro": {
-    "title": "Energized Protection",
-    "sources": [
-      {
-        "url": "https://energized.pro/nsfw/hosts.txt",
-        "title": "NSFW Hosts (IPv4)",
-        "keyword": null
-      },
-      {
-        "url": "https://energized.pro/nsfw/hosts_v6.txt",
-        "title": "NSFW Hosts (IPv6)",
-        "keyword": null
-      }
-    ]
-  }
+	"stevenBlack": {
+		"title": "StevenBlack",
+		"sources": [
+			{
+				"url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
+				"title": "StevenBlack's Porn-only Hosts",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"sinfonietta": {
+		"title": "Sinfonietta",
+		"sources": [
+			{
+				"url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/pornography-hosts",
+				"title": "Sinfonietta's Pornography Hosts",
+				"keyword": null,
+				"isWorking": true
+			}
+		]
+	},
+	"energizedPro": {
+		"title": "Energized Protection",
+		"sources": [
+			{
+				"url": "https://energized.pro/nsfw/hosts.txt",
+				"title": "NSFW Hosts (IPv4)",
+				"keyword": null,
+				"isWorking": false
+			},
+			{
+				"url": "https://energized.pro/nsfw/hosts_v6.txt",
+				"title": "NSFW Hosts (IPv6)",
+				"keyword": null,
+				"isWorking": false
+			}
+		]
+	}
 }

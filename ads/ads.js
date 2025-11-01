@@ -27,6 +27,7 @@ async function main() {
      */
     for (let i = 0; i < ENTRY.sources.length; i++) {
       const source = ENTRY.sources[i];
+      if (source.isWorking){
       console.log(`- Source #${i + 1}: "${source.title}"`);
       const hostArray = await getHost(source.url);
       hostArray.forEach((line) => {
@@ -57,7 +58,7 @@ async function main() {
             }
           }
         }
-      });
+      })};
     }
     console.log();
   }
