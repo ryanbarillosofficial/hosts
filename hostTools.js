@@ -17,6 +17,7 @@ const AFFIX_KEYWORDS = {
 	number: "__number__",
 	prefix: "__prefix__",
 	suffix: "__suffix__",
+	country: "__country__",
 };
 /**
  * Source of IPv6 Regex
@@ -95,6 +96,14 @@ export function resolveUrlAffixes(url, affixes) {
 		 */
 		for (const suffix of affixes.suffixes) {
 			urlSet.add(resolveAffix(url, AFFIX_KEYWORDS.suffix, suffix));
+		}
+	} else if (url.includes(AFFIX_KEYWORDS.country)) {
+		/**
+		 * Check if "URL" has the affix "suffix"
+		 * Then add each URL variant into the list
+		 */
+		for (const country of affixes.countries) {
+			urlSet.add(resolveAffix(url, AFFIX_KEYWORDS.country, country));
 		}
 	}
 	return urlSet;

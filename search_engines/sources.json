@@ -54,6 +54,10 @@
 		]
 	},
 	"bing": {
+		"title": "Bing",
+		"source": [
+			"https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814"
+		],
 		"affixes": {
 			"countries": null,
 			"prefixes": ["th", "sr"],
@@ -61,25 +65,14 @@
 		},
 		"subdomains": [
 			{
-				"url": "edgeservices.bing.com",
-				"about": "DNS domain for Microsoft Edge sidebar",
+				"url": ["edgeservices.bing.com", "bing.com"],
+				"about": "domain name for Microsoft Edge's sidebar + Bing engine",
 				"hasSafeSearch": true,
 				"hasGraphicalContent": false,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": "204.79.197.220",
-					"about": "IP address of strict.bing.com"
-				}
-			},
-			{
-				"url": "bing.com",
-				"about": "",
-				"hasSafeSearch": true,
-				"hasGraphicalContent": true,
-				"safeToDisable": false,
-				"redirectTo": {
-					"url": "204.79.197.220",
-					"about": "IP address of strict.bing.com"
+					"url": ["204.79.197.220"],
+					"about": "IP address of https://strict.bing.com"
 				}
 			},
 			{
@@ -100,7 +93,7 @@
 			},
 			{
 				"url": "tse__number__.explicit.bing.net",
-				"about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving explicit 'Graphical Content' when SafeSearch is off. The IP Address of this domain: \"204.79.197.201\"",
+				"about": "Used by Bing, Dogpile, Ecosia & Yahoo Search for serving explicit 'Graphical Content' when SafeSearch is off. The IP Address of this domain: \"204.79.197.201\"",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": true,
 				"safeToDisable": true,
@@ -108,7 +101,7 @@
 			},
 			{
 				"url": "tse__number__.mm.bing.net",
-				"about": "Relied upon by Bing, Dogpile, Ecosia & Yahoo Search for serving tame 'Graphical Content'; the IP address of this domain: \"204.79.197.200\"",
+				"about": "Used by Bing, Dogpile, Ecosia & Yahoo Search for serving tame 'Graphical Content'; the IP address of this domain: \"204.79.197.200\"",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": true,
 				"safeToDisable": false,
@@ -125,7 +118,7 @@
 		]
 	},
 	"brave_search": {
-		"title": "Brave",
+		"title": "Brave Search",
 		"affixes": {
 			"countries": null,
 			"prefixes": null,
@@ -139,13 +132,13 @@
 				"hasGraphicalContent": false,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": "15.197.160.66",
+					"url": ["15.197.160.66"],
 					"about": "IP address of forcesafe.search.brave.com (different from safe.search.brave.com)"
 				}
 			},
 			{
 				"url": "imgs.search.brave.com",
-				"about": "",
+				"about": "Image search of Brave Search",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": true,
 				"safeToDisable": false,
@@ -154,6 +147,7 @@
 		]
 	},
 	"dogpile": {
+		"title": "DogPile",
 		"affixes": {
 			"countries": null,
 			"prefixes": null,
@@ -171,6 +165,10 @@
 		]
 	},
 	"duckduckgo": {
+		"title": "DuckDuckGo",
+		"source": [
+			"https://safe.duckduckgo.com/duckduckgo-help-pages/features/safe-search/"
+		],
 		"affixes": {
 			"countries": null,
 			"prefixes": ["", "start."],
@@ -184,21 +182,13 @@
 				"hasGraphicalContent": false,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": "40.89.244.237",
+					"url": ["40.89.244.237"],
 					"about": "IP address of safe.duckduckgo.com"
 				}
 			},
 			{
-				"url": "html.duckduckgo.com",
-				"about": "",
-				"hasSafeSearch": false,
-				"hasGraphicalContent": false,
-				"safeToDisable": true,
-				"redirectTo": null
-			},
-			{
-				"url": "lite.duckduckgo.com",
-				"about": "",
+				"url": ["html.duckduckgo.com", "lite.duckduckgo.com"],
+				"about": "DuckDuckGo WITHOUT JavaScript (so a simple search engine without image searching)",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": false,
 				"safeToDisable": true,
@@ -206,7 +196,7 @@
 			},
 			{
 				"url": "external-content.duckduckgo.com",
-				"about": "",
+				"about": "CDN that serves photos & videos in DuckDuckGo search",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": true,
 				"safeToDisable": false,
@@ -215,6 +205,10 @@
 		]
 	},
 	"ecosia": {
+		"title": "Ecosia",
+		"source": [
+			"https://ecosia.helpscoutdocs.com/article/562-how-to-enforce-safe-search-at-your-organization"
+		],
 		"affixes": {
 			"countries": null,
 			"prefixes": ["api", "cdn", "ap", "ac"],
@@ -228,7 +222,7 @@
 				"hasGraphicalContent": false,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": "140.99.233.1",
+					"url": ["140.99.233.1"],
 					"about": "IP address of strict-safe-search.ecosia.org"
 				}
 			},
@@ -277,6 +271,11 @@
 		]
 	},
 	"google": {
+		"title": "Google",
+		"source": [
+			"https://support.google.com/websearch/answer/186669?hl=en",
+			"https://support.google.com/a/answer/6214622"
+		],
 		"affixes": {
 			"countries": [
 				"ac",
@@ -465,7 +464,7 @@
 				"hasGraphicalContent": true,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": "216.239.38.120",
+					"url": ["216.239.38.120"],
 					"about": "IP address of forcesafesearch.google.com"
 				}
 			},
@@ -589,7 +588,7 @@
 		},
 		"subdomains": [
 			{
-				"url": "__prefix__qwant.com",
+				"url": ["__prefix__qwant.com", "s__number__.qwant.com"],
 				"about": "",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": false,
@@ -602,14 +601,6 @@
 				"hasSafeSearch": true,
 				"hasGraphicalContent": false,
 				"safeToDisable": true,
-				"redirectTo": null
-			},
-			{
-				"url": "s__number__.qwant.com",
-				"about": "",
-				"hasSafeSearch": true,
-				"hasGraphicalContent": true,
-				"safeToDisable": false,
 				"redirectTo": null
 			}
 		]
@@ -666,6 +657,10 @@
 		]
 	},
 	"startpage": {
+		"title": "Startpage",
+		"source": [
+			"https://support.startpage.com/hc/en-us/articles/31709891174420-Whitelisting-Startpage-at-the-DNS-level-safe-startpage-com"
+		],
 		"affixes": {
 			"countries": null,
 			"prefixes": null,
@@ -679,7 +674,7 @@
 				"hasGraphicalContent": true,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": "67.63.61.130",
+					"url": ["67.63.61.130"],
 					"about": "IP address of safe.startpage.com"
 				}
 			},
@@ -702,6 +697,8 @@
 		]
 	},
 	"wikimedia": {
+		"title": "Wikimedia (Wikipedia)",
+		"source": ["https://en.wikipedia.org/wiki/Wikipedia:Sexual_content/FAQ"],
 		"affixes": {
 			"countries": [
 				"ab",
@@ -911,15 +908,7 @@
 				"redirectTo": null
 			},
 			{
-				"url": "__country__.wikipedia.org",
-				"about": "",
-				"hasSafeSearch": false,
-				"hasGraphicalContent": false,
-				"safeToDisable": false,
-				"redirectTo": null
-			},
-			{
-				"url": "__country__.m.wikipedia.org",
+				"url": ["__country__.wikipedia.org", "__country__.m.wikipedia.org"],
 				"about": "",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": false,
