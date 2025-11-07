@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 104     
+# 123     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
@@ -157,6 +157,38 @@
 193.110.81.1 www.zero.dns0.eu
 185.253.5.1 zero.dns0.eu
 185.253.5.1 www.zero.dns0.eu
+86.54.11.11 protective.joindns4.eu
+86.54.11.11 www.protective.joindns4.eu
+86.54.11.211 protective.joindns4.eu
+86.54.11.211 www.protective.joindns4.eu
+2a13:1001::86:54:11:11 protective.joindns4.eu
+2a13:1001::86:54:11:11 www.protective.joindns4.eu
+2a13:1001::86:54:11:211 protective.joindns4.eu
+2a13:1001::86:54:11:211 www.protective.joindns4.eu
+86.54.11.11 child.joindns4.eu
+86.54.11.11 www.child.joindns4.eu
+86.54.11.211 child.joindns4.eu
+86.54.11.211 www.child.joindns4.eu
+2a13:1001::86:54:11:11 child.joindns4.eu
+2a13:1001::86:54:11:11 www.child.joindns4.eu
+2a13:1001::86:54:11:211 child.joindns4.eu
+2a13:1001::86:54:11:211 www.child.joindns4.eu
+86.54.11.11 noads.joindns4.eu
+86.54.11.11 www.noads.joindns4.eu
+86.54.11.211 noads.joindns4.eu
+86.54.11.211 www.noads.joindns4.eu
+2a13:1001::86:54:11:11 noads.joindns4.eu
+2a13:1001::86:54:11:11 www.noads.joindns4.eu
+2a13:1001::86:54:11:211 noads.joindns4.eu
+2a13:1001::86:54:11:211 www.noads.joindns4.eu
+86.54.11.11 unfiltered.joindns4.eu
+86.54.11.11 www.unfiltered.joindns4.eu
+86.54.11.211 unfiltered.joindns4.eu
+86.54.11.211 www.unfiltered.joindns4.eu
+2a13:1001::86:54:11:11 unfiltered.joindns4.eu
+2a13:1001::86:54:11:11 www.unfiltered.joindns4.eu
+2a13:1001::86:54:11:211 unfiltered.joindns4.eu
+2a13:1001::86:54:11:211 www.unfiltered.joindns4.eu
 194.242.2.6 dns.mullvad.net
 194.242.2.6 www.dns.mullvad.net
 2a07:e340::6 dns.mullvad.net
@@ -217,6 +249,18 @@
 194.242.2.6 www.us-nyc-dns-601.mullvad.net
 2a07:e340::6 us-nyc-dns-601.mullvad.net
 2a07:e340::6 www.us-nyc-dns-601.mullvad.net
+0.0.0.0 nextdns.io
+0.0.0.0 www.nextdns.io
+:: nextdns.io
+:: www.nextdns.io
+0.0.0.0 my.nextdns.io
+0.0.0.0 www.my.nextdns.io
+:: my.nextdns.io
+:: www.my.nextdns.io
+0.0.0.0 firefox.dns.nextdns.io
+0.0.0.0 www.firefox.dns.nextdns.io
+:: firefox.dns.nextdns.io
+:: www.firefox.dns.nextdns.io
 208.67.222.123 doh.opendns.com
 208.67.222.123 www.doh.opendns.com
 208.67.220.123 doh.opendns.com

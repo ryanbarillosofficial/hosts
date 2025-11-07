@@ -119,7 +119,35 @@
 				}
 			}
 		]
-	},	
+	},
+	"dns4eu": {
+		"title": "DNS4EU",
+		"source": [
+			"https://www.joindns4.eu/",
+			"https://www.joindns4.eu/for-public#resolver-options"
+		],
+		"affixes": {
+			"locations": null,
+			"prefixes": ["protective", "child", "noads", "unfiltered"],
+			"suffixes": null
+		},
+		"subdomains": [
+			{
+				"url": "__prefix__.joindns4.eu",
+				"about": "Default DNS server",
+				"safeToDisable": true,
+				"redirectTo": {
+					"url": [
+						"86.54.11.11",
+						"86.54.11.211",
+						"2a13:1001::86:54:11:11",
+						"2a13:1001::86:54:11:211"
+					],
+					"about": "IP addresses to https://child-noads.joindns4.eu"
+				}
+			}
+		]
+	},
 	"mullvad": {
 		"title": "Mullvad",
 		"source": ["https://mullvad.net/en/help/dns-over-https-and-dns-over-tls"],
@@ -156,7 +184,30 @@
 				}
 			}
 		]
-	},	
+	},
+	"nextdns": {
+		"title": "NextDNS",
+		"source": ["https://https://nextdns.io/"],
+		"affixes": {
+			"locations": null,
+			"prefixes": null,
+			"suffixes": null
+		},
+		"subdomains": [
+			{
+				"url": ["nextdns.io", "my.nextdns.io"],
+				"about": "Default links to NextDNS",
+				"safeToDisable": true,
+				"redirectTo": null
+			},
+			{
+				"url": "firefox.dns.nextdns.io",
+				"about": "Mozilla Fireofox's NextDNS DNS",
+				"safeToDisable": true,
+				"redirectTo": null
+			}
+		]
+	},
 	"opendns": {
 		"title": "OpenDNS",
 		"source": [
@@ -195,9 +246,9 @@
 				"about": "Default DNS server.",
 				"safeToDisable": true,
 				"redirectTo": null
-			}			
+			}
 		]
-	},	
+	},
 	"wikimedia": {
 		"title": "Wikimedia DNS",
 		"source": ["https://meta.wikimedia.org/wiki/Wikimedia_DNS"],
@@ -209,5 +260,5 @@
 				"redirectTo": null
 			}
 		]
-	}	
+	}
 }
