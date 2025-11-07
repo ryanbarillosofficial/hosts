@@ -1,41 +1,4 @@
 {
-	"mullvad": {
-		"title": "Mullvad",
-		"source": ["https://mullvad.net/en/help/dns-over-https-and-dns-over-tls"],
-		"affixes": {
-			"locations": [
-				"de-fra-dns-001",
-				"gb-lon-dns-001",
-				"gb-lon-dns-301",
-				"se-got-dns-001",
-				"se-mma-dns-001",
-				"se-sto-dns-001",
-				"sg-sin-dns-101",
-				"us-dal-dns-001",
-				"us-nyc-dns-601"
-			],
-			"prefixes": [
-				"dns",
-				"adblock.dns",
-				"base.dns",
-				"extended.dns",
-				"doh",
-				"dot"
-			],
-			"suffixes": null
-		},
-		"subdomains": [
-			{
-				"url": ["__prefix__.mullvad.net", "__location__.mullvad.net"],
-				"about": "Default DNS servers.",
-				"safeToDisable": true,
-				"redirectTo": {
-					"url": ["194.242.2.6", "2a07:e340::6"],
-					"about": "IP addresses of family.dns.mullvad.net."
-				}
-			}
-		]
-	},
 	"adguard": {
 		"source": ["https://adguard-dns.io/en/public-dns.html"],
 		"title": "AdGuard",
@@ -80,25 +43,6 @@
 						"2606:4700:4700::1003"
 					],
 					"about": "Block malware and adult content with 1.1.1.1 for Families."
-				}
-			}
-		]
-	},
-	"dns0.eu": {
-		"title": "dns0.eu",
-		"source": [
-			"https://www.dns0.eu/",
-			"https://www.dns0.eu/zero",
-			"https://www.dns0.eu/kids"
-		],
-		"subdomains": [
-			{
-				"url": ["dns0.eu", "zero.dns0.eu"],
-				"about": "Default DNS server - Hardened Security DNS Server",
-				"safeToDisable": true,
-				"redirectTo": {
-					"url": ["193.110.81.1", "185.253.5.1"],
-					"about": "IP addresses to kids.dns0.eu"
 				}
 			}
 		]
@@ -157,6 +101,62 @@
 			}
 		]
 	},
+	"dns0.eu": {
+		"title": "dns0.eu",
+		"source": [
+			"https://www.dns0.eu/",
+			"https://www.dns0.eu/zero",
+			"https://www.dns0.eu/kids"
+		],
+		"subdomains": [
+			{
+				"url": ["dns0.eu", "zero.dns0.eu"],
+				"about": "Default DNS server - Hardened Security DNS Server",
+				"safeToDisable": true,
+				"redirectTo": {
+					"url": ["193.110.81.1", "185.253.5.1"],
+					"about": "IP addresses to kids.dns0.eu"
+				}
+			}
+		]
+	},	
+	"mullvad": {
+		"title": "Mullvad",
+		"source": ["https://mullvad.net/en/help/dns-over-https-and-dns-over-tls"],
+		"affixes": {
+			"locations": [
+				"de-fra-dns-001",
+				"gb-lon-dns-001",
+				"gb-lon-dns-301",
+				"se-got-dns-001",
+				"se-mma-dns-001",
+				"se-sto-dns-001",
+				"sg-sin-dns-101",
+				"us-dal-dns-001",
+				"us-nyc-dns-601"
+			],
+			"prefixes": [
+				"dns",
+				"adblock.dns",
+				"base.dns",
+				"extended.dns",
+				"doh",
+				"dot"
+			],
+			"suffixes": null
+		},
+		"subdomains": [
+			{
+				"url": ["__prefix__.mullvad.net", "__location__.mullvad.net"],
+				"about": "Default DNS servers.",
+				"safeToDisable": true,
+				"redirectTo": {
+					"url": ["194.242.2.6", "2a07:e340::6"],
+					"about": "IP addresses of family.dns.mullvad.net."
+				}
+			}
+		]
+	},	
 	"opendns": {
 		"title": "OpenDNS",
 		"source": [
@@ -179,5 +179,35 @@
 				}
 			}
 		]
-	}
+	},
+	"quad9": {
+		"title": "Quad9",
+		"source": ["https://quad9.net/"],
+		"subdomains": [
+			{
+				"url": "dns.quad9.net",
+				"about": "Default DNS server.",
+				"safeToDisable": true,
+				"redirectTo": null
+			},
+			{
+				"url": "dns__number__.quad9.net",
+				"about": "Default DNS server.",
+				"safeToDisable": true,
+				"redirectTo": null
+			}			
+		]
+	},	
+	"wikimedia": {
+		"title": "Wikimedia DNS",
+		"source": ["https://meta.wikimedia.org/wiki/Wikimedia_DNS"],
+		"subdomains": [
+			{
+				"url": "wikimedia-dns.org",
+				"about": "Default DNS server.",
+				"safeToDisable": true,
+				"redirectTo": null
+			}
+		]
+	}	
 }

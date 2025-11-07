@@ -73,11 +73,11 @@ export function resolveUrlAffixes(url, affixes) {
 		 *
 		 * NOTE:
 		 * Given that any domain can have 1 to 9999+ variations of its domain
-		 * Only the first 10 will be resolved
+		 * Only the first 20 will be resolved
 		 * - In the future, when I've learnt alternatives to hostname blocking, I'll utilize simpler methods (like RegExp)
 		 * - Other alternative is IP address blocking, but hostname blocking won't allow that
 		 */
-		for (let number = 0; number <= 10; number++) {
+		for (let number = 0; number <= 20; number++) {
 			urlSet.add(resolveAffix(url, AFFIX_KEYWORDS.number, number));
 		}
 	} else if (url.includes(AFFIX_KEYWORDS.prefix)) {
