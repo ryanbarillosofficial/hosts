@@ -195,7 +195,12 @@
 		},
 		"subdomains": [
 			{
-				"url": ["nextdns.io", "my.nextdns.io"],
+				"url": [
+					"nextdns.io",
+					"my.nextdns.io",
+					"apple.nextdns.io",
+					"dns.nextdns.io"
+				],
 				"about": "Default links to NextDNS",
 				"safeToDisable": true,
 				"redirectTo": null

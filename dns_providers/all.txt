@@ -10,12 +10,12 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 123     
+# 125     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
 #     
-# Last Updated: Nov 07 2025    
+# Last Updated: Nov 08 2025    
 #
 94.140.14.15 dns.adguard-dns.com
 94.140.14.15 www.dns.adguard-dns.com
@@ -257,6 +257,14 @@
 0.0.0.0 www.my.nextdns.io
 :: my.nextdns.io
 :: www.my.nextdns.io
+0.0.0.0 apple.nextdns.io
+0.0.0.0 www.apple.nextdns.io
+:: apple.nextdns.io
+:: www.apple.nextdns.io
+0.0.0.0 dns.nextdns.io
+0.0.0.0 www.dns.nextdns.io
+:: dns.nextdns.io
+:: www.dns.nextdns.io
 0.0.0.0 firefox.dns.nextdns.io
 0.0.0.0 www.firefox.dns.nextdns.io
 :: firefox.dns.nextdns.io

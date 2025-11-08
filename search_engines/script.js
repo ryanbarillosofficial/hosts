@@ -5,7 +5,6 @@ import {
 	resolveUrlAffixes,
 	AFFIX_KEYWORDS
 } from "../hostTools.js";
-import process from "process";
 
 /**
  * Searching for other live search engines
