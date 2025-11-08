@@ -10,7 +10,7 @@
 # https://raw.githubusercontent.com/ryanbarillosofficial/hosts/main/dns_providers/sources.json     
 #     
 # Number of Unique Domains (without their "www." variants):     
-# 125     
+# 127     
 #     
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
@@ -189,6 +189,14 @@
 2a13:1001::86:54:11:11 www.unfiltered.joindns4.eu
 2a13:1001::86:54:11:211 unfiltered.joindns4.eu
 2a13:1001::86:54:11:211 www.unfiltered.joindns4.eu
+0.0.0.0 dns.google
+0.0.0.0 www.dns.google
+:: dns.google
+:: www.dns.google
+0.0.0.0 dns.google.com
+0.0.0.0 www.dns.google.com
+:: dns.google.com
+:: www.dns.google.com
 194.242.2.6 dns.mullvad.net
 194.242.2.6 www.dns.mullvad.net
 2a07:e340::6 dns.mullvad.net

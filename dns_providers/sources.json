@@ -148,6 +148,27 @@
 			}
 		]
 	},
+	"google": {
+		"title": "Google",
+		"source": [
+			"https://developers.google.com/speed/public-dns/docs/intro",
+			"https://developers.google.com/speed/public-dns/docs/using",
+			"https://developers.google.com/speed/public-dns/docs/doh"
+		],
+		"affixes": {
+			"locations": null,
+			"prefixes": null,
+			"suffixes": null
+		},
+		"subdomains": [
+			{
+				"url": ["dns.google", "dns.google.com"],
+				"about": "DOH address of Google DNS",
+				"safeToDisable": true,
+				"redirectTo": null
+			}
+		]
+	},
 	"mullvad": {
 		"title": "Mullvad",
 		"source": ["https://mullvad.net/en/help/dns-over-https-and-dns-over-tls"],
