@@ -15,7 +15,7 @@
 # Project Home Page:     
 # https://github.com/ryanbarillosofficial/hosts     
 #     
-# Last Updated: Nov 07 2025    
+# Last Updated: Nov 08 2025    
 #
 0.0.0.0 activesearchresults.com
 0.0.0.0 www.activesearchresults.com
@@ -669,8 +669,8 @@
 0.0.0.0 www.searx.be
 :: searx.be
 :: www.searx.be
-67.63.61.130 startpage.com
-67.63.61.130 www.startpage.com
+67.63.58.130 startpage.com
+67.63.58.130 www.startpage.com
 0.0.0.0 eu-browse.startpage.com
 0.0.0.0 www.eu-browse.startpage.com
 :: eu-browse.startpage.com

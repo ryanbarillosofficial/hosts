@@ -674,7 +674,7 @@
 				"hasGraphicalContent": true,
 				"safeToDisable": false,
 				"redirectTo": {
-					"url": ["67.63.61.130"],
+					"url": ["67.63.58.130"],
 					"about": "IP address of safe.startpage.com"
 				}
 			},
