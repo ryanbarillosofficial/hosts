@@ -29,7 +29,15 @@ async function main() {
       const source = ENTRY.sources[i];
       if (source.isWorking){
       console.log(`- Source #${i + 1}: "${source.title}"`);
-      const hostArray = await getHost(source.url);
+      let hostArray;
+      try {
+        hostArray = await getHost(source.url);
+      } catch (error) {
+        console.log("Error! Unable to fetch it.");
+        console.error(error);
+        continue;
+      }
+
       hostArray.forEach((line) => {
         /**
          * Ignore lines that don't have IP addresses

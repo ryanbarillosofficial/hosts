@@ -679,7 +679,7 @@
 				}
 			},
 			{
-				"url": "eu-browse.startpage.com",
+				"url": ["eu-browse.startpage.com", "eu__number__-browse.startpage.com"],
 				"about": "",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": false,
@@ -687,7 +687,7 @@
 				"redirectTo": null
 			},
 			{
-				"url": "us__number__-browse.startpage.com",
+				"url": ["us-browse.startpage.com", "us__number__-browse.startpage.com"],
 				"about": "Domain of Startpage's 'Anonymous View'",
 				"hasSafeSearch": false,
 				"hasGraphicalContent": false,
