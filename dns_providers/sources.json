@@ -200,6 +200,7 @@
 				"about": "Default DNS servers.",
 				"safeToDisable": true,
 				"redirectTo": {
+					"ignoreAndForceDisable": true,
 					"url": ["194.242.2.6", "2a07:e340::6"],
 					"about": "IP addresses of family.dns.mullvad.net."
 				}

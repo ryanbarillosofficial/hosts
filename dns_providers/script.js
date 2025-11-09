@@ -52,10 +52,13 @@ function main() {
 			// Redirect each URL to this assigned IP address(es):
 			if (subdomain.redirectTo !== null) {
 				finalSubdomainUrl.forEach((url) => {
+					if (subdomain.redirectTo.ignoreAndForceDisable) {
+						domainSet.add(resolveRedirect(url));
+					} else {
 					subdomain.redirectTo.url.forEach((redirectUrl) => {
 						domainSet.add(resolveRedirect(url, redirectUrl));
-					});
-				});
+					})
+				}});
 			} else {
 				finalSubdomainUrl.forEach((url) => {
 					domainSet.add(resolveRedirect(url));
